@@ -155,3 +155,103 @@ a, .btn, .link {
 }
 /* /Components - tipografías globales*/
 /* /Components */
+
+body {
+    /*Se contempló poner el fondo a la sección stamps, pero se cortaba*/
+    background-color: var(--color-light);
+    background-image: url(../assets/backgrounds/white-with-fibers.png);
+    background-blend-mode: multiply;
+    background-size: 400px;
+    background-repeat: repeat;
+}
+
+.stamps {
+    .stamps__grid {
+        display: grid;
+        grid-template: repeat(22, 5rem) / repeat(16, 5rem);
+        gap: 2.1875rem;
+    
+        /* Revisar: Comentario VIGENTE?? Se le da un grid-area de 2x2 en lugar de 1x1 para desfasar las columnas a mi facilidad */
+        & .stamps__img-container {
+            grid-area: span 2 / span 2;
+    
+            /* Cada hijo par se desplaza para desfasar las columnas*/
+            &:nth-child(even) {
+                transform: translateY(5rem);
+            }
+        }
+    
+        & .stamps__img {
+            width: 100%;
+            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
+    
+            /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
+            filter: drop-shadow(4px 4px 4px rgba(25, 10, 3, 0.25));
+    
+            &:hover {
+                transform: rotate(3deg);
+                cursor: pointer;
+            }
+        }
+    
+        & .stamps__instructions {
+            /*Se asigna un z-index de 1 para que siempre esté por encima del grid de imágenes*/
+            z-index: 1;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+.detail {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /*Este contenedor tiene un z-index mayor a lo demás para que se muestre arriba de las estampillas*/
+    z-index: 2;
+
+    /*tiene un display none por defecto para que se muestre únicamente cuando tenga la clase active*/
+    display: none;
+
+    &.active {
+        display: block;
+    }
+
+    & .detail__content {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        /*Revisar: Revisitar medidas*/
+        left: 50%;
+        transform: translatex(-50%);
+        padding: 2rem;
+
+        & .detail__clipboard {
+            /*Revisar: revisitar medidas de ancho y alto*/
+            width: clamp(22.5625rem, 5vw, 66.5625rem);
+            height: clamp(94.125rem, 5vw, 22.5625rem);
+        }
+        
+        & .detail__factsheet {
+            /*Revisar: revisitar medidas de ancho y alto*/
+            width: clamp(21.25rem, 5vw, 60.25rem);
+            display: flex;
+            flex-flow: column nowrap;
+        }
+        
+        & .detail__postcard-container {
+            & .detail__postcard-front {}
+            
+            & .detail__postcard-back {}
+        }
+    }
+    
+}
+

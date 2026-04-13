@@ -1,3 +1,4 @@
+<!--Futura Albaby, para revisar cosas pendientes ctrl+f "Revisar"-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palomas</title>
     <link rel="stylesheet" href="css/index.css">
-    <script defer src="js/index.js"></script>
+    <script type="module" defer src="js/index.js"></script>
 </head>
+
 <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <p>Texto párrafo</p>
-    <a href="#">Link</a>
+<!--Revisar: dejo esta estructura para que el profe la vea??
+    Son dos contenedores principales:
+    1 section thumbnails (estampillas):
+        1 container grid:
+            n pictures:
+                1 img c/u
+        
+        1 container controles o instrucciones
+            estructura tbd
+
+    1 section info-detalle (clipboard) - esta sección está estilizada como overlay:
+        1 container scrollable:
+            1 backing de clipboard
+            1 hoja detalle
+            1 block postal:
+                1 div front
+                1 div back
+-->
+<main>
+    <!--Revisar: do I really need la clase section aki??-->
+    <section class="section stamps">
+        <!--Revisar: clases container??-->
+        <div class="container--grid stamps__grid" id="stampsGrid">
+            <!--Con JS se genera cada estampilla con la siguiente estructura:
+            Revisar: Necesito agregar alguna otra cosa a picture para accesibilidad? scrset source etc??
+            <picture class="stamps__img-container">
+                <img class="stamps__img" loading="lazy" src="#" alt="">
+            </picture>
+            -->
+
+            <!--Revisar: clases container??-->
+            <div class="container stamps__instructions">
+                <!--Revisar: Hacer instrucciones, NO DEJAR TEXTO PLACEHOLDER-->
+                <p class="text-md">instructions here!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Revisar: do I really need la clase section aki??-->
+    <section class="section detail" id="detail">
+        <!--Revisar: clases container??-->
+        <div class="container detail__content">
+            <div class="detail__clipboard">
+                <!--Este div permanece vacío porque sirve como fondo decorativo-->
+            </div>
+
+            <div class="detail__factsheet" id="detailFactsheet">
+                <!--Con JS se genera información sobre cada paloma con la siguiente estructura:
+                <h3>More about the ${pigeon.commonName}</h3>
+                <p>${pigeon.summary}</p>
+                <a title="Go to this specie's Wikipedia Article" href="${articleLink}" class="btn">
+                    Wiki article
+                    // Revisar: poner ícono final
+                    <span>icon-here</span>
+                </a>
+                -->
+            </div>
+
+            <div class="detail__postcard-container">
+                <div class="detail__postcard-front" id="detailPostcardFront">
+                    <!--Con JS se genera información sobre cada paloma-->
+                </div>
+                <div class="detail__postcard-back" id="detailPostcardBack">
+                    <!--Con JS se genera información sobre cada paloma-->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
 </body>
+
 </html>
