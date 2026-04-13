@@ -1,0 +1,157 @@
+/* Carga de fuentes
+Al no ser una fuente variable, se importó por peso */
+@font-face {
+    font-family: 'AveriaSansLibre-Bold', sans-serif;
+    src: 
+    local('AveriaSansLibre-Bold'),
+    url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 700;
+
+    /* Se utiliza swap para optimizar el tiempo de carga de la página */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AveriaSansLibre-Light', sans-serif;
+    src: 
+    local('AveriaSansLibre-Light'),
+    url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AveriaSansLibre-LightItalic', sans-serif;
+    src: 
+    local('AveriaSansLibre-LightItalic'),
+    url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AveriaSerifLibre-Light', serif;
+    src: 
+    local('AveriaSerifLibre-Light'),
+    url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AveriaSerifLibre-Regular', serif;
+    src: 
+    local('AveriaSerifLibre-Regular'),
+    url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DidactGothic-Regular', serif;
+    src: 
+    local('DidactGothic-Regular'),
+    url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+}
+/* /Carga de fuentes */
+
+/* Variables raíz */
+:root {
+    /* Colores */
+    --color-light: #F9F8F6;
+    --color-text: #190A03;
+    --color-red: #AF3029;
+    --color-orange: #BC5215;
+    --color-yellow: #AD8301;
+    --color-green: #66800B;
+    --color-cyan: #24837B;
+    --color-blue: #205EA6;
+    --color-purple: #5E409D;
+    --color-magenta: #A02F6F;
+
+    /* Fuentes */
+    --font-h1: 'AveriaSerifLibre-Light', serif;
+    --font-h2: 'AveriaSerifLibre-Regular', serif;
+    --font-h3: 'AveriaSansLibre-Light', sans-serif;
+    --font-h4: 'AveriaSansLibre-LightItalic', sans-serif;
+    --font-text: 'DidactGothic-Regular', sans-serif;
+    --font-btn: 'AveriaSansLibre-Bold', sans-serif;
+}
+/* /Variables raíz */
+
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1, h2 {
+    font-family: serif;
+}
+
+h3, h4, p, a, li {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+/* /Reset CSS */
+
+/* Components */
+/* Components - tipografías globales */
+h1, .text-xl {
+    font: 300 clamp(2.625rem, 5vw, 4rem) var(--font-h1);
+    color: var(--color-text);
+}
+
+h2, .text-lg {
+    font: 400 clamp(2rem, 5vw, 2.5rem) var(--font-h2);
+    color: var(--color-text);
+}
+
+h3, .text-md {
+    font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h3);
+    color: var(--color-text);
+}
+
+h4, .text-sm {
+    font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h4);
+    color: var(--color-text);
+}
+
+p, .text-xs {
+    font: 400 1.125rem var(--font-text);
+    color: var(--color-text);
+}
+
+a, .btn, .link {
+    font: 600 1rem var(--font-btn);
+    color: var(--color-text);
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+/* /Components - tipografías globales*/
+/* /Components */
