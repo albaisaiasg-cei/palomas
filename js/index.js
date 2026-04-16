@@ -98,8 +98,10 @@ singleStamp.addEventListener('click', (e) => {
 })
 
 // Interacciones con contenedor detalle
-detail.addEventListener('click')
-
+const cierre = document.getElementById('cierre')
+cierre.addEventListener('click', () => {
+    detail.classList.remove('active')
+})
 
 // Visualización de información detalle
 function sendPostcardBack() {
