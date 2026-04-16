@@ -4,6 +4,7 @@ import pigeonsWithSummaries from '../assets/pigeon_data/pigeons-with-summaries.j
 // Se declaran constantes para utilizarlas en funciones futuras, se declaran con un scope local en previsión a usarse en distintas secciones.
 const stampsGrid = document.getElementById('stampsGrid')
 const detail = document.getElementById('detail')
+const postcardContainer = document.getElementById('postcardContainer')
 const detailFactsheet = document.getElementById('detailFactsheet')
 const detailPostcardFront = document.getElementById('detailPostcardFront')
 const detailPostcardBack = document.getElementById('detailPostcardBack')
@@ -54,12 +55,36 @@ singleStamp.addEventListener('click', (e) => {
     if (pigeon.genus) {
         // Revisar: poner ícono final
         detailFactsheet.innerHTML = `
-        <h3>More about the ${pigeon.commonName}</h3>
-        <p>${pigeon.summary}</p>
-        <a title="Go to the ${pigeon.commonName} Wikipedia Article" href="${articleLink}" class="btn" target="_blank" rel="noopener noreferrer">
+        <h3 class:"detail__factsheet-title">More about the ${pigeon.commonName}</h3>
+        <p class:"detail__factsheet-text">${pigeon.summary}</p>
+        <a title="Go to the ${pigeon.commonName} Wikipedia Article" href="${articleLink}" class="btn detail__factsheet-external-link" target="_blank" rel="noopener noreferrer">
             Wiki article
             <span>icon-here</span>
         </a>
+        `
+
+        detailPostcardFront.innerHTML = `
+            <picture class="detail__postcard-img-container">
+                <img class="detail__postard-img" src="${pigeon.photos[0]}" alt="${pigeon.commonName}">
+            </picture>
+            <div class="detail__postcard-info">
+                <h2>${pigeon.commonName}</h2>
+                <p>${pigeon.genus} ${pigeon.species}</p>
+            </div>
+        `
+
+        detailPostcardBack.innerHTML = `
+            <picture class="detail__postcard-img-container">
+                <img class="detail__postard-img" src="${fileName}" alt="${pigeon.commonName} styled as a vintage postal stamp">
+            </picture>
+
+            <div class="detail__postcard-metadata">
+                <p class="detail__metadatum">Common Name: ${pigeon.commonName}</p>
+                <p class="detail__metadatum">Genus: ${pigeon.genus}</p>
+                <p class="detail__metadatum">Species: ${pigeon.species}</p>
+                <p class="detail__metadatum">Living Region: ${pigeon.range.region}</p>
+                <p class="detail__metadatum">Conservation Status: ${pigeon.conservationStatus}</p>
+            </div>
         `
     } else {
         detailFactsheet.innerHTML = `
@@ -68,7 +93,40 @@ singleStamp.addEventListener('click', (e) => {
     }
 
     // Revisar: cómo hacer que el clipboard siempre salga en la parte de la pantalla que quiero
-        detail.style.top = e.offsetY
         detail.classList.toggle('active')
     })
+})
+
+// Interacciones con contenedor detalle
+detail.addEventListener('click')
+
+
+// Visualización de información detalle
+function sendPostcardBack() {
+    postcardContainer.classList.remove('top')
+}
+
+function sendFactsheetBack() {
+    detailFactsheet.classList.remove('top')
+}
+
+postcardContainer.addEventListener('click', () => {
+    if (postcardContainer.classList.contains('top')) {
+        detailPostcardFront.classList.toggle('active')
+        detailPostcardBack.classList.toggle('active')
+        detailPostcardFront.classList.toggle('inactive')
+        detailPostcardBack.classList.toggle('inactive')
+    } else {
+        postcardContainer.classList.add('top')
+        sendFactsheetBack()
+    }
+}) 
+
+detailFactsheet.addEventListener('click', () => {
+    if (detailFactsheet.classList.contains('top')) {
+        // Por ahora no hacer nadaP
+    } else {
+        detailFactsheet.classList.add('top')
+        sendPostcardBack()
+    }
 })

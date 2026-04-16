@@ -68,12 +68,33 @@
                 -->
             </div>
 
-            <div class="detail__postcard-container">
-                <div class="detail__postcard-front" id="detailPostcardFront">
-                    <!--Con JS se genera información sobre cada paloma-->
+            <div class="detail__postcard-container" id="postcardContainer">
+                <div class="active detail__postcard-front" id="detailPostcardFront">
+                    <!--Con JS se genera información sobre cada paloma con la siguiente estructura:
+                    <picture class="detail__postcard-img-container">
+                        <img class="detail__postard-img" src="${pigeon.photos[0]}" alt="${pigeon.commonName}">
+                    </picture>
+                    <div class="detail__info">
+                        <h2>${pigeon.commonName}</h2>
+                        <p>${pigeon.genus} ${pigeon.species}</p>
+                    </div>
+                    -->
                 </div>
-                <div class="detail__postcard-back" id="detailPostcardBack">
-                    <!--Con JS se genera información sobre cada paloma-->
+                
+                <div class="inactive detail__postcard-back" id="detailPostcardBack">
+                    <!--Con JS se genera información sobre cada paloma
+                    <picture class="detail__postcard-img-container">
+                        <img class="detail__postard-img" src="${fileName}" alt="${pigeon.commonName} styled as a vintage postal stamp">
+                    </picture>
+
+                    <div class="detail__postcard-metadata">
+                        <p class="detail__metadatum">Common Name: ${pigeon.commonName}</p>
+                        <p class="detail__metadatum">Genus: ${pigeon.genus}</p>
+                        <p class="detail__metadatum">Species: ${pigeon.species}</p>
+                        <p class="detail__metadatum">Living Region: ${pigeon.range.region}</p>
+                        <p class="detail__metadatum">Conservation Status: ${pigeon.conservationStatus}</p>
+                    </div>
+                    -->
                 </div>
             </div>
         </div>

@@ -209,9 +209,11 @@ body {
 .detail {
     width: 100vw;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
+
+    overflow-y: scroll;
 
     /*Este contenedor tiene un z-index mayor a lo demás para que se muestre arriba de las estampillas*/
     z-index: 2;
@@ -225,33 +227,68 @@ body {
 
     & .detail__content {
         position: absolute;
-        top: 0;
-        left: 0;
 
         /*Revisar: Revisitar medidas*/
-        left: 50%;
-        transform: translatex(-50%);
+        left: 25%;
         padding: 2rem;
 
         & .detail__clipboard {
             /*Revisar: revisitar medidas de ancho y alto*/
-            width: clamp(22.5625rem, 5vw, 66.5625rem);
-            height: clamp(94.125rem, 5vw, 22.5625rem);
+            background-color: var(--color-green);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 50vw;
+            height: 80vh;
         }
         
         & .detail__factsheet {
             /*Revisar: revisitar medidas de ancho y alto*/
-            width: clamp(21.25rem, 5vw, 60.25rem);
+            background-color: var(--color-cyan);
+
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 40vw;
             display: flex;
             flex-flow: column nowrap;
+            
         }
         
         & .detail__postcard-container {
-            & .detail__postcard-front {}
+            background-color: var(--color-light);
+
+            & .detail__postcard-front {
+                background-color: var(--color-magenta);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 30vw;
+            }
             
-            & .detail__postcard-back {}
+            & .detail__postcard-back {
+                background-color: var(--color-blue);
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                width: 20vw;
+            }
         }
     }
-    
+
+    .top {
+        z-index: 10;
+    }
+
+    .active {
+        opacity: 100%;
+    }
+
+    .inactive {
+        opacity: 0;
+    }
 }
 
