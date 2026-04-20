@@ -4,7 +4,7 @@
       "genus": "Columba",
       "species": "livia",
       "range": {
-        "regions": [],
+        "regions": ["NA", "MA", "SA", "AF", "OR", "EU", "IO", "AU", "PO"],
         "locations": ["Worldwide - widespread"]
       },
       "conservationStatus": "LC",
@@ -2909,7 +2909,7 @@
       "genus": "Caloenas",
       "species": "maculata",
       "range": {
-        "regions": [],
+        "regions": ["OR", "IO"],
         "locations": ["South Pacific or Indian Ocean island(?)"]
       },
       "conservationStatus": "EX",

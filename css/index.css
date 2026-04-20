@@ -1,7 +1,7 @@
 /* Carga de fuentes
 Al no ser una fuente variable, se importó por peso */
 @font-face {
-    font-family: 'AveriaSansLibre-Bold', sans-serif;
+    font-family: 'AveriaSansLibre';
     src: 
     local('AveriaSansLibre-Bold'),
     url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
@@ -13,7 +13,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSansLibre-Light', sans-serif;
+    font-family: 'AveriaSansLibre';
     src: 
     local('AveriaSansLibre-Light'),
     url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
@@ -23,7 +23,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSansLibre-LightItalic', sans-serif;
+    font-family: 'AveriaSansLibre';
     src: 
     local('AveriaSansLibre-LightItalic'),
     url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
@@ -33,7 +33,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSerifLibre-Light', serif;
+    font-family: 'AveriaSerifLibre';
     src: 
     local('AveriaSerifLibre-Light'),
     url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
@@ -43,7 +43,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSerifLibre-Regular', serif;
+    font-family: 'AveriaSerifLibre';
     src: 
     local('AveriaSerifLibre-Regular'),
     url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
@@ -53,7 +53,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'DidactGothic-Regular', serif;
+    font-family: 'DidactGothic';
     src: 
     local('DidactGothic-Regular'),
     url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
@@ -78,12 +78,12 @@ Al no ser una fuente variable, se importó por peso */
     --color-magenta: #A02F6F;
 
     /* Fuentes */
-    --font-h1: 'AveriaSerifLibre-Light', serif;
-    --font-h2: 'AveriaSerifLibre-Regular', serif;
-    --font-h3: 'AveriaSansLibre-Light', sans-serif;
-    --font-h4: 'AveriaSansLibre-LightItalic', sans-serif;
-    --font-text: 'DidactGothic-Regular', sans-serif;
-    --font-btn: 'AveriaSansLibre-Bold', sans-serif;
+    --font-h1: 'AveriaSerifLibre', serif;
+    --font-h2: 'AveriaSerifLibre', serif;
+    --font-h3: 'AveriaSansLibre', sans-serif;
+    --font-h4: 'AveriaSansLibre', sans-serif;
+    --font-text: 'DidactGothic', sans-serif;
+    --font-btn: 'AveriaSansLibre', sans-serif;
 }
 /* /Variables raíz */
 
@@ -128,6 +128,7 @@ h1, .text-xl {
 h2, .text-lg {
     font: 400 clamp(2rem, 5vw, 2.5rem) var(--font-h2);
     color: var(--color-text);
+    text-transform: uppercase;
 }
 
 h3, .text-md {
@@ -172,27 +173,25 @@ body {
         gap: 2.1875rem;
     
         /* Revisar: Comentario VIGENTE?? Se le da un grid-area de 2x2 en lugar de 1x1 para desfasar las columnas a mi facilidad */
-        & .stamps__img-container {
+        & .stamps__picture {
             grid-area: span 2 / span 2;
+            /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
+            filter: drop-shadow(4px 4px 4px rgba(25, 10, 3, 0.25));
     
             /* Cada hijo par se desplaza para desfasar las columnas*/
             &:nth-child(even) {
                 transform: translateY(5rem);
             }
-        }
-    
-        & .stamps__img {
-            width: 100%;
-            height: 100%;
-            max-width: 100%;
-            max-height: 100%;
-    
-            /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
-            filter: drop-shadow(4px 4px 4px rgba(25, 10, 3, 0.25));
-    
-            &:hover {
-                transform: rotate(3deg);
-                cursor: pointer;
+
+            & .stamps__img {
+                width: 100%;
+                height: 100%;
+                max-width: 100%;
+                max-height: 100%;
+                &:hover {
+                    transform: rotate(3deg);
+                    cursor: pointer;
+                }
             }
         }
     
@@ -215,6 +214,8 @@ body {
 
     overflow-y: scroll;
 
+    background-color: var(--color-yellow);
+
     /*Este contenedor tiene un z-index mayor a lo demás para que se muestre arriba de las estampillas*/
     z-index: 2;
 
@@ -230,6 +231,14 @@ body {
 
         /*Revisar: Revisitar medidas*/
         left: 25%;
+        
+        & .cruz {
+            width: 25px;
+
+            &:hover {
+            transform: rotate(3deg);
+            cursor: pointer;
+            }
 
         & .detail__clipboard {
             /*Revisar: revisitar medidas de ancho y alto*/
@@ -247,13 +256,6 @@ body {
             justify-content: start;
             align-items: end;
 
-            & .cruz {
-                width: 25px;
-
-                &:hover {
-                transform: rotate(3deg);
-                cursor: pointer;
-                }
             }
         }
         
