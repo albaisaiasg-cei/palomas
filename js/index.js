@@ -1,29 +1,34 @@
 // Se utiliza import para obtener los datos de un archivo local. Se especifica que el archivo es tipo json para que el compilador del navegador sepa el tipo de archivo y lo convierta en un objeto.
-import pigeonsWithSummaries from "../assets/pigeon_data/pigeons-with-summaries.json" with { type: "json" };
+import pigeonsWithSummaries from '../assets/pigeon_data/pigeons-with-summaries.json' with { type: 'json' }
 
 // Se declaran constantes para utilizarlas en funciones futuras, se declaran con un scope local en previsión a usarse en distintas secciones.
-const stampsGrid = document.getElementById("stampsGrid");
-const detail = document.getElementById("detail");
-const postcardContainer = document.getElementById("postcardContainer");
-const detailFactsheet = document.getElementById("detailFactsheet");
-const detailPostcardFront = document.getElementById("detailPostcardFront");
-const detailPostcardBack = document.getElementById("detailPostcardBack");
+const stampsGrid = document.getElementById('stampsGrid')
+const detail = document.getElementById('detail')
+const postcardContainer = document.getElementById('postcardContainer')
+const detailFactsheet = document.getElementById('detailFactsheet')
+const detailPostcardFront = document.getElementById('detailPostcardFront')
+const detailPostcardBack = document.getElementById('detailPostcardBack')
+const detailRelatedSpecies = document.getElementById('detailRelatedSpecies')
+const detailMapCanvas = document.getElementById('detailMapCanvas')
+const detailMapRegions = document.getElementById('detailMapRegions')
+const detailMapLocations = document.getElementById('detailMapLocations')
 
+var mapsToClean = []
 
 function getRandomNumber(min, max) {
-  return Math.random() * (max - min) + min;
+    return Math.random() * (max - min) + min
 }
 
 // Obtener ruta de estampilla para manipular datos del array para referencia sencilla más adelante
-function getStampFilePath(pigeonName, extension = "png") {
+function getStampFilePath(pigeonName, extension = 'png') {
     const fileName =
-        "assets/pigeon_stamps/" + pigeonName.split(" ").join("_") + `.${extension}`;
-    return fileName;
+        'assets/pigeon_stamps/' + pigeonName.split(' ').join('_') + `.${extension}`
+    return fileName
 }
 
 // Escribir nombre de región
 function translateRegionName(region) {
-    switch(region) {
+    switch (region) {
         case 'NA':
             return 'North America'
         case 'MA':
@@ -47,7 +52,7 @@ function translateRegionName(region) {
 
 // Escribir nombre de conservation status 
 function translateConservationStatus(status) {
-    switch(status) {
+    switch (status) {
         case 'LC':
             return 'Least Concern'
         case 'NT':
@@ -66,13 +71,13 @@ function translateConservationStatus(status) {
 }
 
 function createStamp(pigeon, pictureClass, imgClass) {
-    let singleStamp = document.createElement("picture");
-    singleStamp.tabIndex = 0;
-    
+    let singleStamp = document.createElement('picture')
+    singleStamp.tabIndex = 0
+
     // Se declara una constante que manipula datos del array para referencia sencilla más adelante
     // const fileName = 'assets/pigeon_stamps/' + pigeon.commonName.split(' ').join('_') + '.png'
     // Se da clase y modifica el html interno de la singleStamp (picture) nueva
-    singleStamp.classList.add(pictureClass);
+    singleStamp.classList.add(pictureClass)
     // Revisar: Cambiar formato de src a webp cuando tenga las imágenes
     singleStamp.innerHTML = `
     <source src="${getStampFilePath(pigeon.commonName)}" type="image/webp">
@@ -83,21 +88,22 @@ function createStamp(pigeon, pictureClass, imgClass) {
         title="${pigeon.genus} ${pigeon.species}"
         alt="${pigeon.commonName} styled as a vintage postal stamp"
     >
-    `;
+    `
     return singleStamp
 }
 
 function generateDetail(pigeon) {
     /* Detail section */
     const articleLink = pigeon.articleTitle
-        ? "https://en.wikipedia.org/wiki/" +
-        pigeon.articleTitle.split(" ").join("_")
-        : "";
+        ? 'https://en.wikipedia.org/wiki/' +
+        pigeon.articleTitle.split(' ').join('_')
+        : ''
 
     if (pigeon.genus) {
         // Revisar: poner ícono final
         /* Main info element */
-        const detailMainInfo = document.getElementById('detailMainInfo');
+        const detailMainInfo = document.getElementById('detailMainInfo')
+
         detailMainInfo.innerHTML = `
         <h3 class="detail__title">More about the ${pigeon.commonName}</h3>
         <p class="detail__summary">${pigeon.summary}</p>
@@ -108,10 +114,6 @@ function generateDetail(pigeon) {
         /* /Main info element */
 
         /* Map element */
-        const detailMapCanvas = document.getElementById('detailMapCanvas');
-        const detailMapRegions = document.getElementById('detailMapRegions');
-        const detailMapLocations = document.getElementById('detailMapLocations');
-        
         pigeon.range.regions.forEach((region) => {
             let singleRegion = document.createElement('picture')
             singleRegion.classList.add('detail__map-picture')
@@ -120,9 +122,10 @@ function generateDetail(pigeon) {
             <img class="detail__map-img" src="assets/maps/${region}.svg" alt="${translateRegionName(region)}">
             `
             detailMapCanvas.appendChild(singleRegion)
+            mapsToClean.push(singleRegion)
         })
 
-        const regions = pigeon.range.regions.map((region) => translateRegionName(region)).join(', ');
+        const regions = pigeon.range.regions.map((region) => translateRegionName(region)).join(', ')
 
         detailMapRegions.innerText = `
         living region: ${regions}
@@ -135,12 +138,12 @@ function generateDetail(pigeon) {
         /* Related species element */
         pigeon.range.regions.forEach((region) => {
             // Filter by region
-            const relatedSpecies = pigeonsWithSummaries.data.filter(p => p.range.regions.includes(region) && p.commonName !== pigeon.commonName);
-            
+            const relatedSpecies = pigeonsWithSummaries.data.filter(p => p.range.regions.includes(region) && p.commonName !== pigeon.commonName)
+
             // Select 5 random related species
-            const max = getRandomNumber(4, relatedSpecies.length)
+            const max = getRandomNumber(5, relatedSpecies.length)
             const min = max - 5
-            const selectedSpecies = relatedSpecies.slice(min, max);
+            const selectedSpecies = relatedSpecies.slice(min, max)
             console.log(selectedSpecies)
 
             // Create container for selected species
@@ -149,26 +152,26 @@ function generateDetail(pigeon) {
 
             // createStamp of each selected species
             selectedSpecies.forEach((species) => {
-                const selectedPigeonStamp = createStamp(species, "detail__related-picture", "detail__related-img")
+                const selectedPigeonStamp = createStamp(species, 'detail__related-picture', 'detail__related-img')
                 singleRegion.appendChild(selectedPigeonStamp)
             })
 
             // Create container for related species text
             let singleRegionText = document.createElement('p')
             singleRegionText.classList.add('detail__region-name')
+            singleRegionText.classList.add('text-md')
             singleRegionText.innerText = `
             Other species in ${translateRegionName(region)}
             `
 
             // Append elements to related species container
-            const detailRelatedSpecies = document.getElementById('detailRelatedSpecies');
             detailRelatedSpecies.appendChild(singleRegion)
             detailRelatedSpecies.appendChild(singleRegionText)
         })
         /* /Related species element */
 
         /* Postcard front element */
-        let extensionType = pigeon.photos[0].split('.').pop();
+        let extensionType = pigeon.photos[0].split('.').pop()
         console.log(extensionType)
 
         detailPostcardFront.innerHTML = `
@@ -186,8 +189,8 @@ function generateDetail(pigeon) {
         /* /Postcard front element */
 
         /* Postcard back element */
-        const postcardStamp = createStamp(pigeon, "detail__postcard-stamp-picture", "detail__postcard-stamp-img")
-        
+        const postcardStamp = createStamp(pigeon, 'detail__postcard-stamp-picture', 'detail__postcard-stamp-img')
+
         const postcardInfo = document.createElement('div')
         postcardInfo.classList.add('detail__postcard-info')
         postcardInfo.innerHTML = `
@@ -207,7 +210,7 @@ function generateDetail(pigeon) {
         detailPostcardBack.appendChild(postcardStamp)
         detailPostcardBack.appendChild(postcardInfo)
         /* /Postcard back element */
-        
+
     } else {
         detailFactsheet.innerHTML = `
         <p class="text-xl">404 cucurrucucú not found</p>
@@ -219,50 +222,65 @@ function generateDetail(pigeon) {
     }
 
     // Revisar: cómo hacer que el clipboard siempre salga en la parte de la pantalla que quiero
-    detail.classList.toggle("active");
+    detail.classList.toggle('active')
     /* /Detail section */
 }
 
 // Creación de estampilla de cada paloma en stampsGrid
 pigeonsWithSummaries.data.forEach((pigeon) => {
-    const singleStamp = createStamp(pigeon, "stamps__picture", "stamps__img");
-    stampsGrid.appendChild(singleStamp);
+    const singleStamp = createStamp(pigeon, 'stamps__picture', 'stamps__img')
+    stampsGrid.appendChild(singleStamp)
 
-    singleStamp.addEventListener("click", (e) => generateDetail(pigeon));
-});
+    singleStamp.addEventListener('click', (e) => generateDetail(pigeon))
+})
 
 // Interacciones con contenedor detalle
-const cierre = document.getElementById("cierre");
-cierre.addEventListener("click", () => {
-    detail.classList.remove("active");
-});
+const cierre = document.getElementById('cierre')
+cierre.addEventListener('click', () => {
+    detail.classList.remove('active')
+
+    while(detailPostcardBack.firstElementChild) {
+        detailPostcardBack.removeChild(detailPostcardBack.firstElementChild)
+    }
+
+    while(detailRelatedSpecies.firstElementChild) {
+        detailRelatedSpecies.removeChild(detailRelatedSpecies.firstElementChild)
+    }
+
+    mapsToClean.forEach((map) => {
+        console.log(map)
+        detailMapCanvas.removeChild(map)
+    })
+
+    mapsToClean = []
+})
 
 // Visualización de información detalle
 function sendPostcardBack() {
-    postcardContainer.classList.remove("top");
+    postcardContainer.classList.remove('top')
 }
 
 function sendFactsheetBack() {
-    detailFactsheet.classList.remove("top");
+    detailFactsheet.classList.remove('top')
 }
 
-postcardContainer.addEventListener("click", () => {
-    if (postcardContainer.classList.contains("top")) {
-        detailPostcardFront.classList.toggle("active");
-        detailPostcardBack.classList.toggle("active");
-        detailPostcardFront.classList.toggle("inactive");
-        detailPostcardBack.classList.toggle("inactive");
+postcardContainer.addEventListener('click', () => {
+    if (postcardContainer.classList.contains('top')) {
+        detailPostcardFront.classList.toggle('active')
+        detailPostcardBack.classList.toggle('active')
+        detailPostcardFront.classList.toggle('inactive')
+        detailPostcardBack.classList.toggle('inactive')
     } else {
-        postcardContainer.classList.add("top");
-        sendFactsheetBack();
+        postcardContainer.classList.add('top')
+        sendFactsheetBack()
     }
-});
+})
 
-detailFactsheet.addEventListener("click", () => {
-    if (detailFactsheet.classList.contains("top")) {
+detailFactsheet.addEventListener('click', () => {
+    if (detailFactsheet.classList.contains('top')) {
         // Por ahora no hacer nadaP
     } else {
-        detailFactsheet.classList.add("top");
-        sendPostcardBack();
+        detailFactsheet.classList.add('top')
+        sendPostcardBack()
     }
-});
+})

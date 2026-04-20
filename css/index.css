@@ -1,9 +1,9 @@
-/* Carga de fuentes
-Al no ser una fuente variable, se importó por peso */
+/* Carga de fuentes - Al ser fuentes estáticas, se importaron por peso */
 @font-face {
-    font-family: 'AveriaSansLibre';
+    font-family: 'Averia Sans Libre';
     src: 
-    local('AveriaSansLibre-Bold'),
+    /* Se agrega la función local para optimizar el tiempo de carga de la página, si el usuario tiene la tipografía instalada, se usará ese archivo */
+    local('AveriaSansLibre-Bold'), /* Los nombres asignados en local son los mismos que tendría el usuario al descargar de Google Fonts sin editar su nombre */
     url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
     font-style: normal;
     font-weight: 700;
@@ -13,7 +13,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSansLibre';
+    font-family: 'Averia Sans Libre';
     src: 
     local('AveriaSansLibre-Light'),
     url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
@@ -23,7 +23,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSansLibre';
+    font-family: 'Averia Sans Libre';
     src: 
     local('AveriaSansLibre-LightItalic'),
     url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
@@ -33,7 +33,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSerifLibre';
+    font-family: 'Averia Serif Libre';
     src: 
     local('AveriaSerifLibre-Light'),
     url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
@@ -43,7 +43,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'AveriaSerifLibre';
+    font-family: 'Averia Serif Libre';
     src: 
     local('AveriaSerifLibre-Regular'),
     url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
@@ -53,7 +53,7 @@ Al no ser una fuente variable, se importó por peso */
 }
 
 @font-face {
-    font-family: 'DidactGothic';
+    font-family: 'Didact Gothic';
     src: 
     local('DidactGothic-Regular'),
     url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
@@ -78,12 +78,24 @@ Al no ser una fuente variable, se importó por peso */
     --color-magenta: #A02F6F;
 
     /* Fuentes */
-    --font-h1: 'AveriaSerifLibre', serif;
-    --font-h2: 'AveriaSerifLibre', serif;
-    --font-h3: 'AveriaSansLibre', sans-serif;
-    --font-h4: 'AveriaSansLibre', sans-serif;
-    --font-text: 'DidactGothic', sans-serif;
-    --font-btn: 'AveriaSansLibre', sans-serif;
+    --font-h1: 'Averia Serif Libre', serif;
+    --font-h2: 'Averia Serif Libre', serif;
+    --font-h3: 'Averia Sans Libre', sans-serif;
+    --font-h4: 'Averia Sans Libre', sans-serif;
+    --font-text: 'Didact Gothic', sans-serif;
+    --font-btn: 'Averia Sans Libre', sans-serif;
+
+    /* Background */
+    --bg-white-with-fibers: url(../assets/backgrounds/white-with-fibers.png);
+    --bg-brown-envelope: url(../assets/backgrounds/brown-envelope.png);
+    --bg-textured-vintage: url(../assets/backgrounds/textured-vintage.png);
+    --bg-corkboard: url(../assets/backgrounds/corkboard.png);
+
+    --bg-size: 12.5rem;
+
+    --drop-shadow: 4px 4px 4px rgba(25, 10, 3, 0.25);
+
+    --lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
 }
 /* /Variables raíz */
 
@@ -98,6 +110,8 @@ Al no ser una fuente variable, se importó por peso */
 img {
     max-width: 100%;
     max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 h1, h2 {
@@ -123,6 +137,7 @@ ul {
 h1, .text-xl {
     font: 300 clamp(2.625rem, 5vw, 4rem) var(--font-h1);
     color: var(--color-text);
+    text-transform: capitalize;
 }
 
 h2, .text-lg {
@@ -134,11 +149,13 @@ h2, .text-lg {
 h3, .text-md {
     font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h3);
     color: var(--color-text);
+    text-transform: lowercase;
 }
 
 h4, .text-sm {
     font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h4);
     color: var(--color-text);
+    text-transform: lowercase;
 }
 
 p, .text-xs {
@@ -149,132 +166,226 @@ p, .text-xs {
 a, .btn, .link {
     font: 600 1rem var(--font-btn);
     color: var(--color-text);
+    text-transform: uppercase;
 
-    &:hover{
+    &:hover {
         text-decoration: underline;
     }
 }
 /* /Components - tipografías globales*/
 /* /Components */
 
-body {
+.homepage {
     /*Se contempló poner el fondo a la sección stamps, pero se cortaba*/
     background-color: var(--color-light);
-    background-image: url(../assets/backgrounds/white-with-fibers.png);
+    background-image: var(--bg-textured-vintage);
     background-blend-mode: multiply;
-    background-size: 400px;
+    background-size: var(--bg-size);
     background-repeat: repeat;
-}
-
-.stamps {
-    .stamps__grid {
-        display: grid;
-        grid-template: repeat(22, 5rem) / repeat(16, 5rem);
-        gap: 2.1875rem;
     
-        /* Revisar: Comentario VIGENTE?? Se le da un grid-area de 2x2 en lugar de 1x1 para desfasar las columnas a mi facilidad */
-        & .stamps__picture {
-            grid-area: span 2 / span 2;
-            /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
-            filter: drop-shadow(4px 4px 4px rgba(25, 10, 3, 0.25));
-    
-            /* Cada hijo par se desplaza para desfasar las columnas*/
-            &:nth-child(even) {
-                transform: translateY(5rem);
-            }
 
-            & .stamps__img {
-                width: 100%;
-                height: 100%;
-                max-width: 100%;
-                max-height: 100%;
-                &:hover {
-                    transform: rotate(3deg);
-                    cursor: pointer;
+    /* Stamps section */
+    /* Revisar: cómo agregar margin o padding a los cuatro lados, tanto en stamps como en grid se me pone solo izq y top*/
+    /* Revisar: cómo hacer que se haga scale */
+    .stamps {
+        .stamps__grid {
+            display: grid;
+            grid-template: repeat(22, 10rem) / repeat(16, 10rem);
+            gap: 2.5rem;
+
+            /* Se le da un grid-area de 2x2 en lugar de 1x1 para desfasar las columnas a mi facilidad */
+            .stamps__picture {
+                grid-area: span 1 / span 1;
+
+                /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
+                filter: drop-shadow(var(--drop-shadow));
+                
+                /* Cada hijo par se desplaza para desfasar las columnas*/
+                &:nth-child(even) {
+                    transform: translateY(5rem);
+                }
+
+                .stamps__img {
+                    &:hover {
+                        transform: rotate(3deg);
+                        cursor: pointer;
+                    }
                 }
             }
         }
-    
-        & .stamps__instructions {
-            /*Se asigna un z-index de 1 para que siempre esté por encima del grid de imágenes*/
+
+        .stamps__instructions {
             z-index: 1;
             position: fixed;
-            bottom: 0;
-            left: 0;
+            bottom: 1rem;
+            left: 1rem;
+            padding: .5rem;
+
+            background-image: var(--bg-brown-envelope);
+            filter: drop-shadow(var(--drop-shadow));
         }
     }
-}
+    /* /Stamps section*/
 
-.detail {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
+    /* Detail section */
+    .detail {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
 
-    overflow-y: scroll;
+        background: var(--lightbox);
 
-    background-color: var(--color-yellow);
+        /*Este contenedor tiene un z-index mayor a lo demás para que se muestre arriba de las estampillas*/
+        z-index: 2;
 
-    /*Este contenedor tiene un z-index mayor a lo demás para que se muestre arriba de las estampillas*/
-    z-index: 2;
+        /*tiene un display none por defecto para que se muestre únicamente cuando tenga la clase active*/
+        display: none;
 
-    /*tiene un display none por defecto para que se muestre únicamente cuando tenga la clase active*/
-    display: none;
-
-    &.active {
-        display: block;
-    }
-
-    & .detail__content {
-        position: absolute;
-
-        /*Revisar: Revisitar medidas*/
-        left: 25%;
-        
-        & .cruz {
-            width: 25px;
-
-            &:hover {
-            transform: rotate(3deg);
-            cursor: pointer;
-            }
-
-        & .detail__clipboard {
-            /*Revisar: revisitar medidas de ancho y alto*/
-            background-color: var(--color-green);
-
-            position: absolute;
-            top: 0;
-            left: 0;
-
-            width: 50vw;
-            height: 80vh;
-
-            display:flex;
-            flex-flow: column nowrap;
-            justify-content: start;
-            align-items: end;
-
-            }
+        &.active {
+            display: block;
         }
         
-        & .detail__factsheet {
+        .detail__content {
+
+            .detail__clipboard {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: start;
+                align-items: end;
+                width: 66.5625rem;
+                height: 88.9375rem;
+                padding: 1rem;
+
+                background-image: var(--bg-corkboard);
+                background-repeat: repeat;
+                background-size: var(--bg-size);
+                border-radius: 10px;
+                
+                .cruz {
+                    width: 25px;
+                    height: 25px;
+                    
+                    &:hover {
+                        transform: rotate(3deg);
+                        cursor: pointer;
+                    }
+                }
+            }
+    
+            .detail__factsheet {
             /*Revisar: revisitar medidas de ancho y alto*/
-            background-color: var(--color-cyan);
+            background-image: var(--bg-white-with-fibers);
+            background-size: var(--bg-size);
+            background-repeat: repeat;
+            padding: 2.25rem;
 
             position: absolute;
-            top: 0;
-            left: 20px;
-            width: 40vw;
+            top: 1rem;
+            left: 1.25rem;
+            width: 60.25rem;
             display: flex;
             flex-flow: column nowrap;
+            gap: 5rem;
 
             &:hover {
                 cursor: pointer;
             }
-            
+
+                .detail__main-info{
+                    display: flex;
+                    flex-flow: column nowrap;
+                    gap: 2.5rem;
+
+                    align-items: end;
+
+                    .detail__title {
+                        width: 100%;
+                    }
+    
+                    .detail__summary {
+                        width: 100%;
+                    }
+    
+                    .detail__wiki-link {
+                        width: fit-content;
+                    }
+                }
+            }
+    
+            .detail__map {
+                .detail__map-canvas {
+                    position: relative;
+
+                    .detail__map-picture--base {
+                        position: relative;
+                        width: 100%;
+
+                        .detail__map-img--base {}
+                    }
+
+                    .detail__map-picture {
+                        position: absolute;
+                        width: 100%;
+                        top: 2px;
+                        left: 0;
+                        mix-blend-mode: multiply;
+                        filter: blur(0.5px);
+
+                        .detail__map-img {}
+                    }
+                }
+    
+                .detail__metadatum {
+                    width: 100%;
+                    text-align: left;
+                    border-bottom: 1px solid var(--color-text);
+                    padding: 7px 10px 3px 10px;
+                }
+            }
+    
+            .detail__related-species {
+                display: flex;
+                flex-flow: column nowrap;
+                gap: .5rem;
+
+                .detail__related-region {
+                    display: grid;
+                    grid-template: repeat(1, 1fr) / repeat(5, 1fr);
+                    gap: 2rem;
+
+                    .detail__related-picture{
+                        &:first-child {
+                            rotate: -1deg;
+                        }
+    
+                        &:nth-child(even) {
+                            rotate: 2deg;
+                        }
+
+                        &:last-child {
+                            rotate: -2deg;
+                        }
+
+                        .detail__related-img {}
+                    }
+                }
+
+                .detail__region-name {
+                    width: 100%;
+                    text-align: left;
+                    padding-bottom: 3rem;
+                }
+            }
         }
+    }
+    /* /Detail section */
+}
+
+
+.detail {
         
         & .detail__postcard-container {
             background-color: var(--color-light);
@@ -313,5 +424,4 @@ body {
     .inactive {
         opacity: 0;
     }
-}
 

@@ -250,7 +250,9 @@
         "locations": ["western Cameroon", "eastern Nigeria"]
       },
       "conservationStatus": "LC",
-      "photos": [],
+      "photos": [
+        "https://i.redd.it/xy7ce6stlvd51.jpg"
+      ],
       "commonName": "Cameroon olive pigeon",
       "articleTitle": "Cameroon olive pigeon",
       "summary": "In the verdant landscapes of the Cameroon line, nestles a feathered enigma: the Cameroon olive pigeon (Columba sjostedti). This avian gem, found in realms ranging from pastoral plains to montane forests - even on Bioko island, claims its territory.\n\nAn intriguing dietary preference sets it apart, with a fondness for fruit native to its habitat, such as Polyscias fulva, and waterberry trees. Its existence serves as a testament to the delicate balance of life in these ecosystems, offering a glimpse into the interconnected web that sustains it.\n\nA solitary figure amidst the lush canopy, the Cameroon olive pigeon carves out its niche, adding another layer of diversity to Africa's rich tapestry of wildlife. This brief exploration merely scratches the surface of this enigmatic species, inviting further exploration and appreciation for its unique place in the natural world."
@@ -454,7 +456,9 @@
         "locations": ["Daitō", "Okinawa Islands"]
       },
       "conservationStatus": "EX",
-      "photos": [],
+      "photos": [
+        "https://alchetron.com/cdn/ryukyu-wood-pigeon-1a08daf0-a0c9-4e9b-83da-1a8c46b3963-resize-750.jpeg"
+      ],
       "commonName": "Ryukyu wood pigeon",
       "articleTitle": "Ryukyu wood pigeon",
       "summary": "In the verdant Laurel forests of the Ryukyu Islands, a captivating avian spectacle once flourished - the extinct Ryukyu wood pigeon (Columba jouyi).\n\nEndemic to a scattering of islands, from Iheyajima to the Daitō group, this enigmatic pigeon shared similarities with Columba janthina, yet bore distinctive bronze-green scapulars and back, contrasted by a large white patch on its lower hind neck.\n\nIts demise began in earnest, as habitat loss due to deforestation for settlement and agriculture eroded the species' stronghold. By 1904, it vanished from Okinawa, succumbing to hunting pressures, while disappearing from the Daitō group by 1936 following complete deforestation for pre-WWII development activities.\n\nThe species' persistence on outlying islands remains a mystery, with no records since its last documented sighting. Theoretically, there is still ample habitat in Okinawa's mountains, yet none have been observed since. The absence from Tokashikijima, despite preserved forest cover, and Zamamijima, a smaller island further away from the mainland, adds to the enigma that surrounds the extinction of this resplendent Ryukyu wood pigeon."
@@ -501,7 +505,9 @@
         "locations": ["Bismarck", "Solomon archipelagos"]
       },
       "conservationStatus": "VU",
-      "photos": [],
+      "photos": [
+        "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/34556251/900"
+        ],
       "commonName": "Yellow-legged pigeon",
       "articleTitle": "Yellow-legged pigeon",
       "summary": "In the heart of the Bismarck and Solomon archipelagos, a modest avian resides - the elusive yellow-legged pigeon (Columba pallidiceps). This species, belonging to the Columbidae family, favors subtropical and tropical forest ecosystems, both lowland and mountainous.\n\nNative to these Pacific islands, it has adapted gracefully to its surroundings, its azure plumage standing out against lush green foliage. However, the species faces threats from habitat loss, a persistent danger in an era of rapid environmental change.\n\nInitially thought to be on the brink of extinction, recent research revealed a more promising situation for the yellow-legged pigeon. Once classified as Endangered by the IUCN, it was reevaluated and downlisted to Vulnerable in 2008, indicating a shift towards a more sustainable future for this intriguing bird.\n\n[BirdLife International (BLI) (2008): 2008 IUCN Redlist status changes. Retrieved 2008-MAY-23.]\n[BirdLife Species Factsheet]"
@@ -716,7 +722,9 @@
         "locations": ["South America"]
       },
       "conservationStatus": "LC",
-      "photos": [],
+      "photos": [
+        "https://en.wikipedia.org/wiki/Spot-winged_pigeon#/media/File:Spot-winged_pigeon_%28Patagioenas_maculosa%29_Colonia.jpg"
+      ],
       "commonName": "Spot-winged pigeon",
       "articleTitle": "Spot-winged pigeon",
       "summary": "In the vast, arid landscapes of South America, the spot-winged pigeon (Patagioenas maculosa) thrives, its distinctive presence echoing through open woodland and scrub. This species, found across Argentina, Bolivia, Brazil, Chile, Paraguay, Peru, and Uruguay, is a member of the Columbidae family, sharing close ties with the picazuro pigeon, bare-eyed pigeon, and scaled pigeon, according to some ornithologists.\n\nThe nominate subspecies, P. m. maculosa, stands 32 to 33 cm tall, its adult male adorned in a blend of dull purplish pink on the head and breast, contrasting with dark brown wings spotted with creamy white. The female is similar but more subdued, while the juvenile is a softer version of both.\n\nIn contrast, P. m. albipennis, found in Peru, Bolivia, Argentina, and Chile, boasts a bluish-gray plumage with purplish undertones, particularly prominent in males. Both subspecies exhibit unique adaptations to their respective habitats: P. m. maculosa inhabits lowlands up to 1000 meters, shunning towns, while P. m. albipennis favors higher elevations, 2000 to 4300 meters, and is locally common in urban areas.\n\nFeeding predominantly on seeds, including rice and sunflower, P. m. maculosa also samples fruit and leaves. The diet of P. m. albipenniss remains undiscovered. Both subspecies are social creatures, foraging on the ground in flocks.\n\nBreeding occurs year-round in Argentina, with P. m. maculosa constructing fragile nests in trees and laying one or two eggs. The breeding habits of P. m. albipenniss are as yet unstudied, though increased calling in October may signal the start of the breeding season. The spot-winged pigeon's rhythmic song continues to resonate through the continent, a testament to its resilient and evolving presence."
@@ -3160,7 +3168,9 @@
         "locations": ["southern Solomon Islands", "Vanuatu"]
       },
       "conservationStatus": "EN",
-      "photos": [],
+      "photos": [
+        "https://www.animal.photos/bird2/gdov-scruz_files/stacruz5.jpg"
+      ],
       "commonName": "Santa Cruz ground dove",
       "articleTitle": "Santa Cruz ground dove",
       "summary": "Nestled within the southern Solomon Islands and Vanuatu, the Santa Cruz ground dove (Pampusana sanctaecrucis) finds its home amidst subtropical or tropical moist lowland forests. A member of the Columbidae family, this elusive avian is a captivating sight with azure plumage that shimmers in the dappled forest light.\n\nOriginally categorized under the genus Alopecoenas Sharpe, 1899, a reclassification in 2019 recognized Pampusana Bonaparte, 1855 as having priority. This slight name change, however, does not detract from the species' distinctive identity, nor its struggle against habitat loss that threatens its survival.\n\nIn the verdant heart of its territories, the Santa Cruz ground dove quietly perseveres, embodying resilience and adaptation as it continues to captivate those who venture into its hidden world."
@@ -3188,7 +3198,9 @@
         "locations": ["Makira", "Ramos (Solomon Islands)"]
       },
       "conservationStatus": "EX",
-      "photos": [],
+      "photos": [
+        "https://scontent-bcn1-1.xx.fbcdn.net/v/t39.30808-6/653834527_912748481667147_6443869268128485197_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=Qlu-xlkiUB4Q7kNvwE77yQo&_nc_oc=Adq5iA9MxHLxANYvXUfOFbI64IkFE5ZCT8decbs1od2eHDPbXdbv8xhaibnh6aAFERSWqbm3mdO6F0tyydMi8XrM&_nc_zt=23&_nc_ht=scontent-bcn1-1.xx&_nc_gid=ubO_HjhHsz9jTMEZ3uHThA&_nc_ss=7a389&oh=00_Af2Cw--eOI0eveEjcdiql7OsZ2GMySVehCuNr-3eNEi_Aw&oe=69EC41CA"
+      ],
       "commonName": "Thick-billed ground dove",
       "articleTitle": "Thick-billed ground dove",
       "summary": "In the heart of the Solomon Islands, a spectral avian once thrived - the extinct thick-billed ground dove (Pampusana salamonis). Known from mere remnants: two specimens, one from 1882 and another in 1927, the Australian Museum now safeguards the elusive holotype.\n\nThis cryptic bird boasted a unique plumage. The head, throat, and breast mantle were beige, while chestnut upperparts shimmered with a purple hue, contrasting sharply against a chocolate-hued belly.\n\nThe thick-billed ground dove likely resided in dry beach forests on Makira (formerly San Cristobal) and the diminutive island of Ramos. However, its downfall was swift, due to introduced predators and habitat loss caused by logging and war. Despite a final survey in 2004 yielding no results, it wasn't until 2005 that the species was officially declared extinct.\n\nOnce classified under Alopecoenas Sharpe, its genus name was changed to Pampusana Bonaparte in 2019 due to priority rules. The thick-billed ground dove, once a vibrant part of the Solomon Island ecosystem, now serves as a stark reminder of the consequences of human encroachment."
@@ -3473,7 +3485,9 @@
         "locations": ["Tawi-Tawi Islands (Philippines)"]
       },
       "conservationStatus": "EN",
-      "photos": [],
+      "photos": [
+        "https://scontent-bcn1-1.xx.fbcdn.net/v/t39.30808-6/633167859_1336486195173489_2525672324257343395_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=e-Hhy1tB5pwQ7kNvwHg74LB&_nc_oc=AdqXx2ix_9RH5H9Y31Dlz9rg_OSZIMB3ArFlzlabRD-Gxk8-LRgtiBWI7t6A9dpCY_VeuCyHvVHVmO4wCX-9FgYL&_nc_zt=23&_nc_ht=scontent-bcn1-1.xx&_nc_gid=jcfNMH0Afxhw_ICs2kdNAA&_nc_ss=7a389&oh=00_Af111EMXFjNm-8l4JAyaEUvSrOHPWFGgACGN5404Ubvl_Q&oe=69EC7338"
+      ],
       "commonName": "Tawitawi brown dove",
       "articleTitle": "Tawitawi brown dove",
       "summary": "In the tropical lowlands of the Sulu Archipelago's Tawi-Tawi Island, dwells the elusive Tawitawi brown dove (Phapitreron cinereiceps). A singular beauty, it stands apart from its kin with azure neck iridescence and an orange-peach breast. Once thought conspecific with the Mindanao brown dove, it now holds a distinct identity.\n\nEmanating a unique melody that echoes like a ping-pong ball descending, this medium-sized dove thrives in lowland secondary forests and forest edges, demonstrating adaptability to degraded habitats. The IUCN Red List categorizes it as endangered, with an estimated population of 500–2,500 mature individuals.\n\nUnfortunately, its numbers are dwindling due to habitat loss from logging, mining, and agricultural expansion. Despite the absence of protected areas or conservation programs specific to this species in the archipelago, efforts must be made to preserve its unique symphony before it fades into silence."
@@ -4448,7 +4462,9 @@
         "locations": ["western Society Islands"]
       },
       "conservationStatus": "",
-      "photos": [],
+      "photos": [
+        "https://en.wikipedia.org/wiki/Raiatea_fruit_dove#/media/File:Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
+      ],
       "commonName": "Raiatea fruit-dove",
       "articlePage": null,
       "articleTitle": null,
@@ -4524,7 +4540,9 @@
         "locations": ["Rapa Iti"]
       },
       "conservationStatus": "CR",
-      "photos": [],
+      "photos": [
+        "https://images.unsplash.com/photo-1674873322419-ae411fec4144?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      ],
       "commonName": "Rapa fruit dove",
       "articleTitle": "Rapa fruit dove",
       "summary": "In the remote Austral Islands of French Polynesia, a vibrant avian gem, the Rapa fruit dove (Ptilinopus huttoni), thrives. Endemic to the small island of Rapa Iti, this species is critically endangered, with its population plummeting by 42% between surveys in the late 80s and 2017, leaving an estimated 160 individuals.\n\nStanding at around 31 cm tall, the Rapa fruit dove dons a colorful plumage—azure wings, blue-gray foreparts, and a rose-purple band below the chest feathers contrasting with a yellow lower belly. A striking feature is its bright pink crown, a distinctive mark between the eyes.\n\nTheir habitat, subtropical moist lowland forests on Rapa Iti, covers approximately 30 sqkm. These birds prefer undisturbed forest fragments at elevations between 40-450 meters, though they can occasionally be found in Caribbean pine plantations. Their diet primarily consists of fleshy fruit from native berry trees and nectar from flowers, including the invasive strawberry guava, which while threatening their habitat, might also serve as a food source.\n\nThreatened by habitat loss due to deforestation, invasive species, and declining forest quality, conservation efforts are crucial. Effective land protection and management can bolster the Rapa fruit dove's prospects, along with research into population dynamics and the impact of these threats to ensure the survival of this extraordinary island dweller."
@@ -5048,7 +5066,9 @@
         "locations": ["Enggano (w of s Sumatra)"]
       },
       "conservationStatus": "NT",
-      "photos": [],
+      "photos": [
+        "https://inaturalist-open-data.s3.amazonaws.com/photos/537724665/large.jpg"
+      ],
       "commonName": "Enggano imperial pigeon",
       "articleTitle": "Enggano imperial pigeon",
       "summary": "In the remote outpost of Enggano Island resides the enigmatic Enggano Imperial Pigeon (Ducula oenothorax). This avian gem, endemic to its island sanctuary, is a captivating embodiment of the Columbidae family's splendor.\n\nNestled amidst forest, shrubland, and degraded former forests, these azure-plumaged creatures thrive in their verdant habitat. However, they face a unique threat - local inhabitants hunt them for sustenance. This delicate balance between man and nature unfolds within the island's boundaries.\n\nThe Enggano Imperial Pigeon is a testament to resilience, adapting to heavily degraded habitats while maintaining its distinctive identity. Yet, the future hangs precariously, as human encroachment poses a persistent challenge to the survival of this remarkable species."
@@ -5121,7 +5141,9 @@
         "locations": ["Bismarck Archipelago to Cook Islands"]
       },
       "conservationStatus": "LC",
-      "photos": [],
+      "photos": [
+        "https://en.wikipedia.org/wiki/Pacific_imperial_pigeon#/media/File:Pacific_imperial-pigeon_(Ducula_pacifica)_Rarotonga.jpg"
+      ],
       "commonName": "Pacific imperial pigeon",
       "articleTitle": "Pacific imperial pigeon",
       "summary": "In the azure-tinted realm of the Pacific, a regal figure dominates - the Pacific Imperial Pigeon (Ducula pacifica). Native to islands spanning from American Samoa to Wallis and Futuna, this majestic species is found across a vast oceanic expanse.\n\nDescribed by Gmelin in 1789, this pigeon was initially classified within the genus Columba before being relegated to Ducula in 1836. Two subspecies, distinguished by their geographical locations, coexist: sejuncta found in north New Guinea and Nissan Island, while pacifica resides across a diverse range extending to the Solomon Islands and Tonga.\n\nStanding at 36-41 cm tall with a weight of 370-420 g, the Pacific Imperial Pigeon boasts a unique plumage: blackish-green back, tail, and wings; light grey head and neck; grey breast adorned with a pink tinge, and brown undertail coverts. The bill is black with a knob on the upper mantle, and the iris is red. Females are slightly smaller than their male counterparts, while juveniles exhibit a duller appearance and lack the adult's distinctive pink breast hue.\n\nNesting high in trees and foraging in fruit-laden forests, this pigeon plays an essential role as a seed disperser. In Tonga, it has been observed consuming fruits from 38 plant species across 24 families, traveling short to moderate distances between trees but sometimes venturing long distances or even crossing bodies of water to forage on other islands.\n\nThis species' frugivorous nature and significant impact as a seed disperser make it an integral component of the tropical forests it inhabits, adding depth and intrigue to the vibrant tapestry of life in the Pacific."
@@ -5276,7 +5298,9 @@
         "locations": ["New Guinea"]
       },
       "conservationStatus": "LC",
-      "photos": [],
+      "photos": [
+        "https://dibird.com/image_taxon/5_4716_27815372159_a6cb38f54f_c"
+      ],
       "commonName": "Rufescent imperial pigeon",
       "articleTitle": "Rufescent imperial pigeon",
       "summary": "In the diverse avian world, the Rufescent Imperial Pigeon (Ducula chalconota), or the Shining Imperial Pigeon, stands out as a rare and stable species. Listed as of minimal concern by the International Union for Conservation Nature, these pigeons are known for their reserved nature, preferring solitude in their montane forest habitats across New Guinea.\n\nDescribed by Tommaso Salvadori in 1874 as Carpophaga chalconota, two subspecies exist: the Vogelkop's D. c. chalconota and the western, central, and eastern New Guinea's D. c. smaragdina. A distinct population in the Foja Mountains has been reported.\n\nMeasuring approximately 41-42 centimeters (males) and 37-39 centimeters (females), these birds weigh around 21-22 ounces, larger than most pigeon species. The male sports a slaty-grey head, metallic green back and wing coverts with bronzy and bluish reflections, a blackish glossed tail, cinnamon throat, vinous breast, chestnut belly, red feet, reddish eye, and dark slate beak. Females are similar but may exhibit slight color differences.\n\nThe Rufescent Imperial Pigeon inhabits the deeper layers of New Guinea's montane forests, at elevations ranging from 3,600 to 8,200 feet—an unusually high habitat for Columbidae family members. These pigeons are often found alone but can form pairs within these verdant realms. They primarily reside in the middle layers of the forest, seldom venturing out. Silent most of the time, they emit mournful hums and low hoots when communicating. Duetting has been observed, and their diet consists mainly of figs and fruits."
@@ -5369,7 +5393,9 @@
         "locations": ["Solomon Islands"]
       },
       "conservationStatus": "NT",
-      "photos": [],
+      "photos": [
+        "https://www.oiseaux.net/photos/lars.petersson/images/carpophage.de.brenchley.lape.1g.jpg"
+      ],
       "commonName": "Chestnut-bellied imperial pigeon",
       "articleTitle": "Chestnut-bellied imperial pigeon",
       "summary": "In the verdant heart of the Solomon Islands, the chestnut-bellied imperial pigeon (Ducula brenchleyi) holds court. A member of the Columbidae family, this endemic avian resides predominantly in subtropical and tropical forests, dwelling chiefly at elevations between 200 to 700 meters. However, deforestation has driven it to inhabit higher altitudes in numerous regions.\n\nAn adaptable forager, the chestnut-bellied imperial pigeon feasts primarily on banyan figs, a testament to its symbiotic relationship with the forest ecosystem. This species, though once widespread, now faces threats from habitat loss, a grim reminder of man's encroachment upon nature's domain."
@@ -5382,7 +5408,9 @@
         "locations": ["Vanuatu"]
       },
       "conservationStatus": "VU",
-      "photos": [],
+      "photos": [
+        "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/344080281/2400"
+      ],
       "commonName": "Vanuatu imperial pigeon",
       "articleTitle": "Vanuatu imperial pigeon",
       "summary": "In the lush forests of Vanuatu resides the enigmatic Vanuatu Imperial Pigeon (Ducula bakeri), a species teetering on the brink of vulnerability. Discovered by Norman Boyd Kinnear in 1928, this avian beauty commemorates British zoologist John Randal Baker, who first brought it to light.\n\nMeasuring around 40 cm long, this pigeon's plumage is a study in contrasts. The head and nape are azure blue-grey, transitioning to dark purplish-maroon on the neck. The mantle, back, and wing coverts are sooty-grey, shimmering with a steely sheen. Underwing coverts are chestnut, while flight feathers are rufous. The throat is grey, the breast a deep purplish-maroon with a slight gloss, and the belly deep chestnut. Black uppertail coverts contrast with rufous undertail coverts, eyes are yellow, beak black, and feet pinkish-red. Females are slightly smaller and duller than males, while juveniles exhibit much duller plumage with no gloss.\n\nEndemic to Vanuatu, this pigeon inhabits montane forests and lowlands, with Santo populations found above 500 meters. Typically solitary or paired in the canopy, small parties are occasionally spotted. A frugivore by nature, it forages for fruits from trees, shrubs, and vines, traveling within islands to find sustenance. Its call, a powerful repetition of twoo-too-too-too-too, echoes through the forests.\n\nThe species' population is estimated between 2,500 to 10,000 mature individuals, translating to 3,500 to 15,000 birds in total. The IUCN categorizes it as vulnerable due to its small, fragmented population that appears to be declining, threatened by forest clearing for agriculture and hunting."
