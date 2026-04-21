@@ -120,8 +120,10 @@
                             alt="${pigeon.genus} ${pigeon.species}"
                         >
                     </picture>
-                    <h2 class="detail__common-name">${pigeon.commonName}</h2>
-                    <p class="detail__scientific-name">${pigeon.genus} ${pigeon.species}</p>
+                    <div class="detail__postcard-titles">
+                        <h2 class="detail__common-name">${pigeon.commonName}</h2>
+                        <p class="detail__scientific-name text-sm">${pigeon.genus} ${pigeon.species}</p>
+                    </div>
                     -->
                 </div>
                 
@@ -154,10 +156,13 @@
                         <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
                         Wiki article
                         Revisar: Agregar ícono en i, svg o span
+                    </div>
                     -->
                 </div>
             </div>
         </div>
+        <!-- Revisar: poner clip de manera correcta en cuanto a estándares web -->
+        <img class="detail__clipboard-clip" src="assets/clipboard-clip.png" alt="vintage styled clipboard clip">
     </section>
 </main>
 

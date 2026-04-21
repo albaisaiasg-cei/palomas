@@ -156,6 +156,7 @@ h4, .text-sm {
     font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h4);
     color: var(--color-text);
     text-transform: lowercase;
+    font-style: italic;
 }
 
 p, .text-xs {
@@ -249,6 +250,9 @@ a, .btn, .link {
         }
         
         .detail__content {
+            position: relative;
+            padding-left: 3.75rem;
+            padding-top: 2rem;
 
             .detail__clipboard {
                 display: flex;
@@ -285,8 +289,8 @@ a, .btn, .link {
             filter: drop-shadow(var(--drop-shadow));
 
             position: absolute;
-            top: 1rem;
-            left: 1.25rem;
+            top: 7rem;
+            left: 7rem;
             width: 60.25rem;
             display: flex;
             flex-flow: column nowrap;
@@ -339,42 +343,39 @@ a, .btn, .link {
                         .detail__map-img {}
                     }
                 }
-    
-                .detail__metadatum {
-                    width: 100%;
-                    text-align: left;
-                    border-bottom: 1px solid var(--color-text);
-                    padding: 7px 10px 3px 10px;
-                }
+                
+                .detail__metadatum {/* Styled in components */}
             }
-    
+            
             .detail__related-species {
                 display: flex;
                 flex-flow: column nowrap;
                 gap: .5rem;
-
+                
                 .detail__related-region {
                     display: grid;
                     grid-template: repeat(1, 1fr) / repeat(5, 1fr);
                     gap: 2rem;
-
+                    
                     .detail__related-picture{
+                        filter: drop-shadow(var(--drop-shadow));
+
                         &:first-child {
                             rotate: -1deg;
                         }
-    
+                        
                         &:nth-child(even) {
                             rotate: 2deg;
                         }
-
+                        
                         &:last-child {
                             rotate: -2deg;
                         }
-
+                        
                         .detail__related-img {}
                     }
                 }
-
+                
                 .detail__region-name {
                     width: 100%;
                     text-align: left;
@@ -383,7 +384,7 @@ a, .btn, .link {
             }
         }
         /* /Factsheet block */
-
+        
         /* Postcard block */
         .detail__postcard-container {
             background-image: var(--bg-white-with-fibers);
@@ -391,65 +392,120 @@ a, .btn, .link {
             background-repeat: repeat;
             padding: 2.25rem;
             filter: drop-shadow(var(--drop-shadow));
-
-            position: relative;
-            top: .5rem;
-            left: .25rem;
+            
+            position: absolute;
+            top: 5rem;
+            left: 2.5rem;
             width: 60.25rem;
-
+            
             display: flex;
-
+            
             &:hover {
                 cursor: pointer;
             }
-
+            
             .detail__postcard-front {
                 width: 100%;
                 display: flex;
-                flex-flow: row wrap;
-
+                flex-flow: column nowrap;
+                gap: 1.25rem;
+                
                 .detail__postcard-picture {
                     flex: 1 1 100%;
-                    height: 32.5rem;
+                    max-height: 32.5rem;
                     mix-blend-mode: multiply;
-
+                    
                     .detail__postcard-img {
                         object-fit: cover;
                         object-position: top;
                     }
                 }
-
-                .detail__postcard-common-name {
-                    flex: 1 1 50%;
-                }
-
-                .detail__scientific-name {
-                    flex: 1 1 50%;
+                
+                .detail__postcard-titles {
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    
+                    .detail__postcard-common-name {
+                        width: auto;
+                    }
+                    
+                    .detail__scientific-name {
+                        width: auto;
+                        text-align: left;
+                    }
                 }
             }
             
             .detail__postcard-back {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                align-items: end;
+
+                padding: 2.25rem;
+                
                 position: absolute;
                 top: 0;
                 left: 0;
-                
-                width: 20vw;
+
+                .detail__postcard-stamp-picture {
+                    filter: drop-shadow(var(--drop-shadow));
+                    width: 9.375rem;
+                    transform: rotate(1deg);
+
+                    .detail__postcard-stamp-img {}
+                }
+
+                .detail__postcard-info {
+                    width: 100%;
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: end;
+                    justify-content: space-between;
+                    gap: 7.5rem;
+
+                    .detail__metadata {
+                        flex: 1 1 50%;
+                        .detail__metadatum {/* Styled in components */}
+                    }
+                }
             }
-        /* /Postcard block */
+            /* /Postcard block */
         }
-    /* /Detail section */
+        .detail__clipboard-clip {
+            position: absolute;
+            top: -50px;
+            left: 27rem;
+            width: 16.25rem;
+            height: 11rem;
+            z-index: 20;
+        }
+        /* /Detail section */
     }
 }
 
+/* States */
+.top {
+    z-index: 10;
+}
 
-    .top {
-        z-index: 10;
-    }
+.active {
+    opacity: 100%;
+}
 
-    .active {
-        opacity: 100%;
-    }
+.inactive {
+    opacity: 0;
+}
+/* /States */
 
-    .inactive {
-        opacity: 0;
-    }
+/* Revisar: Component??? */
+.detail__metadatum {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--color-text);
+    padding: 7px 10px 3px 10px;
+}

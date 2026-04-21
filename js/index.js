@@ -165,8 +165,8 @@ function generateDetail(pigeon) {
             `
 
             // Append elements to related species container
-            detailRelatedSpecies.appendChild(singleRegion)
             detailRelatedSpecies.appendChild(singleRegionText)
+            detailRelatedSpecies.appendChild(singleRegion)
         })
         /* /Related species element */
 
@@ -183,8 +183,10 @@ function generateDetail(pigeon) {
             alt="${pigeon.genus} ${pigeon.species}"
             >
         </picture>
-        <h2 class="detail__common-name">${pigeon.commonName}</h2>
-        <p class="detail__scientific-name">${pigeon.genus} ${pigeon.species}</p>
+        <div class="detail__postcard-titles">
+            <h2 class="detail__common-name">${pigeon.commonName}</h2>
+            <p class="detail__scientific-name text-sm">${pigeon.genus} ${pigeon.species}</p>
+        </div>
         `
         /* /Postcard front element */
 
@@ -195,11 +197,11 @@ function generateDetail(pigeon) {
         postcardInfo.classList.add('detail__postcard-info')
         postcardInfo.innerHTML = `
         <div class="detail__metadata">
-        <p class="detail__metadatum">Common Name: ${pigeon.commonName}</p>
-        <p class="detail__metadatum">Genus: ${pigeon.genus}</p>
-        <p class="detail__metadatum">Species: ${pigeon.species}</p>
-        <p class="detail__metadatum">Living Region: ${regions}</p>
-        <p class="detail__metadatum">ConservationStatus: ${translateConservationStatus(pigeon.conservationStatus)}</p>
+            <p class="detail__metadatum text-md">Common Name: ${pigeon.commonName}</p>
+            <p class="detail__metadatum text-md">Genus: ${pigeon.genus}</p>
+            <p class="detail__metadatum text-md">Species: ${pigeon.species}</p>
+            <p class="detail__metadatum text-md">Living Region: ${regions}</p>
+            <p class="detail__metadatum text-md">ConservationStatus: ${translateConservationStatus(pigeon.conservationStatus)}</p>
         </div>
         
         <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
