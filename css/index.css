@@ -274,13 +274,15 @@ a, .btn, .link {
                     }
                 }
             }
-    
+            
+            /* Factsheet block */
             .detail__factsheet {
             /*Revisar: revisitar medidas de ancho y alto*/
             background-image: var(--bg-white-with-fibers);
             background-size: var(--bg-size);
             background-repeat: repeat;
             padding: 2.25rem;
+            filter: drop-shadow(var(--drop-shadow));
 
             position: absolute;
             top: 1rem;
@@ -380,38 +382,65 @@ a, .btn, .link {
                 }
             }
         }
-    }
-    /* /Detail section */
-}
+        /* /Factsheet block */
 
+        /* Postcard block */
+        .detail__postcard-container {
+            background-image: var(--bg-white-with-fibers);
+            background-size: var(--bg-size);
+            background-repeat: repeat;
+            padding: 2.25rem;
+            filter: drop-shadow(var(--drop-shadow));
 
-.detail {
-        
-        & .detail__postcard-container {
-            background-color: var(--color-light);
+            position: relative;
+            top: .5rem;
+            left: .25rem;
+            width: 60.25rem;
+
+            display: flex;
 
             &:hover {
                 cursor: pointer;
             }
 
-            & .detail__postcard-front {
-                background-color: var(--color-magenta);
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 30vw;
+            .detail__postcard-front {
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+
+                .detail__postcard-picture {
+                    flex: 1 1 100%;
+                    height: 32.5rem;
+                    mix-blend-mode: multiply;
+
+                    .detail__postcard-img {
+                        object-fit: cover;
+                        object-position: top;
+                    }
+                }
+
+                .detail__postcard-common-name {
+                    flex: 1 1 50%;
+                }
+
+                .detail__scientific-name {
+                    flex: 1 1 50%;
+                }
             }
             
-            & .detail__postcard-back {
-                background-color: var(--color-blue);
+            .detail__postcard-back {
                 position: absolute;
                 top: 0;
                 left: 0;
-
+                
                 width: 20vw;
             }
+        /* /Postcard block */
         }
+    /* /Detail section */
     }
+}
+
 
     .top {
         z-index: 10;
@@ -424,4 +453,3 @@ a, .btn, .link {
     .inactive {
         opacity: 0;
     }
-
