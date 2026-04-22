@@ -12,6 +12,7 @@ const detailRelatedSpecies = document.getElementById('detailRelatedSpecies')
 const detailMapCanvas = document.getElementById('detailMapCanvas')
 const detailMapRegions = document.getElementById('detailMapRegions')
 const detailMapLocations = document.getElementById('detailMapLocations')
+const stamps = document.getElementById('stamps')
 
 var mapsToClean = []
 
@@ -285,4 +286,22 @@ detailFactsheet.addEventListener('click', () => {
         detailFactsheet.classList.add('top')
         sendPostcardBack()
     }
+})
+
+function centerStampsGrid() {
+    if (!stamps || !stampsGrid) return
+
+    const centerX = (stampsGrid.scrollWidth - stamps.clientWidth) / 2
+    const centerY = (stampsGrid.scrollHeight - stamps.clientHeight) / 2
+
+    console.log(centerX)
+
+    //stamps.scrollLeft = centerX
+    // stamps.scrollTop = centerY
+
+    stamps.scroll(centerX, centerY)
+}
+
+window.addEventListener('load', () => {
+    requestAnimationFrame(() => setTimeout(centerStampsGrid, 5))
 })

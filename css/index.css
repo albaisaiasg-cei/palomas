@@ -99,6 +99,17 @@
 }
 /* /Variables raíz */
 
+/* Animaciones */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+/* /Animaciones */
+
 /* Reset CSS */
 * {
     box-sizing: border-box;
@@ -186,15 +197,19 @@ a, .btn, .link {
     
 
     /* Stamps section */
-    /* Revisar: cómo agregar margin o padding a los cuatro lados, tanto en stamps como en grid se me pone solo izq y top*/
-    /* Revisar: cómo hacer que se haga scale */
     .stamps {
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        position: relative;
+        
         .stamps__grid {
             display: grid;
             grid-template: repeat(22, 10rem) / repeat(16, 10rem);
             gap: 2.5rem;
 
-            /* Se le da un grid-area de 2x2 en lugar de 1x1 para desfasar las columnas a mi facilidad */
+            animation: zoomIn 3s cubic-bezier(0.77, 0, 0.175, 1) backwards;
+
             .stamps__picture {
                 grid-area: span 1 / span 1;
 

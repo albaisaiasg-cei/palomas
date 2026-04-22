@@ -17,7 +17,7 @@
 <main>
     <!-- When describing sections with dynamically generated content, a general structure of each block is defined, class names and interpolation placeholders may vary from final template literals in JS file -->
     <!-- Stamps section: Grid of thumbnail images styled as postal stamps-->
-    <section class="stamps">
+    <section class="stamps" id="stamps">
         <div class="container--grid stamps__grid" id="stampsGrid">
             <!-- Revisar: Se pone loading lazy a todas (incluso las primeras en pantalla para mejorar performance), como son generadas por un script, no se puede usar loading lazy en imágenes que no son cargadas dinámicamente, probar carga con loading lazy y con eager y ver cómo es el performance. -->
             <!-- Each stamp is created dynamically by JS, information is taken from the "pigeons-with-summaries.json" file.
