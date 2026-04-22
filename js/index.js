@@ -23,7 +23,7 @@ function getRandomNumber(min, max) {
 // Obtener ruta de estampilla para manipular datos del array para referencia sencilla más adelante
 function getStampFilePath(pigeonName, extension = 'png') {
     const fileName =
-        'assets/pigeon_stamps/' + pigeonName.split(' ').join('_') + `.${extension}`
+        `assets/pigeon_stamps/${extension}/` + pigeonName.split(' ').join('_') + `.${extension}`
     return fileName
 }
 
@@ -81,7 +81,7 @@ function createStamp(pigeon, pictureClass, imgClass) {
     singleStamp.classList.add(pictureClass)
     // Revisar: Cambiar formato de src a webp cuando tenga las imágenes
     singleStamp.innerHTML = `
-    <source src="${getStampFilePath(pigeon.commonName)}" type="image/webp">
+    <source srcset="${getStampFilePath(pigeon.commonName, 'webp')}" type="image/webp">
     <img 
         class="${imgClass}" 
         src="${getStampFilePath(pigeon.commonName)}"

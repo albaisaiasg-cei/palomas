@@ -108,6 +108,19 @@
         transform: scale(1);
     }
 }
+
+@keyframes appear {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 /* /Animaciones */
 
 /* Reset CSS */
@@ -208,8 +221,7 @@ a, .btn, .link {
             grid-template: repeat(22, 10rem) / repeat(16, 10rem);
             gap: 2.5rem;
 
-            animation: zoomIn 3s cubic-bezier(0.77, 0, 0.175, 1) backwards;
-
+            
             .stamps__picture {
                 grid-area: span 1 / span 1;
 
@@ -222,6 +234,8 @@ a, .btn, .link {
                 }
 
                 .stamps__img {
+                    animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both;
+
                     &:hover {
                         transform: rotate(3deg);
                         cursor: pointer;
