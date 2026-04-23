@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/index.css">
     <!-- Type="module" used so import of local JSON file works -->
     <script type="module" defer src="js/index.js"></script>
+
+<!-- Add favicon Revisar: cómo agregar favicon -->
 </head>
 
 <body class="homepage">
@@ -49,14 +51,20 @@
         <!-- Detail content block: This contains all the information blocks -->
         <div class="container detail__content" id="detailContent">
 
-            <!-- Revisar: poner clip de manera correcta en cuanto a estándares web -->
-        <img class="detail__clipboard-clip" src="assets/clipboard-clip.png" alt="vintage styled clipboard clip">
+            <picture class="detail__clip-picture">
+                <source srcset="assets/decorative_img/clip.webp" type="image/webp">
+                <img class="detail__clip-img" src="assets/decorative_img/clip.png" alt="decorative clipboard clip">
+            </picture>
 
             <!-- Clipboard block: Background texture & closing control container. -->
             <div class="detail__clipboard">
                 <!-- Closing button -->
+                <button type="button" onclick="click()" class="detail__close-button" id="detailCloseButton" aria-label="Close details view">
+                    <!-- Alt text is not included on purpose. Since it´s decoration for the button, we want screen readers to ignore it -->
+                    <img class="detail__close-icon" src="assets/icons/cruz.svg" alt="" id="closeIcon">
+                </button>
                 <!-- Revisar: editar para agregar el ícono como ícono y no como imagen (con etiqueta i, svg o span) -->
-                <img class="cruz" src="assets/icons/cruz.svg" alt="" id="cierre">
+                
             </div>
 
             <!-- Factsheet block: Container for detailed information about each pigeon species -->

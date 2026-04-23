@@ -155,6 +155,8 @@ function generateDetail(pigeon) {
             selectedSpecies.forEach((species) => {
                 const selectedPigeonStamp = createStamp(species, 'detail__related-picture', 'detail__related-img')
                 singleRegion.appendChild(selectedPigeonStamp)
+
+                // Revisar: aquí se podrían agregar event listeners a cada estampilla para generar un detalle al hacer click, pero por ahora no lo hago para evitar que el código se vuelva muy complejo y difícil de manejar. Si tuviera que hacerlo, tendría que modificar la función generateDetail para que pueda recibir un pigeon vacío o con datos mínimos, y luego ir llenando los datos a medida que se hace click en las estampillas relacionadas. Por ahora, solo dejo la función createStamp para reutilizar el código de creación de estampillas, pero sin agregarle funcionalidad extra.
             })
 
             // Create container for related species text
@@ -238,7 +240,7 @@ pigeonsWithSummaries.data.forEach((pigeon) => {
 })
 
 // Interacciones con contenedor detalle
-function close () {
+function closeDetail() {
     detail.classList.remove('active')
     
     while(detailPostcardBack.firstElementChild) {
@@ -258,8 +260,8 @@ function close () {
 }
 
 // Revisar: nombres de const
-const cierre = document.getElementById('cierre')
-cierre.addEventListener('click', () => close())
+const detailCloseButton = document.getElementById('detailCloseButton')
+detailCloseButton.addEventListener('click', () => closeDetail())
 
 // Visualización de información detalle
 function sendPostcardBack() {
@@ -299,9 +301,6 @@ function centerStampsGrid() {
 
     console.log(centerX)
 
-    //stamps.scrollLeft = centerX
-    // stamps.scrollTop = centerY
-
     stamps.scroll(centerX, centerY)
 }
 
@@ -310,4 +309,4 @@ window.addEventListener('load', () => {
 })
 
 const detailOverlay = document.getElementById('detailOverlay')
-detailOverlay.addEventListener('click', (e) => close())
+detailOverlay.addEventListener('click', (e) => closeDetail())

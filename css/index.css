@@ -87,6 +87,7 @@
 
     /* Background */
     --bg-white-with-fibers: url(../assets/backgrounds/white-with-fibers.png);
+    --bg-bone-with-fibers: url(../assets/backgrounds/bone-with-fibers.png);
     --bg-brown-envelope: url(../assets/backgrounds/brown-envelope.png);
     --bg-textured-vintage: url(../assets/backgrounds/textured-vintage.png);
     --bg-corkboard: url(../assets/backgrounds/corkboard.png);
@@ -169,6 +170,15 @@ a {
 ul {
     list-style: none;
 }
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+}
+
 /* /Reset CSS */
 
 /* Components */
@@ -302,12 +312,15 @@ a, .btn, .link {
             z-index: var(--z-content);
             margin-top: 5rem;
 
-            .detail__clipboard-clip {
+            .detail__clip-picture {
             position: absolute;
-            top: -50px;
-            width: 16.25rem;
-            height: 11rem;
             z-index: var(--z-clip);
+
+            top: -6rem;
+            width: 16.25rem;
+            height: auto;
+
+                .detail__clip-img {}
             }
 
             .detail__clipboard {
@@ -323,14 +336,21 @@ a, .btn, .link {
                 background-repeat: repeat;
                 background-size: var(--bg-size);
                 border-radius: 10px;
+
+                @media (max-width:660px){
+                    display: none;
+                }
                 
-                .cruz {
+                .detail__close-button {
                     width: 25px;
                     height: 25px;
+                    mix-blend-mode: multiply;
                     
                     &:hover {
                         transform: rotate(3deg);
                         cursor: pointer;
+
+                        .detail__close-icon {}
                     }
                 }
             }
@@ -345,7 +365,9 @@ a, .btn, .link {
             filter: drop-shadow(var(--filter-drop-shadow));
 
             position: absolute;
-            top: 7rem;
+            top: 5rem;
+            margin-left: clamp(2rem, 10vw, 3rem);
+
             width: var(--width-detail);
             display: flex;
             flex-flow: column nowrap;
@@ -353,6 +375,7 @@ a, .btn, .link {
 
             &:hover {
                 cursor: pointer;
+                transform: rotate(.5deg);
             }
 
                 .detail__main-info{
@@ -383,6 +406,7 @@ a, .btn, .link {
                     .detail__map-picture--base {
                         position: relative;
                         width: 100%;
+                        height: 100%;
 
                         .detail__map-img--base {}
                     }
@@ -390,7 +414,10 @@ a, .btn, .link {
                     .detail__map-picture {
                         position: absolute;
                         width: 100%;
-                        top: 2px;
+                        height: 100%;
+
+                        /* El leve desfase entre controno y relleno es intencional, para emular error de imprenta */
+                        top: 1px;
                         left: 0;
                         mix-blend-mode: multiply;
                         filter: blur(0.5px);
@@ -409,11 +436,13 @@ a, .btn, .link {
                 
                 .detail__related-region {
                     display: grid;
+                    /* Revisar: esto se puede ver mejor en movil */
                     grid-template: repeat(1, 1fr) / repeat(5, 1fr);
                     gap: 2rem;
                     
                     .detail__related-picture{
                         filter: drop-shadow(var(--filter-drop-shadow));
+                        grid-template-areas: span 1 / span 1;
 
                         &:first-child {
                             rotate: -1deg;
@@ -441,6 +470,7 @@ a, .btn, .link {
         /* /Factsheet block */
         
         /* Postcard block */
+        /* Revisar: do I want a different bg for the postcard? */
         .detail__postcard-container {
             background-image: var(--bg-white-with-fibers);
             background-size: var(--bg-size);
@@ -449,14 +479,15 @@ a, .btn, .link {
             filter: drop-shadow(var(--filter-drop-shadow));
             
             position: absolute;
-            top: 5rem;
-            left: 2.5rem;
+            top: 4rem;
+            margin-left: -3rem;
             width: var(--width-detail);
             
             display: flex;
             
             &:hover {
                 cursor: pointer;
+                transform: rotate(-1deg);
             }
             
             .detail__postcard-front {
@@ -510,7 +541,6 @@ a, .btn, .link {
                 .detail__postcard-stamp-picture {
                     filter: drop-shadow(var(--filter-drop-shadow));
                     width: 9.375rem;
-                    transform: rotate(1deg);
 
                     @media (max-width:520px){
                         display: none;
