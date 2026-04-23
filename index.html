@@ -44,9 +44,14 @@
 
     <!-- Detail section: Popup section with detail view styled as field clipboard for each pigeon species. Each container stays the same, content is modified by JS each time a stamp is clicked on. Styled as a lightbox. -->
     <section class="detail" id="detail">
+        <div class="detail__overlay" id="detailOverlay"></div>
 
         <!-- Detail content block: This contains all the information blocks -->
-        <div class="container detail__content">
+        <div class="container detail__content" id="detailContent">
+
+            <!-- Revisar: poner clip de manera correcta en cuanto a estándares web -->
+        <img class="detail__clipboard-clip" src="assets/clipboard-clip.png" alt="vintage styled clipboard clip">
+
             <!-- Clipboard block: Background texture & closing control container. -->
             <div class="detail__clipboard">
                 <!-- Closing button -->
@@ -105,7 +110,7 @@
             </div>
 
             <!-- Postcard block: Summarized information about the selected pigeon species styled as a postcard -->
-            <div class="detail__postcard-container" id="postcardContainer">
+            <div class="top detail__postcard-container" id="postcardContainer">
                 
                 <!-- Front of the postcard -->
                 <div class="active detail__postcard-front" id="detailPostcardFront">
@@ -161,8 +166,6 @@
                 </div>
             </div>
         </div>
-        <!-- Revisar: poner clip de manera correcta en cuanto a estándares web -->
-        <img class="detail__clipboard-clip" src="assets/clipboard-clip.png" alt="vintage styled clipboard clip">
     </section>
 </main>
 

@@ -238,25 +238,28 @@ pigeonsWithSummaries.data.forEach((pigeon) => {
 })
 
 // Interacciones con contenedor detalle
-const cierre = document.getElementById('cierre')
-cierre.addEventListener('click', () => {
+function close () {
     detail.classList.remove('active')
-
+    
     while(detailPostcardBack.firstElementChild) {
         detailPostcardBack.removeChild(detailPostcardBack.firstElementChild)
     }
-
+    
     while(detailRelatedSpecies.firstElementChild) {
         detailRelatedSpecies.removeChild(detailRelatedSpecies.firstElementChild)
     }
-
+    
     mapsToClean.forEach((map) => {
         console.log(map)
         detailMapCanvas.removeChild(map)
     })
-
+    
     mapsToClean = []
-})
+}
+
+// Revisar: nombres de const
+const cierre = document.getElementById('cierre')
+cierre.addEventListener('click', () => close())
 
 // Visualización de información detalle
 function sendPostcardBack() {
@@ -305,3 +308,6 @@ function centerStampsGrid() {
 window.addEventListener('load', () => {
     requestAnimationFrame(() => setTimeout(centerStampsGrid, 5))
 })
+
+const detailOverlay = document.getElementById('detailOverlay')
+detailOverlay.addEventListener('click', (e) => close())

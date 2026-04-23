@@ -4,8 +4,10 @@
       "genus": "Columba",
       "species": "livia",
       "range": {
-        "regions": ["NA", "MA", "SA", "AF", "OR", "EU", "IO", "AU", "PO"],
-        "locations": ["Worldwide - widespread"]
+        "regions": [],
+        "locations": [
+          "Worldwide - widespread"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -24,8 +26,14 @@
       "genus": "Columba",
       "species": "rupestris",
       "range": {
-        "regions": ["EU"],
-        "locations": ["China", "Himalayas", "Central Asia"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "China",
+          "Himalayas",
+          "Central Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -39,8 +47,15 @@
       "genus": "Columba",
       "species": "leuconota",
       "range": {
-        "regions": ["EU"],
-        "locations": ["Altay", "Tian Shan", "Himalayas", "Central China"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "Altay",
+          "Tian Shan",
+          "Himalayas",
+          "Central China"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -56,8 +71,12 @@
       "genus": "Columba",
       "species": "guinea",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -77,8 +96,13 @@
       "genus": "Columba",
       "species": "albitorques",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Eritrea", "Ethiopia"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Eritrea",
+          "Ethiopia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -92,8 +116,13 @@
       "genus": "Columba",
       "species": "oenas",
       "range": {
-        "regions": ["EU"],
-        "locations": ["Europe", "central Asia"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "Europe",
+          "central Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -108,8 +137,13 @@
       "genus": "Columba",
       "species": "eversmanni",
       "range": {
-        "regions": ["EU"],
-        "locations": ["Central Asia", "western China"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "Central Asia",
+          "western China"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -124,8 +158,12 @@
       "genus": "Columba",
       "species": "oliviae",
       "range": {
-        "regions": ["AF"],
-        "locations": ["northeastern Somalia"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "northeastern Somalia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -139,8 +177,12 @@
       "genus": "Columba",
       "species": "palumbus",
       "range": {
-        "regions": ["EU"],
-        "locations": ["Europe to China"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "Europe to China"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -161,8 +203,12 @@
       "genus": "Columba",
       "species": "trocaz",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Madeira"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Madeira"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -179,8 +225,12 @@
       "genus": "Columba",
       "species": "bollii",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Canary Islands"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Canary Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -196,8 +246,12 @@
       "genus": "Columba",
       "species": "junoniae",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Canary Islands"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Canary Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -213,8 +267,12 @@
       "genus": "Columba",
       "species": "unicincta",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Equatorial Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Equatorial Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -228,8 +286,13 @@
       "genus": "Columba",
       "species": "arquatrix",
       "range": {
-        "regions": ["AF"],
-        "locations": ["mainly eastern", "southern Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "mainly eastern",
+          "southern Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -246,39 +309,49 @@
       "genus": "Columba",
       "species": "sjostedti",
       "range": {
-        "regions": ["AF"],
-        "locations": ["western Cameroon", "eastern Nigeria"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "western Cameroon",
+          "eastern Nigeria"
+        ]
       },
       "conservationStatus": "LC",
-      "photos": [
-        "https://i.redd.it/xy7ce6stlvd51.jpg"
-      ],
+      "photos": [],
       "commonName": "Cameroon olive pigeon",
       "articleTitle": "Cameroon olive pigeon",
       "summary": "In the verdant landscapes of the Cameroon line, nestles a feathered enigma: the Cameroon olive pigeon (Columba sjostedti). This avian gem, found in realms ranging from pastoral plains to montane forests - even on Bioko island, claims its territory.\n\nAn intriguing dietary preference sets it apart, with a fondness for fruit native to its habitat, such as Polyscias fulva, and waterberry trees. Its existence serves as a testament to the delicate balance of life in these ecosystems, offering a glimpse into the interconnected web that sustains it.\n\nA solitary figure amidst the lush canopy, the Cameroon olive pigeon carves out its niche, adding another layer of diversity to Africa's rich tapestry of wildlife. This brief exploration merely scratches the surface of this enigmatic species, inviting further exploration and appreciation for its unique place in the natural world."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Columba",
+      "species": "thomensis",
       "range": {
-        "regions": ["AF"],
-        "locations": ["São Tomé"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "São Tomé"
+        ]
       },
-      "conservationStatus": "",
-      "photos": ["Columba thomensis.jpg"],
+      "conservationStatus": "LC",
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
+      ],
       "commonName": "Sao Tome olive pigeon",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Raiatea fruit dove",
+      "summary": " Nestled within the lush lowland forests of French Polynesia's Society Islands, the Raiatea Fruit Dove (Ptilinopus chrysogaster) unfurls a tale of resilience and adaptation. First documented in 1853, this enigmatic bird was likely discovered three decades earlier by René Primevère Lesson during his voyage aboard La Coquille. Once deemed a subspecies of the Grey-Green Fruit Dove, it gained species recognition by the IOC in 2021.\n\nEndemic to Huahine, Raiatea, Tahaa, Bora Bora, and Maupiti, this avian jewel faces an ongoing population decline due to habitat destruction and invasive predators such as swamp harriers, feral cats, Polynesian rats, and black rats. With an estimated 1000 to 2500 mature individuals, its numbers remain a mystery post-2001.\n\nAmid the verdant splendor of its habitat, the Raiatea Fruit Dove persists—an indomitable testament to nature's unyielding spirit and the eternal dance between species and environment."
     },
     {
       "genus": "Columba",
       "species": "pollenii",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Comoros"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Comoros"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -292,8 +365,14 @@
       "genus": "Columba",
       "species": "hodgsonii",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Himalayas", "Myanmar", "Central China"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Himalayas",
+          "Myanmar",
+          "Central China"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -310,8 +389,13 @@
       "genus": "Columba",
       "species": "albinucha",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Central Africa", "Albertine Rift"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Central Africa",
+          "Albertine Rift"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -325,8 +409,15 @@
       "genus": "Columba",
       "species": "pulchricollis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Eastern Himalaya", "Yunnan", "Myanmar", "Taiwan"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Eastern Himalaya",
+          "Yunnan",
+          "Myanmar",
+          "Taiwan"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -342,8 +433,12 @@
       "genus": "Columba",
       "species": "elphinstonii",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Western Ghats (India)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Western Ghats (India)"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -359,8 +454,12 @@
       "genus": "Columba",
       "species": "torringtoniae",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sri Lanka"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sri Lanka"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -374,8 +473,12 @@
       "genus": "Columba",
       "species": "punicea",
       "range": {
-        "regions": ["OR"],
-        "locations": ["northeast India through southeast Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "northeast India through southeast Asia"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -389,8 +492,12 @@
       "genus": "Columba",
       "species": "argentina",
       "range": {
-        "regions": ["OR"],
-        "locations": ["western Malaysia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "western Malaysia"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -405,8 +512,13 @@
       "genus": "Columba",
       "species": "palumboides",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Andaman", "Nicobar Islands"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Andaman",
+          "Nicobar Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -417,27 +529,34 @@
       "summary": "Nestled in the Andaman and Nicobar Islands of India, the enigmatic Andaman Wood Pigeon (Columba palumboides) resides, a species teetering on the precipice of vulnerability, classified as 'near threatened.' With an estimated population ranging between 2,500 to 10,000 mature individuals, this avian gem is a rare find.\n\nSporting a striking visage, its head shines resplendent in pristine white, contrasted by a beak tipped in vibrant red and yellow, while the rest of its body adopts an alluring black hue. The Andaman Wood Pigeon shares kinship with the green imperial pigeon and the rock dove but exhibits a distinct identity that sets it apart.\n\nThis elusive creature predominantly inhabits North Passage Island, a testament to its intriguing habitat preferences. As custodians of this breathtaking landscape, these avian ambassadors weave an irresistible allure for nature enthusiasts and researchers alike."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Columba",
+      "species": "janthina",
       "range": {
-        "regions": ["EU"],
-        "locations": ["East China Sea"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "East China Sea"
+        ]
       },
-      "conservationStatus": "",
-      "photos": ["Columba (Carpophaga) janthina Fauna Japonica.jpg"],
+      "conservationStatus": "LC",
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
+      ],
       "commonName": "Japanese wood pigeon",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Raiatea fruit dove",
+      "summary": " In the heart of French Polynesia's lush tropical lowlands, the Raiatea fruit dove (Ptilinopus chrysogaster) reigns. Discovered in the early 19th century by naturalist René Primevère Lesson aboard La Coquille, this elusive avian has captivated ornithologists since its formal scientific recognition in 1853. Once thought a subspecies of the grey-green fruit dove, it was reclassified as a distinct species by the International Ornithological Committee in 2021.\n\nThis exquisite bird dwells among Huahine, Raiatea, Tahaa, Bora Bora, and, formerly, Maupiti islands. With an estimated population of 1000 to 2500 mature individuals, it flourishes amidst the verdant canopies that characterize its habitat. However, since the turn of the millennium, population estimates have remained elusive.\n\nThe Raiatea fruit dove faces significant threats. Habitat destruction, coupled with the introduction of invasive species like the swamp harrier and feral cats, Polynesian rats, and black rats, have eroded its natural sanctuary. This delicate balance continues to unravel, leaving this enigmatic bird teetering on the edge of irretrievable loss."
     },
     {
       "genus": "Columba",
       "species": "versicolor",
       "range": {
-        "regions": ["EU"],
-        "locations": ["Bonin Islands"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "Bonin Islands"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -452,13 +571,16 @@
       "genus": "Columba",
       "species": "jouyi",
       "range": {
-        "regions": ["EU"],
-        "locations": ["Daitō", "Okinawa Islands"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "Daitō",
+          "Okinawa Islands"
+        ]
       },
       "conservationStatus": "EX",
-      "photos": [
-        "https://alchetron.com/cdn/ryukyu-wood-pigeon-1a08daf0-a0c9-4e9b-83da-1a8c46b3963-resize-750.jpeg"
-      ],
+      "photos": [],
       "commonName": "Ryukyu wood pigeon",
       "articleTitle": "Ryukyu wood pigeon",
       "summary": "In the verdant Laurel forests of the Ryukyu Islands, a captivating avian spectacle once flourished - the extinct Ryukyu wood pigeon (Columba jouyi).\n\nEndemic to a scattering of islands, from Iheyajima to the Daitō group, this enigmatic pigeon shared similarities with Columba janthina, yet bore distinctive bronze-green scapulars and back, contrasted by a large white patch on its lower hind neck.\n\nIts demise began in earnest, as habitat loss due to deforestation for settlement and agriculture eroded the species' stronghold. By 1904, it vanished from Okinawa, succumbing to hunting pressures, while disappearing from the Daitō group by 1936 following complete deforestation for pre-WWII development activities.\n\nThe species' persistence on outlying islands remains a mystery, with no records since its last documented sighting. Theoretically, there is still ample habitat in Okinawa's mountains, yet none have been observed since. The absence from Tokashikijima, despite preserved forest cover, and Zamamijima, a smaller island further away from the mainland, adds to the enigma that surrounds the extinction of this resplendent Ryukyu wood pigeon."
@@ -467,8 +589,15 @@
       "genus": "Columba",
       "species": "vitiensis",
       "range": {
-        "regions": ["OR", "AU"],
-        "locations": ["Melanesia", "Philippines", "Wallacea"]
+        "regions": [
+          "OR",
+          "AU"
+        ],
+        "locations": [
+          "Melanesia",
+          "Philippines",
+          "Wallacea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -486,8 +615,12 @@
       "genus": "Columba",
       "species": "leucomela",
       "range": {
-        "regions": ["AU"],
-        "locations": ["eastern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "eastern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -501,13 +634,16 @@
       "genus": "Columba",
       "species": "pallidiceps",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck", "Solomon archipelagos"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck",
+          "Solomon archipelagos"
+        ]
       },
       "conservationStatus": "VU",
-      "photos": [
-        "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/34556251/900"
-        ],
+      "photos": [],
       "commonName": "Yellow-legged pigeon",
       "articleTitle": "Yellow-legged pigeon",
       "summary": "In the heart of the Bismarck and Solomon archipelagos, a modest avian resides - the elusive yellow-legged pigeon (Columba pallidiceps). This species, belonging to the Columbidae family, favors subtropical and tropical forest ecosystems, both lowland and mountainous.\n\nNative to these Pacific islands, it has adapted gracefully to its surroundings, its azure plumage standing out against lush green foliage. However, the species faces threats from habitat loss, a persistent danger in an era of rapid environmental change.\n\nInitially thought to be on the brink of extinction, recent research revealed a more promising situation for the yellow-legged pigeon. Once classified as Endangered by the IUCN, it was reevaluated and downlisted to Vulnerable in 2008, indicating a shift towards a more sustainable future for this intriguing bird.\n\n[BirdLife International (BLI) (2008): 2008 IUCN Redlist status changes. Retrieved 2008-MAY-23.]\n[BirdLife Species Factsheet]"
@@ -516,8 +652,12 @@
       "genus": "Columba",
       "species": "delegorguei",
       "range": {
-        "regions": ["AF"],
-        "locations": ["east Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "east Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -532,8 +672,12 @@
       "genus": "Columba",
       "species": "iriditorques",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Equatorial Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Equatorial Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -547,8 +691,12 @@
       "genus": "Columba",
       "species": "malherbii",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Gulf of Guinea islands"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Gulf of Guinea islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -563,8 +711,12 @@
       "genus": "Columba",
       "species": "larvata",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -580,8 +732,14 @@
       "genus": "Ectopistes",
       "species": "migratorius",
       "range": {
-        "regions": ["NA"],
-        "locations": ["central", "eastern USA", "Canada"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "central",
+          "eastern USA",
+          "Canada"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -636,8 +794,15 @@
       "genus": "Patagioenas",
       "species": "leucocephala",
       "range": {
-        "regions": ["NA", "MA"],
-        "locations": ["Florida", "West Indies", "eastern Caribbean"]
+        "regions": [
+          "NA",
+          "MA"
+        ],
+        "locations": [
+          "Florida",
+          "West Indies",
+          "eastern Caribbean"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -653,8 +818,12 @@
       "genus": "Patagioenas",
       "species": "squamosa",
       "range": {
-        "regions": ["NA"],
-        "locations": ["West Indies"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "West Indies"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -671,8 +840,14 @@
       "genus": "Patagioenas",
       "species": "speciosa",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Central", "South America"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Central",
+          "South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -687,8 +862,12 @@
       "genus": "Patagioenas",
       "species": "picazuro",
       "range": {
-        "regions": ["SA"],
-        "locations": ["eastern South America"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "eastern South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -703,8 +882,14 @@
       "genus": "Patagioenas",
       "species": "corensis",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Colombia", "Venezuela", "Netherlands Antilles"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Colombia",
+          "Venezuela",
+          "Netherlands Antilles"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -718,13 +903,15 @@
       "genus": "Patagioenas",
       "species": "maculosa",
       "range": {
-        "regions": ["SA"],
-        "locations": ["South America"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "South America"
+        ]
       },
       "conservationStatus": "LC",
-      "photos": [
-        "https://en.wikipedia.org/wiki/Spot-winged_pigeon#/media/File:Spot-winged_pigeon_%28Patagioenas_maculosa%29_Colonia.jpg"
-      ],
+      "photos": [],
       "commonName": "Spot-winged pigeon",
       "articleTitle": "Spot-winged pigeon",
       "summary": "In the vast, arid landscapes of South America, the spot-winged pigeon (Patagioenas maculosa) thrives, its distinctive presence echoing through open woodland and scrub. This species, found across Argentina, Bolivia, Brazil, Chile, Paraguay, Peru, and Uruguay, is a member of the Columbidae family, sharing close ties with the picazuro pigeon, bare-eyed pigeon, and scaled pigeon, according to some ornithologists.\n\nThe nominate subspecies, P. m. maculosa, stands 32 to 33 cm tall, its adult male adorned in a blend of dull purplish pink on the head and breast, contrasting with dark brown wings spotted with creamy white. The female is similar but more subdued, while the juvenile is a softer version of both.\n\nIn contrast, P. m. albipennis, found in Peru, Bolivia, Argentina, and Chile, boasts a bluish-gray plumage with purplish undertones, particularly prominent in males. Both subspecies exhibit unique adaptations to their respective habitats: P. m. maculosa inhabits lowlands up to 1000 meters, shunning towns, while P. m. albipennis favors higher elevations, 2000 to 4300 meters, and is locally common in urban areas.\n\nFeeding predominantly on seeds, including rice and sunflower, P. m. maculosa also samples fruit and leaves. The diet of P. m. albipenniss remains undiscovered. Both subspecies are social creatures, foraging on the ground in flocks.\n\nBreeding occurs year-round in Argentina, with P. m. maculosa constructing fragile nests in trees and laying one or two eggs. The breeding habits of P. m. albipenniss are as yet unstudied, though increased calling in October may signal the start of the breeding season. The spot-winged pigeon's rhythmic song continues to resonate through the continent, a testament to its resilient and evolving presence."
@@ -733,8 +920,15 @@
       "genus": "Patagioenas",
       "species": "fasciata",
       "range": {
-        "regions": ["NA", "MA", "SA"],
-        "locations": ["western", "mountainous Americas"]
+        "regions": [
+          "NA",
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "western",
+          "mountainous Americas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -751,8 +945,13 @@
       "genus": "Patagioenas",
       "species": "araucana",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Chile", "western Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Chile",
+          "western Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -767,8 +966,12 @@
       "genus": "Patagioenas",
       "species": "caribaea",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Jamaica"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Jamaica"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -782,8 +985,13 @@
       "genus": "Patagioenas",
       "species": "cayennensis",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Mexico into South America"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Mexico into South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -798,8 +1006,13 @@
       "genus": "Patagioenas",
       "species": "flavirostris",
       "range": {
-        "regions": ["NA", "MA"],
-        "locations": ["southern Texas to Costa Rica"]
+        "regions": [
+          "NA",
+          "MA"
+        ],
+        "locations": [
+          "southern Texas to Costa Rica"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -813,8 +1026,13 @@
       "genus": "Patagioenas",
       "species": "oenops",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Ecuador", "Peru"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Ecuador",
+          "Peru"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -829,8 +1047,12 @@
       "genus": "Patagioenas",
       "species": "inornata",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Greater Antilles"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Greater Antilles"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -845,8 +1067,12 @@
       "genus": "Patagioenas",
       "species": "plumbea",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Colombia to southeastern Brazil"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Colombia to southeastern Brazil"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -860,8 +1086,14 @@
       "genus": "Patagioenas",
       "species": "subvinacea",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["southern Central", "northern South America"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "southern Central",
+          "northern South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -876,8 +1108,13 @@
       "genus": "Patagioenas",
       "species": "nigrirostris",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Mexico to Colombia"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Mexico to Colombia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -891,8 +1128,12 @@
       "genus": "Patagioenas",
       "species": "goodsoni",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Tumbes-Chocó-Magdalena"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Tumbes-Chocó-Magdalena"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -906,8 +1147,14 @@
       "genus": "Nesoenas",
       "species": "picturatus",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Madagascar", "Seychelles", "Mauritius"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Madagascar",
+          "Seychelles",
+          "Mauritius"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -922,8 +1169,12 @@
       "genus": "Nesoenas",
       "species": "rodericanus",
       "range": {
-        "regions": ["IO"],
-        "locations": ["Rodrigues Island"]
+        "regions": [
+          "IO"
+        ],
+        "locations": [
+          "Rodrigues Island"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -938,8 +1189,12 @@
       "genus": "Nesoenas",
       "species": "mayeri",
       "range": {
-        "regions": ["IO"],
-        "locations": ["Mauritius Island"]
+        "regions": [
+          "IO"
+        ],
+        "locations": [
+          "Mauritius Island"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -956,8 +1211,13 @@
       "genus": "Streptopelia",
       "species": "turtur",
       "range": {
-        "regions": ["EU"],
-        "locations": ["primarily Europe; to North Africa", "China"]
+        "regions": [
+          "EU"
+        ],
+        "locations": [
+          "primarily Europe; to North Africa",
+          "China"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -975,8 +1235,14 @@
       "genus": "Streptopelia",
       "species": "lugens",
       "range": {
-        "regions": ["AF", "EU"],
-        "locations": ["east Africa", "Arabian Peninsula"]
+        "regions": [
+          "AF",
+          "EU"
+        ],
+        "locations": [
+          "east Africa",
+          "Arabian Peninsula"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -990,8 +1256,12 @@
       "genus": "Streptopelia",
       "species": "hypopyrrha",
       "range": {
-        "regions": ["AF"],
-        "locations": ["West Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "West Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1005,14 +1275,19 @@
       "genus": "Streptopelia",
       "species": "orientalis",
       "range": {
-        "regions": ["EU", "OR"],
-        "locations": ["widespread"]
+        "regions": [
+          "EU",
+          "OR"
+        ],
+        "locations": [
+          "widespread"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
-        "https://wikipedia.org/wiki/Special:Redirect/file/Orientalturtledove.JPG",
         "https://wikipedia.org/wiki/Special:Redirect/file/Oriental_Turtle_Doves_(Streptopelia_orientalis).webm",
         "https://wikipedia.org/wiki/Special:Redirect/file/_Tourterelle_orientale_MHNT.jpg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Orientalturtledove.JPG",
         "https://wikipedia.org/wiki/Special:Redirect/file/Oriental_Turtle_Dove.jpg",
         "https://wikipedia.org/wiki/Special:Redirect/file/Rufous_turtle_dove_(Streptopelia_orientalis_orii)_Qianshan_2.jpg",
         "https://wikipedia.org/wiki/Special:Redirect/file/Streptopelia_orientalis1.jpg",
@@ -1032,8 +1307,14 @@
       "genus": "Streptopelia",
       "species": "bitorquata",
       "range": {
-        "regions": ["OR", "AU"],
-        "locations": ["Java", "Lesser Sundas to Timor"]
+        "regions": [
+          "OR",
+          "AU"
+        ],
+        "locations": [
+          "Java",
+          "Lesser Sundas to Timor"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1047,8 +1328,13 @@
       "genus": "Streptopelia",
       "species": "dusumieri",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines", "Sunda Archipelago"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines",
+          "Sunda Archipelago"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -1063,7 +1349,10 @@
       "genus": "Streptopelia",
       "species": "decaocto",
       "range": {
-        "regions": ["EU", "OR"],
+        "regions": [
+          "EU",
+          "OR"
+        ],
         "locations": [
           "native from Europe to China; widely introduced elsewhere"
         ]
@@ -1084,8 +1373,12 @@
       "genus": "Streptopelia",
       "species": "xanthocycla",
       "range": {
-        "regions": ["OR"],
-        "locations": ["central Myanmar"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "central Myanmar"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1099,8 +1392,12 @@
       "genus": "Streptopelia",
       "species": "roseogrisea",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1116,8 +1413,12 @@
       "genus": "Streptopelia",
       "species": "reichenowi",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Horn of Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Horn of Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1131,8 +1432,12 @@
       "genus": "Streptopelia",
       "species": "decipiens",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1149,8 +1454,14 @@
       "genus": "Streptopelia",
       "species": "semitorquata",
       "range": {
-        "regions": ["AF", "EU"],
-        "locations": ["Sub-Saharan Africa", "Arabian Peninsula"]
+        "regions": [
+          "AF",
+          "EU"
+        ],
+        "locations": [
+          "Sub-Saharan Africa",
+          "Arabian Peninsula"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1164,8 +1475,13 @@
       "genus": "Streptopelia",
       "species": "capicola",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa", "Comoros"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa",
+          "Comoros"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1181,8 +1497,12 @@
       "genus": "Streptopelia",
       "species": "vinacea",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1196,8 +1516,13 @@
       "genus": "Streptopelia",
       "species": "tranquebarica",
       "range": {
-        "regions": ["OR"],
-        "locations": ["eastern", "southern Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "eastern",
+          "southern Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1213,8 +1538,13 @@
       "genus": "Spilopelia",
       "species": "chinensis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["eastern", "southern Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "eastern",
+          "southern Asia"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -1241,8 +1571,16 @@
       "genus": "Spilopelia",
       "species": "senegalensis",
       "range": {
-        "regions": ["AF", "EU", "OR"],
-        "locations": ["Africa", "the Middle East", "southern Asia"]
+        "regions": [
+          "AF",
+          "EU",
+          "OR"
+        ],
+        "locations": [
+          "Africa",
+          "the Middle East",
+          "southern Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1261,8 +1599,14 @@
       "genus": "Macropygia",
       "species": "unchall",
       "range": {
-        "regions": ["OR"],
-        "locations": ["eastern Himalaya", "southern China", "southeast Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "eastern Himalaya",
+          "southern China",
+          "southeast Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1278,8 +1622,12 @@
       "genus": "Macropygia",
       "species": "amboinensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas to New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas to New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1293,8 +1641,12 @@
       "genus": "Macropygia",
       "species": "doreya",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas to New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas to New Guinea"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -1308,8 +1660,12 @@
       "genus": "Macropygia",
       "species": "emiliana",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Indonesia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Indonesia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1323,8 +1679,12 @@
       "genus": "Macropygia",
       "species": "cinnamomea",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Enggano Island (off western Sumatra)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Enggano Island (off western Sumatra)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -1338,8 +1698,12 @@
       "genus": "Macropygia",
       "species": "modiglianii",
       "range": {
-        "regions": ["OR"],
-        "locations": ["western Sumatran islands (except Enggano)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "western Sumatran islands (except Enggano)"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -1353,8 +1717,13 @@
       "genus": "Macropygia",
       "species": "magna",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Timor", "eastern Lesser Sundas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Timor",
+          "eastern Lesser Sundas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1368,8 +1737,12 @@
       "genus": "Macropygia",
       "species": "timorlaoensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Tanimbar Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Tanimbar Islands"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -1383,8 +1756,13 @@
       "genus": "Macropygia",
       "species": "macassariensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi", "Lesser Sundas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi",
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -1398,8 +1776,12 @@
       "genus": "Macropygia",
       "species": "tenuirostris",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1413,8 +1795,12 @@
       "genus": "Macropygia",
       "species": "phasianella",
       "range": {
-        "regions": ["AU"],
-        "locations": ["eastern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "eastern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1429,8 +1815,13 @@
       "genus": "Macropygia",
       "species": "rufipennis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Andaman", "Nicobar Islands"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Andaman",
+          "Nicobar Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1444,8 +1835,13 @@
       "genus": "Macropygia",
       "species": "nigrirostris",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea", "Bismarck Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea",
+          "Bismarck Archipelago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1459,8 +1855,12 @@
       "genus": "Macropygia",
       "species": "mackinlayi",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Melanesia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Melanesia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1474,8 +1874,12 @@
       "genus": "Macropygia",
       "species": "ruficeps",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Myanmar to Lesser Sundas"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Myanmar to Lesser Sundas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1490,8 +1894,13 @@
       "genus": "Reinwardtoena",
       "species": "reinwardti",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas", "New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1509,8 +1918,13 @@
       "genus": "Reinwardtoena",
       "species": "browni",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck Archipelago", "Admiralty Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck Archipelago",
+          "Admiralty Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -1524,8 +1938,12 @@
       "genus": "Reinwardtoena",
       "species": "crassirostris",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -1539,8 +1957,12 @@
       "genus": "Turacoena",
       "species": "manadensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1554,8 +1976,13 @@
       "genus": "Turacoena",
       "species": "sulaensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sula Islands", "Banggai Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sula Islands",
+          "Banggai Archipelago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1569,8 +1996,12 @@
       "genus": "Turacoena",
       "species": "modesta",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Lesser Sundas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -1585,8 +2016,13 @@
       "genus": "Turtur",
       "species": "chalcospilos",
       "range": {
-        "regions": ["AF"],
-        "locations": ["eastern", "southern Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "eastern",
+          "southern Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1601,8 +2037,12 @@
       "genus": "Turtur",
       "species": "abyssinicus",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan belt"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan belt"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1616,8 +2056,12 @@
       "genus": "Turtur",
       "species": "afer",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1631,8 +2075,13 @@
       "genus": "Turtur",
       "species": "tympanistria",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa", "Comoros"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa",
+          "Comoros"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1646,8 +2095,12 @@
       "genus": "Turtur",
       "species": "brehmeri",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Equatorial Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Equatorial Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1661,8 +2114,14 @@
       "genus": "Oena",
       "species": "capensis",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa", "Arabian Peninsula", "Madagascar"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa",
+          "Arabian Peninsula",
+          "Madagascar"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1683,8 +2142,13 @@
       "genus": "Chalcophaps",
       "species": "indica",
       "range": {
-        "regions": ["OR", "AU"],
-        "locations": ["southern China to New Guinea"]
+        "regions": [
+          "OR",
+          "AU"
+        ],
+        "locations": [
+          "southern China to New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1701,8 +2165,12 @@
       "genus": "Chalcophaps",
       "species": "longirostris",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australasia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australasia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1718,8 +2186,14 @@
       "genus": "Chalcophaps",
       "species": "stephani",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi", "New Guinea", "Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi",
+          "New Guinea",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1733,8 +2207,12 @@
       "genus": "Henicophaps",
       "species": "albifrons",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1748,8 +2226,12 @@
       "genus": "Henicophaps",
       "species": "foersteri",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck Archipelago"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -1763,8 +2245,12 @@
       "genus": "Phaps",
       "species": "chalcoptera",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1782,8 +2268,12 @@
       "genus": "Phaps",
       "species": "elegans",
       "range": {
-        "regions": ["AU"],
-        "locations": ["southern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "southern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1797,8 +2287,12 @@
       "genus": "Phaps",
       "species": "histrionica",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1813,8 +2307,12 @@
       "genus": "Ocyphaps",
       "species": "lophotes",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1832,8 +2330,12 @@
       "genus": "Geophaps",
       "species": "plumifera",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1849,8 +2351,12 @@
       "genus": "Geophaps",
       "species": "scripta",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northeast Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northeast Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1864,8 +2370,12 @@
       "genus": "Geophaps",
       "species": "smithii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1879,11 +2389,17 @@
       "genus": "Trugon",
       "species": "terrestris",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
-      "photos": ["https://wikipedia.org/wiki/Special:Redirect/file/Trugon.jpg"],
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Trugon.jpg"
+      ],
       "commonName": "Thick-billed ground pigeon",
       "articleTitle": "Thick-billed ground pigeon",
       "summary": "In the heart of New Guinea's lush lowland forests dwells the elusive thick-billed ground pigeon (Trugon terrestris), a species distinguished by its uniform bluish-grey or brownish-grey upper parts, grey breast, and orangey-buff belly. The bird's robust form belies its agility; it can launch itself into the air with rapid wing beats when threatened, flicking its tail downwards as it walks on the ground.\n\nFeeding mainly on fallen fruits and seeds, this solitary forager often visits the display arenas of the magnificent bird-of-paradise to feast on regurgitated seeds. At night, it roosts in hollows on low tree branches, laying a single white egg in a simple nest hidden among tree roots.\n\nDespite being uncommon, this species' population trend remains stable. Its wide range and lack of apparent threats have earned it the status of \"least concern\"by the International Union for Conservation of Nature, a testament to its resilience amidst New Guinea's dense jungle terrain."
@@ -1892,8 +2408,12 @@
       "genus": "Leucosarcia",
       "species": "melanoleuca",
       "range": {
-        "regions": ["AU"],
-        "locations": ["eastern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "eastern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1907,8 +2427,12 @@
       "genus": "Petrophassa",
       "species": "rufipennis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1922,8 +2446,12 @@
       "genus": "Petrophassa",
       "species": "albipennis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["north-western Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "north-western Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1942,8 +2470,12 @@
       "genus": "Geopelia",
       "species": "cuneata",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1960,8 +2492,14 @@
       "genus": "Geopelia",
       "species": "striata",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Malay Peninsula", "Sumatra", "Java"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Malay Peninsula",
+          "Sumatra",
+          "Java"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1977,8 +2515,13 @@
       "genus": "Geopelia",
       "species": "placida",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia", "New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -1993,8 +2536,13 @@
       "genus": "Geopelia",
       "species": "maugeus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Lesser Sundas", "Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Lesser Sundas",
+          "Moluccas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2008,8 +2556,13 @@
       "genus": "Geopelia",
       "species": "humeralis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Australia", "New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Australia",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2023,8 +2576,13 @@
       "genus": "Columbina",
       "species": "inca",
       "range": {
-        "regions": ["NA", "MA"],
-        "locations": ["southwestern USA to Costa Rica"]
+        "regions": [
+          "NA",
+          "MA"
+        ],
+        "locations": [
+          "southwestern USA to Costa Rica"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2040,8 +2598,13 @@
       "genus": "Columbina",
       "species": "squammata",
       "range": {
-        "regions": ["SA"],
-        "locations": ["northern", "eastern South America"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "northern",
+          "eastern South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2056,8 +2619,14 @@
       "genus": "Columbina",
       "species": "passerina",
       "range": {
-        "regions": ["NA", "MA", "SA"],
-        "locations": ["southern USA into Brazil"]
+        "regions": [
+          "NA",
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "southern USA into Brazil"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2072,8 +2641,14 @@
       "genus": "Columbina",
       "species": "minuta",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["southern Central America", "northern South America"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "southern Central America",
+          "northern South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2087,8 +2662,13 @@
       "genus": "Columbina",
       "species": "buckleyi",
       "range": {
-        "regions": ["SA"],
-        "locations": ["western Ecuador", "northwestern Peru"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "western Ecuador",
+          "northwestern Peru"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2102,8 +2682,13 @@
       "genus": "Columbina",
       "species": "talpacoti",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Mexico to Argentina"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Mexico to Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2119,8 +2704,13 @@
       "genus": "Columbina",
       "species": "picui",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Brazil to Chile", "Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Brazil to Chile",
+          "Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2135,8 +2725,12 @@
       "genus": "Columbina",
       "species": "cruziana",
       "range": {
-        "regions": ["SA"],
-        "locations": ["northern Ecuador to Chile"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "northern Ecuador to Chile"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2151,8 +2745,12 @@
       "genus": "Columbina",
       "species": "cyanopis",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Cerrado of Brazil"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Cerrado of Brazil"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -2167,8 +2765,13 @@
       "genus": "Claravis",
       "species": "pretiosa",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Mexico to Argentina"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Mexico to Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2182,8 +2785,12 @@
       "genus": "Paraclaravis",
       "species": "geoffroyi",
       "range": {
-        "regions": ["SA"],
-        "locations": ["southern Atlantic Forest (Brazil to Argentina)"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "southern Atlantic Forest (Brazil to Argentina)"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -2197,8 +2804,13 @@
       "genus": "Paraclaravis",
       "species": "mondetoura",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Mexico to Bolivia"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Mexico to Bolivia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2212,8 +2824,14 @@
       "genus": "Metriopelia",
       "species": "ceciliae",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Altiplano of Peru", "Chile", "Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Altiplano of Peru",
+          "Chile",
+          "Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2227,8 +2845,12 @@
       "genus": "Metriopelia",
       "species": "morenoi",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2242,8 +2864,12 @@
       "genus": "Metriopelia",
       "species": "melanoptera",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Andes"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Andes"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2258,8 +2884,14 @@
       "genus": "Metriopelia",
       "species": "aymara",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Altiplano of Peru", "Chile", "Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Altiplano of Peru",
+          "Chile",
+          "Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2273,8 +2905,13 @@
       "genus": "Uropelia",
       "species": "campestris",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Brazil", "Bolivia"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Brazil",
+          "Bolivia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2288,8 +2925,12 @@
       "genus": "Starnoenas",
       "species": "cyanocephala",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Cuba"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Cuba"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -2303,8 +2944,12 @@
       "genus": "Geotrygon",
       "species": "purpurata",
       "range": {
-        "regions": ["SA"],
-        "locations": ["northwestern Colombia to northwestern Ecuador"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "northwestern Colombia to northwestern Ecuador"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -2318,8 +2963,12 @@
       "genus": "Geotrygon",
       "species": "saphirina",
       "range": {
-        "regions": ["SA"],
-        "locations": ["western Amazon Basin"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "western Amazon Basin"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2333,8 +2982,12 @@
       "genus": "Geotrygon",
       "species": "versicolor",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Jamaica"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Jamaica"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -2348,8 +3001,14 @@
       "genus": "Geotrygon",
       "species": "montana",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Central America", "northern South America"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Central America",
+          "northern South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2363,8 +3022,14 @@
       "genus": "Geotrygon",
       "species": "violacea",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["southern Central America", "northern South America"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "southern Central America",
+          "northern South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2378,8 +3043,12 @@
       "genus": "Geotrygon",
       "species": "caniceps",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Cuba"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Cuba"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -2393,8 +3062,12 @@
       "genus": "Geotrygon",
       "species": "leucometopia",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Hispaniola"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Hispaniola"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -2408,8 +3081,12 @@
       "genus": "Geotrygon",
       "species": "chrysia",
       "range": {
-        "regions": ["NA"],
-        "locations": ["northern Caribbean"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "northern Caribbean"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2423,7 +3100,9 @@
       "genus": "Geotrygon",
       "species": "mystacea",
       "range": {
-        "regions": ["NA"],
+        "regions": [
+          "NA"
+        ],
         "locations": [
           "Puerto Rico",
           "Virgin Islands",
@@ -2442,8 +3121,13 @@
       "genus": "Leptotrygon",
       "species": "veraguensis",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Costa Rica to Ecuador"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Costa Rica to Ecuador"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2458,8 +3142,14 @@
       "genus": "Leptotila",
       "species": "verreauxi",
       "range": {
-        "regions": ["NA", "MA", "SA"],
-        "locations": ["southern Texas to Argentina"]
+        "regions": [
+          "NA",
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "southern Texas to Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2477,8 +3167,13 @@
       "genus": "Leptotila",
       "species": "megalura",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Bolivia", "Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Bolivia",
+          "Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2492,8 +3187,12 @@
       "genus": "Leptotila",
       "species": "rufaxilla",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Colombia to Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Colombia to Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2507,8 +3206,13 @@
       "genus": "Leptotila",
       "species": "plumbeiceps",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Mexico to Colombia"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Mexico to Colombia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2523,8 +3227,13 @@
       "genus": "Leptotila",
       "species": "pallida",
       "range": {
-        "regions": ["SA"],
-        "locations": ["western Colombia", "Ecuador"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "western Colombia",
+          "Ecuador"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2538,8 +3247,12 @@
       "genus": "Leptotila",
       "species": "battyi",
       "range": {
-        "regions": ["MA"],
-        "locations": ["Panama"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "Panama"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -2553,8 +3266,12 @@
       "genus": "Leptotila",
       "species": "wellsi",
       "range": {
-        "regions": ["NA"],
-        "locations": ["Grenada"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "Grenada"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -2570,8 +3287,15 @@
       "genus": "Leptotila",
       "species": "jamaicensis",
       "range": {
-        "regions": ["NA", "MA"],
-        "locations": ["Cayman Islands", "Jamaica", "Yucatán Peninsula"]
+        "regions": [
+          "NA",
+          "MA"
+        ],
+        "locations": [
+          "Cayman Islands",
+          "Jamaica",
+          "Yucatán Peninsula"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2585,8 +3309,13 @@
       "genus": "Leptotila",
       "species": "cassinii",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Guatemala to Colombia"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Guatemala to Colombia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2600,8 +3329,13 @@
       "genus": "Leptotila",
       "species": "ochraceiventris",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Ecuador", "Peru"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Ecuador",
+          "Peru"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -2615,8 +3349,12 @@
       "genus": "Leptotila",
       "species": "conoveri",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Colombian Andes"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Colombian Andes"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -2630,8 +3368,12 @@
       "genus": "Zentrygon",
       "species": "carrikeri",
       "range": {
-        "regions": ["MA"],
-        "locations": ["southeastern Mexico"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "southeastern Mexico"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -2645,8 +3387,13 @@
       "genus": "Zentrygon",
       "species": "costaricensis",
       "range": {
-        "regions": ["MA"],
-        "locations": ["Costa Rica", "Panama"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "Costa Rica",
+          "Panama"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2660,8 +3407,13 @@
       "genus": "Zentrygon",
       "species": "lawrencii",
       "range": {
-        "regions": ["MA"],
-        "locations": ["Costa Rica", "Panama"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "Costa Rica",
+          "Panama"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2675,8 +3427,12 @@
       "genus": "Zentrygon",
       "species": "albifacies",
       "range": {
-        "regions": ["MA"],
-        "locations": ["Mexico to Nicaragua"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "Mexico to Nicaragua"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2692,8 +3448,12 @@
       "genus": "Zentrygon",
       "species": "frenata",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Andes from Colombia to northwestern Argentina"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Andes from Colombia to northwestern Argentina"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2707,8 +3467,15 @@
       "genus": "Zentrygon",
       "species": "linearis",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Colombia", "Venezuela", "Trinidad", "Tobago"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Colombia",
+          "Venezuela",
+          "Trinidad",
+          "Tobago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2722,8 +3489,13 @@
       "genus": "Zentrygon",
       "species": "chiriquensis",
       "range": {
-        "regions": ["MA"],
-        "locations": ["Costa Rica", "Panama"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "Costa Rica",
+          "Panama"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2737,8 +3509,14 @@
       "genus": "Zentrygon",
       "species": "goldmani",
       "range": {
-        "regions": ["MA", "SA"],
-        "locations": ["Panama", "Colombia"]
+        "regions": [
+          "MA",
+          "SA"
+        ],
+        "locations": [
+          "Panama",
+          "Colombia"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -2752,8 +3530,13 @@
       "genus": "Zenaida",
       "species": "macroura",
       "range": {
-        "regions": ["NA", "MA"],
-        "locations": ["North America to Panama"]
+        "regions": [
+          "NA",
+          "MA"
+        ],
+        "locations": [
+          "North America to Panama"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2782,8 +3565,12 @@
       "genus": "Zenaida",
       "species": "graysoni",
       "range": {
-        "regions": ["MA"],
-        "locations": ["Soccoro Island (Mexico)"]
+        "regions": [
+          "MA"
+        ],
+        "locations": [
+          "Soccoro Island (Mexico)"
+        ]
       },
       "conservationStatus": "EW",
       "photos": [
@@ -2797,8 +3584,12 @@
       "genus": "Zenaida",
       "species": "auriculata",
       "range": {
-        "regions": ["SA"],
-        "locations": ["South America"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "South America"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2816,8 +3607,13 @@
       "genus": "Zenaida",
       "species": "aurita",
       "range": {
-        "regions": ["NA"],
-        "locations": ["West Indies", "Yucatán Peninsula"]
+        "regions": [
+          "NA"
+        ],
+        "locations": [
+          "West Indies",
+          "Yucatán Peninsula"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2833,8 +3629,12 @@
       "genus": "Zenaida",
       "species": "galapagoensis",
       "range": {
-        "regions": ["SA"],
-        "locations": ["Galápagos Islands"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "Galápagos Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -2851,8 +3651,13 @@
       "genus": "Zenaida",
       "species": "asiatica",
       "range": {
-        "regions": ["NA", "MA"],
-        "locations": ["southwestern USA to Panama; Greater Antilles"]
+        "regions": [
+          "NA",
+          "MA"
+        ],
+        "locations": [
+          "southwestern USA to Panama; Greater Antilles"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2878,8 +3683,12 @@
       "genus": "Zenaida",
       "species": "meloda",
       "range": {
-        "regions": ["SA"],
-        "locations": ["South American west coast"]
+        "regions": [
+          "SA"
+        ],
+        "locations": [
+          "South American west coast"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2896,8 +3705,14 @@
       "genus": "Caloenas",
       "species": "nicobarica",
       "range": {
-        "regions": ["OR", "AU"],
-        "locations": ["Andaman Islands to Philippines", "Solomon Islands"]
+        "regions": [
+          "OR",
+          "AU"
+        ],
+        "locations": [
+          "Andaman Islands to Philippines",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -2917,8 +3732,10 @@
       "genus": "Caloenas",
       "species": "maculata",
       "range": {
-        "regions": ["OR", "IO"],
-        "locations": ["South Pacific or Indian Ocean island(?)"]
+        "regions": [],
+        "locations": [
+          "South Pacific or Indian Ocean island(?)"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -2940,8 +3757,12 @@
       "genus": "Gallicolumba",
       "species": "tristigmata",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2956,8 +3777,12 @@
       "genus": "Gallicolumba",
       "species": "rufigula",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -2974,8 +3799,12 @@
       "genus": "Gallicolumba",
       "species": "luzonica",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Luzon (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Luzon (Philippines)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -2991,8 +3820,12 @@
       "genus": "Gallicolumba",
       "species": "crinigera",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3008,8 +3841,12 @@
       "genus": "Gallicolumba",
       "species": "platenae",
       "range": {
-        "regions": ["OR"],
-        "locations": ["primarily Mindoro (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "primarily Mindoro (Philippines)"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -3021,27 +3858,34 @@
       "summary": "In the verdant island sanctuary of Mindoro, Philippines, a rare and enigmatic bird dwells - the Mindoro bleeding-heart (Gallicolumba platenae). Known by multiple Mangyan names, this critically endangered dove is battling habitat loss due to quarrying, land conversion, illegal logging, and hunters' snares.\n\nA phylogenetic study in 2013 revealed that the Mindoro bleeding-heart shares a common ancestry with four other bleeding-heart dove species, forming the Gallicolumba genus alongside G. rufigula. This elusive bird is monotypic, lacking any smaller subspecies groups.\n\nStanding around 26 to 30 cm tall, the Mindoro bleeding-heart sports a unique plumage. Its forehead is dark grey, transitioning into iridescent green on its head, nape, and hindneck. A cream-white underside is streaked by a distinctive bleeding wound-like patch on its breast. The bird's backside dons reddish purple on its mantle, chestnut wings, and rump, with grey tail feathers and white shoulder triangles.\n\nFemales exhibit slight differences from males, featuring purple irises and smaller frames, with a 141-wingspan compared to males' 150-.\n\nThis elusive dove resides primarily in lowland forests at an altitude of 400 m, although it has been spotted as high as 750 m. Its preferred habitat is closed-canopy primary forest, typically found in areas overrun with bamboos and rattans, interspersed with limestone outcrops and boulders. It also frequents dry riverbed pools on leveled forest floors.\n\nCurrently, the Mindoro bleeding-heart has only been observed in four regions since 1980: Puerto Galera, MUFRC Experimental Forest, Siburan, and Mounts Iglit–Baco Natural Park. With deforestation dwindling its numbers, other populations may still be hidden across the island. The future of this singular dove hangs precariously in the balance, making it one of the world's rarest avian species."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Gallicolumba",
+      "species": "keayi",
       "range": {
-        "regions": ["OR"],
-        "locations": ["primarily Negros (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "primarily Negros (Philippines)"
+        ]
       },
-      "conservationStatus": "",
-      "photos": ["PhlegoenasKeayiKeulemans.jpg"],
+      "conservationStatus": "LC",
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
+      ],
       "commonName": "Negros bleeding-heart",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Raiatea fruit dove",
+      "summary": " In the lush tropical lowlands of French Polynesia's Society Islands, the Raiatea Fruit Dove (Ptilinopus chrysogaster) thrives, its azure plumage a vivid contrast against the verdant canopy. First discovered by naturalist René Primevère Lesson in 1823, though officially named in 1853, this bird was once considered a subspecies of the grey-green fruit dove before being recognized as distinct by the IOC in 2021.\n\nEndemic to Huahine, Raiatea, Tahaa, Bora Bora, and Maupiti, the Raiatea Fruit Dove boasts an estimated population of 1000 to 2500 mature individuals. However, since 2001, populations have been in decline, largely due to habitat destruction and the introduction of invasive species like swamp harriers, feral cats, Polynesian rats, and black rats, which have degraded the bird's natural habitat.\n\nThis enigmatic species continues to captivate researchers, as they work tirelessly to ensure its survival in the face of encroaching development and invasive predators. The Raiatea Fruit Dove remains a testament to the resilience of life amidst change."
     },
     {
       "genus": "Gallicolumba",
       "species": "menagei",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sulu (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sulu (Philippines)"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -3055,8 +3899,13 @@
       "genus": "Pampusana",
       "species": "hoedtii",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Wetar", "Timor"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Wetar",
+          "Timor"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -3070,8 +3919,14 @@
       "genus": "Pampusana",
       "species": "jobiensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea", "Bismarck Archipelago", "Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea",
+          "Bismarck Archipelago",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3087,8 +3942,12 @@
       "genus": "Pampusana",
       "species": "kubaryi",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Caroline Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Caroline Islands"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -3102,8 +3961,12 @@
       "genus": "Pampusana",
       "species": "erythroptera",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Tuamotu Archipelago"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Tuamotu Archipelago"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -3119,8 +3982,13 @@
       "genus": "Pampusana",
       "species": "xanthonura",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Mariana", "Caroline Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Mariana",
+          "Caroline Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3134,8 +4002,12 @@
       "genus": "Pampusana",
       "species": "norfolkensis",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Norfolk Island"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Norfolk Island"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -3149,8 +4021,13 @@
       "genus": "Pampusana",
       "species": "stairi",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Tonga", "neighboring islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Tonga",
+          "neighboring islands"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3164,13 +4041,16 @@
       "genus": "Pampusana",
       "species": "sanctaecrucis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["southern Solomon Islands", "Vanuatu"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "southern Solomon Islands",
+          "Vanuatu"
+        ]
       },
       "conservationStatus": "EN",
-      "photos": [
-        "https://www.animal.photos/bird2/gdov-scruz_files/stacruz5.jpg"
-      ],
+      "photos": [],
       "commonName": "Santa Cruz ground dove",
       "articleTitle": "Santa Cruz ground dove",
       "summary": "Nestled within the southern Solomon Islands and Vanuatu, the Santa Cruz ground dove (Pampusana sanctaecrucis) finds its home amidst subtropical or tropical moist lowland forests. A member of the Columbidae family, this elusive avian is a captivating sight with azure plumage that shimmers in the dappled forest light.\n\nOriginally categorized under the genus Alopecoenas Sharpe, 1899, a reclassification in 2019 recognized Pampusana Bonaparte, 1855 as having priority. This slight name change, however, does not detract from the species' distinctive identity, nor its struggle against habitat loss that threatens its survival.\n\nIn the verdant heart of its territories, the Santa Cruz ground dove quietly perseveres, embodying resilience and adaptation as it continues to captivate those who venture into its hidden world."
@@ -3179,8 +4059,12 @@
       "genus": "Pampusana",
       "species": "ferruginea",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Tanna Islands (Vanuatu)"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Tanna Islands (Vanuatu)"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -3194,13 +4078,16 @@
       "genus": "Pampusana",
       "species": "salamonis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Makira", "Ramos (Solomon Islands)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Makira",
+          "Ramos (Solomon Islands)"
+        ]
       },
       "conservationStatus": "EX",
-      "photos": [
-        "https://scontent-bcn1-1.xx.fbcdn.net/v/t39.30808-6/653834527_912748481667147_6443869268128485197_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=13d280&_nc_ohc=Qlu-xlkiUB4Q7kNvwE77yQo&_nc_oc=Adq5iA9MxHLxANYvXUfOFbI64IkFE5ZCT8decbs1od2eHDPbXdbv8xhaibnh6aAFERSWqbm3mdO6F0tyydMi8XrM&_nc_zt=23&_nc_ht=scontent-bcn1-1.xx&_nc_gid=ubO_HjhHsz9jTMEZ3uHThA&_nc_ss=7a389&oh=00_Af2Cw--eOI0eveEjcdiql7OsZ2GMySVehCuNr-3eNEi_Aw&oe=69EC41CA"
-      ],
+      "photos": [],
       "commonName": "Thick-billed ground dove",
       "articleTitle": "Thick-billed ground dove",
       "summary": "In the heart of the Solomon Islands, a spectral avian once thrived - the extinct thick-billed ground dove (Pampusana salamonis). Known from mere remnants: two specimens, one from 1882 and another in 1927, the Australian Museum now safeguards the elusive holotype.\n\nThis cryptic bird boasted a unique plumage. The head, throat, and breast mantle were beige, while chestnut upperparts shimmered with a purple hue, contrasting sharply against a chocolate-hued belly.\n\nThe thick-billed ground dove likely resided in dry beach forests on Makira (formerly San Cristobal) and the diminutive island of Ramos. However, its downfall was swift, due to introduced predators and habitat loss caused by logging and war. Despite a final survey in 2004 yielding no results, it wasn't until 2005 that the species was officially declared extinct.\n\nOnce classified under Alopecoenas Sharpe, its genus name was changed to Pampusana Bonaparte in 2019 due to priority rules. The thick-billed ground dove, once a vibrant part of the Solomon Island ecosystem, now serves as a stark reminder of the consequences of human encroachment."
@@ -3209,8 +4096,12 @@
       "genus": "Pampusana",
       "species": "rubescens",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Marquesas Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Marquesas Islands"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -3224,8 +4115,14 @@
       "genus": "Pampusana",
       "species": "beccarii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea", "Bismarck Archipelago", "Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea",
+          "Bismarck Archipelago",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3240,8 +4137,12 @@
       "genus": "Pampusana",
       "species": "canifrons",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Palau"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Palau"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -3255,8 +4156,12 @@
       "genus": "Microgoura",
       "species": "meeki",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Choiseul (Solomon Islands)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Choiseul (Solomon Islands)"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -3274,8 +4179,12 @@
       "genus": "Otidiphaps",
       "species": "nobilis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3293,8 +4202,12 @@
       "genus": "Goura",
       "species": "cristata",
       "range": {
-        "regions": ["AU"],
-        "locations": ["western New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "western New Guinea"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3316,8 +4229,12 @@
       "genus": "Goura",
       "species": "scheepmakeri",
       "range": {
-        "regions": ["AU"],
-        "locations": ["southeastern New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "southeastern New Guinea"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3332,8 +4249,12 @@
       "genus": "Goura",
       "species": "sclaterii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["southern New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "southern New Guinea"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3347,8 +4268,12 @@
       "genus": "Goura",
       "species": "victoria",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern New Guinea"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3378,8 +4303,12 @@
       "genus": "Raphus",
       "species": "cucullatus",
       "range": {
-        "regions": ["IO"],
-        "locations": ["Mauritius Island"]
+        "regions": [
+          "IO"
+        ],
+        "locations": [
+          "Mauritius Island"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -3411,8 +4340,12 @@
       "genus": "Pezophaps",
       "species": "solitaria",
       "range": {
-        "regions": ["IO"],
-        "locations": ["Rodrigues Island"]
+        "regions": [
+          "IO"
+        ],
+        "locations": [
+          "Rodrigues Island"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -3433,8 +4366,12 @@
       "genus": "Didunculus",
       "species": "strigirostris",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Samoa"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Samoa"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -3451,8 +4388,12 @@
       "genus": "Phapitreron",
       "species": "leucotis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3466,8 +4407,12 @@
       "genus": "Phapitreron",
       "species": "amethystinus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3481,13 +4426,15 @@
       "genus": "Phapitreron",
       "species": "cinereiceps",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Tawi-Tawi Islands (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Tawi-Tawi Islands (Philippines)"
+        ]
       },
       "conservationStatus": "EN",
-      "photos": [
-        "https://scontent-bcn1-1.xx.fbcdn.net/v/t39.30808-6/633167859_1336486195173489_2525672324257343395_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=7b2446&_nc_ohc=e-Hhy1tB5pwQ7kNvwHg74LB&_nc_oc=AdqXx2ix_9RH5H9Y31Dlz9rg_OSZIMB3ArFlzlabRD-Gxk8-LRgtiBWI7t6A9dpCY_VeuCyHvVHVmO4wCX-9FgYL&_nc_zt=23&_nc_ht=scontent-bcn1-1.xx&_nc_gid=jcfNMH0Afxhw_ICs2kdNAA&_nc_ss=7a389&oh=00_Af111EMXFjNm-8l4JAyaEUvSrOHPWFGgACGN5404Ubvl_Q&oe=69EC7338"
-      ],
+      "photos": [],
       "commonName": "Tawitawi brown dove",
       "articleTitle": "Tawitawi brown dove",
       "summary": "In the tropical lowlands of the Sulu Archipelago's Tawi-Tawi Island, dwells the elusive Tawitawi brown dove (Phapitreron cinereiceps). A singular beauty, it stands apart from its kin with azure neck iridescence and an orange-peach breast. Once thought conspecific with the Mindanao brown dove, it now holds a distinct identity.\n\nEmanating a unique melody that echoes like a ping-pong ball descending, this medium-sized dove thrives in lowland secondary forests and forest edges, demonstrating adaptability to degraded habitats. The IUCN Red List categorizes it as endangered, with an estimated population of 500–2,500 mature individuals.\n\nUnfortunately, its numbers are dwindling due to habitat loss from logging, mining, and agricultural expansion. Despite the absence of protected areas or conservation programs specific to this species in the archipelago, efforts must be made to preserve its unique symphony before it fades into silence."
@@ -3496,8 +4443,13 @@
       "genus": "Phapitreron",
       "species": "brunneiceps",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Mindanao", "Basilan (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Mindanao",
+          "Basilan (Philippines)"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3511,8 +4463,12 @@
       "genus": "Treron",
       "species": "fulvicollis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Malay Peninsula to Borneo"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Malay Peninsula to Borneo"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3526,8 +4482,13 @@
       "genus": "Treron",
       "species": "olax",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Malay Peninsula", "Greater Sundas"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Malay Peninsula",
+          "Greater Sundas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3541,8 +4502,13 @@
       "genus": "Treron",
       "species": "vernans",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Southeast Asia mainland to Philippines", "Sulawesi"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Southeast Asia mainland to Philippines",
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3558,8 +4524,13 @@
       "genus": "Treron",
       "species": "bicinctus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["south", "southeast Asia to Bali"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "south",
+          "southeast Asia to Bali"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3575,8 +4546,12 @@
       "genus": "Treron",
       "species": "pompadora",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sri Lanka"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sri Lanka"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3590,8 +4565,12 @@
       "genus": "Treron",
       "species": "affinis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["southern India"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "southern India"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3607,8 +4586,12 @@
       "genus": "Treron",
       "species": "phayrei",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Himalayas to Southeast Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Himalayas to Southeast Asia"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3623,8 +4606,13 @@
       "genus": "Treron",
       "species": "chloropterus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Andaman", "Nicobar Islands"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Andaman",
+          "Nicobar Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3638,8 +4626,12 @@
       "genus": "Treron",
       "species": "axillaris",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3655,8 +4647,12 @@
       "genus": "Treron",
       "species": "aromaticus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Buru Island (Indonesia)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Buru Island (Indonesia)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3670,8 +4666,13 @@
       "genus": "Treron",
       "species": "curvirostra",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Nepal to Philippines", "Borneo"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Nepal to Philippines",
+          "Borneo"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3689,8 +4690,14 @@
       "genus": "Treron",
       "species": "griseicauda",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sulawesi", "Java", "Bali (Indonesia)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sulawesi",
+          "Java",
+          "Bali (Indonesia)"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3705,8 +4712,12 @@
       "genus": "Treron",
       "species": "teysmannii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sumba (Indonesia)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sumba (Indonesia)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3720,8 +4731,12 @@
       "genus": "Treron",
       "species": "floris",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Lesser Sundas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3735,8 +4750,12 @@
       "genus": "Treron",
       "species": "psittaceus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Timor (Indonesia)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Timor (Indonesia)"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -3750,8 +4769,13 @@
       "genus": "Treron",
       "species": "capellei",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Malay Peninsula to Borneo", "Java"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Malay Peninsula to Borneo",
+          "Java"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3765,8 +4789,12 @@
       "genus": "Treron",
       "species": "phoenicopterus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Pakistan to Southeast Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Pakistan to Southeast Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3781,8 +4809,14 @@
       "genus": "Treron",
       "species": "waalia",
       "range": {
-        "regions": ["AF", "EU"],
-        "locations": ["Sub-Saharan belt", "Arabian Peninsula"]
+        "regions": [
+          "AF",
+          "EU"
+        ],
+        "locations": [
+          "Sub-Saharan belt",
+          "Arabian Peninsula"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3798,8 +4832,12 @@
       "genus": "Treron",
       "species": "australis",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Madagascar"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Madagascar"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3814,8 +4852,12 @@
       "genus": "Treron",
       "species": "griveaudi",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Comoros"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Comoros"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -3829,8 +4871,12 @@
       "genus": "Treron",
       "species": "calvus",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Sub-Saharan Africa"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Sub-Saharan Africa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3849,8 +4895,12 @@
       "genus": "Treron",
       "species": "pembaensis",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Pemba Island (Tanzania)"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Pemba Island (Tanzania)"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -3861,27 +4911,34 @@
       "summary": "In the isolated realm of Pemba Island, off Tanzania's northeastern coast, resides the elusive Pemba green pigeon (Treron pembaensis). This small, stocky avian species, measuring an average of 25 cm, boasts a unique plumage palette. The head, neck, breast, and underparts are a verdant greyish hue, while the upperparts sport an olive-green hue, brighter on the rump and uppertail-coverts, with a grey wash elsewhere. A striking dark greyish-purple patch adorns the shoulder, formed by the lesser wing-coverts.\n\nEndemic to Pemba Island, this secretive bird prefers undisturbed woodlands, particularly the native forests of Ngezi and Msitu Mkuu. It forages in the canopy of fruiting trees, favoring mangoes, Pterocarpus, betel palms, and figs. Though primarily sedentary, it makes local movements based on food and water availability. Its retiring nature is a testament to hunting pressures on the island.\n\nBreeding occurs from October to February, with nests, constructed by both sexes, being fragile platforms of twigs near the end of branches. Breeding may also occur outside this period, as breeding males have been sighted in April and June. The Pemba green pigeon, with its distinctive plumage and habitat preferences, remains a captivating enigma in the world of avian biology."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Treron",
+      "species": "sanctithomae",
       "range": {
-        "regions": ["AF"],
-        "locations": ["São Tomé"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "São Tomé"
+        ]
       },
-      "conservationStatus": "",
-      "photos": ["Hoflössnitz Eckhout 45brCrop.jpg"],
+      "conservationStatus": "LC",
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
+      ],
       "commonName": "Sao Tome green pigeon",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Raiatea fruit dove",
+      "summary": " In the lush tropical lowlands of French Polynesia's Society Islands, the elusive Raiatea Fruit Dove (Ptilinopus chrysogaster) reigns. Discovered in 1823 by naturalist René Primevère Lesson but not formally named until 1853, this species of Columbidae has since captivated ornithologists. Once a subspecies of the grey-green fruit dove, it was recognized as distinct by the International Ornithological Committee in 2021.\n\nEndemic to Huahine, Raiatea, Tahaa, Bora Bora, and Maupiti, its azure plumage stands out against the verdant backdrop of its habitats. With an estimated population of 1000-2500 mature individuals, this species has seen a steady decline due to habitat destruction, predation by invasive species like the swamp harrier and feral cats, and the impacts of Polynesian and black rats. As efforts continue to protect this captivating bird, preserving its natural haven becomes crucial for its survival."
     },
     {
       "genus": "Treron",
       "species": "apicauda",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Himalayas to Southeast Asia"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Himalayas to Southeast Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3897,8 +4954,13 @@
       "genus": "Treron",
       "species": "oxyurus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sumatra", "Java"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sumatra",
+          "Java"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3912,8 +4974,14 @@
       "genus": "Treron",
       "species": "seimundi",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Laos", "Vietnam", "Malay Peninsula"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Laos",
+          "Vietnam",
+          "Malay Peninsula"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3927,8 +4995,13 @@
       "genus": "Treron",
       "species": "sphenurus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Himalayas to Bali", "Lombok"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Himalayas to Bali",
+          "Lombok"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3943,8 +5016,13 @@
       "genus": "Treron",
       "species": "sieboldii",
       "range": {
-        "regions": ["EU", "OR"],
-        "locations": ["Japan to Southeast Asia"]
+        "regions": [
+          "EU",
+          "OR"
+        ],
+        "locations": [
+          "Japan to Southeast Asia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3959,8 +5037,12 @@
       "genus": "Treron",
       "species": "permagnus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Ryukyu Islands of Japan"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Ryukyu Islands of Japan"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -3974,8 +5056,13 @@
       "genus": "Treron",
       "species": "formosae",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Taiwan", "northern Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Taiwan",
+          "northern Philippines"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -3990,8 +5077,13 @@
       "genus": "Ptilinopus",
       "species": "cinctus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bali", "Lesser Sundas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bali",
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4005,8 +5097,12 @@
       "genus": "Ptilinopus",
       "species": "alligator",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4020,8 +5116,12 @@
       "genus": "Ptilinopus",
       "species": "dohertyi",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sumba (Indonesia)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sumba (Indonesia)"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -4036,8 +5136,13 @@
       "genus": "Ptilinopus",
       "species": "porphyreus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sumatra", "Java"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sumatra",
+          "Java"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4052,8 +5157,12 @@
       "genus": "Ptilinopus",
       "species": "marchei",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Luzon (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Luzon (Philippines)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4067,8 +5176,12 @@
       "genus": "Ptilinopus",
       "species": "merrilli",
       "range": {
-        "regions": ["OR"],
-        "locations": ["northern Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "northern Philippines"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4082,8 +5195,12 @@
       "genus": "Ptilinopus",
       "species": "occipitalis",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4098,8 +5215,12 @@
       "genus": "Ptilinopus",
       "species": "fischeri",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4113,8 +5234,13 @@
       "genus": "Ptilinopus",
       "species": "jambu",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Malay Peninsula", "Greater Sundas"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Malay Peninsula",
+          "Greater Sundas"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4129,8 +5255,12 @@
       "genus": "Ptilinopus",
       "species": "subgularis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Banggai Islands (Indonesia)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Banggai Islands (Indonesia)"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -4144,8 +5274,12 @@
       "genus": "Ptilinopus",
       "species": "gularis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -4159,8 +5293,12 @@
       "genus": "Ptilinopus",
       "species": "mangoliensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sula Islands (Indonesia)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sula Islands (Indonesia)"
+        ]
       },
       "conservationStatus": "",
       "photos": [
@@ -4174,8 +5312,13 @@
       "genus": "Ptilinopus",
       "species": "leclancheri",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines", "Taiwan"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines",
+          "Taiwan"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4189,8 +5332,12 @@
       "genus": "Ptilinopus",
       "species": "bernsteinii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern Moluccas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4204,8 +5351,13 @@
       "genus": "Ptilinopus",
       "species": "magnificus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea", "Queensland"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea",
+          "Queensland"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4222,8 +5374,12 @@
       "genus": "Ptilinopus",
       "species": "perlatus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4238,8 +5394,12 @@
       "genus": "Ptilinopus",
       "species": "ornatus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4253,8 +5413,12 @@
       "genus": "Ptilinopus",
       "species": "tannensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Vanuatu"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Vanuatu"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4268,8 +5432,12 @@
       "genus": "Ptilinopus",
       "species": "aurantiifrons",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4283,8 +5451,12 @@
       "genus": "Ptilinopus",
       "species": "wallacii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Wallacea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Wallacea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4299,8 +5471,14 @@
       "genus": "Ptilinopus",
       "species": "superbus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas", "Melanesia", "northeastern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas",
+          "Melanesia",
+          "northeastern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4317,8 +5495,14 @@
       "genus": "Ptilinopus",
       "species": "perousii",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Fiji", "Tonga", "Samoa"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Fiji",
+          "Tonga",
+          "Samoa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4334,8 +5518,14 @@
       "genus": "Ptilinopus",
       "species": "porphyraceus",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Fiji", "Tonga", "Samoa"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Fiji",
+          "Tonga",
+          "Samoa"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4350,8 +5540,13 @@
       "genus": "Ptilinopus",
       "species": "ponapensis",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Chuuk", "Pohnpei (Caroline Islands)"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Chuuk",
+          "Pohnpei (Caroline Islands)"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4365,8 +5560,12 @@
       "genus": "Ptilinopus",
       "species": "hernsheimi",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Kosrae (Caroline Islands)"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Kosrae (Caroline Islands)"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4380,8 +5579,12 @@
       "genus": "Ptilinopus",
       "species": "pelewensis",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Palau"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Palau"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4395,8 +5598,12 @@
       "genus": "Ptilinopus",
       "species": "rarotongensis",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Cook Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Cook Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4410,8 +5617,13 @@
       "genus": "Ptilinopus",
       "species": "roseicapilla",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Guam", "northern Marianas"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Guam",
+          "northern Marianas"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4428,8 +5640,13 @@
       "genus": "Ptilinopus",
       "species": "regina",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Lesser Sundas", "Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Lesser Sundas",
+          "Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4443,8 +5660,12 @@
       "genus": "Ptilinopus",
       "species": "richardsii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4455,29 +5676,34 @@
       "summary": "In the verdant heart of Solomon Islands, the silver-capped fruit dove (Ptilinopus richardsii) resides, a captivating avian spectacle endemic to these remote isles. This enigmatic species dwells in the humid lowland forests, where sunlight filters through the canopy, casting dappled shadows on the forest floor.\n\nThe silver-capped fruit dove boasts striking azure plumage crowned by a glistening band of silver feathers. Two distinct subspecies inhabit different islands: P. r. richardsii roosts on Ugi and Santa Anna, while P. r. cyanopterus calls Rennell Island and Bellona Island home.\n\nThis elusive bird plays a vital role in the delicate balance of its ecosystem, contributing to the dispersal of seeds from consumed fruits. Each subspecies adapts to its unique habitat, evolving behaviors that ensure their survival in these isolated island sanctuaries. The silver-capped fruit dove remains a mesmerizing testament to nature's intricate design and the beauty hidden within Solomon Islands' lush forests."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Ptilinopus",
+      "species": "chrysogaster",
       "range": {
-        "regions": ["PO"],
-        "locations": ["western Society Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "western Society Islands"
+        ]
       },
-      "conservationStatus": "",
+      "conservationStatus": "LC",
       "photos": [
-        "https://en.wikipedia.org/wiki/Raiatea_fruit_dove#/media/File:Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
+        "https://wikipedia.org/wiki/Special:Redirect/file/Ptilinopus_chrysogaster_-_R%C3%A9mi_Bigonneau_-_213531998.jpeg"
       ],
       "commonName": "Raiatea fruit-dove",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Raiatea fruit dove",
+      "summary": " In the lush, tropical lowlands of French Polynesia's Society Islands, the Raiatea Fruit Dove (Ptilinopus chrysogaster) flourishes. First documented by naturalist René Primevère Lesson in 1853, this avian gem was likely discovered three decades earlier during his tenure aboard La Coquille.\n\nOnce categorized as a subspecies of the grey-green fruit dove, it gained independent species status in 2021 by the International Ornithological Committee (IOC). Its habitat is an intimate dance between verdant foliage and ripe fruit, shared with fellow island residents such as the swamp harrier and invasive Polynesian rats.\n\nThe Raiatea Fruit Dove calls Huahine, Raiatea, Tahaa, Bora Bora, and Maupiti home, with an estimated population of 1000 to 2500 mature individuals. Post-2001 population data remains elusive, yet the species faces a steady decline due to habitat loss, competition with invasive species, and the detrimental impact of introduced predators like feral cats and black rats on its habitat's quality."
     },
     {
       "genus": "Ptilinopus",
       "species": "purpuratus",
       "range": {
-        "regions": ["PO"],
-        "locations": ["eastern Society Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "eastern Society Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4491,8 +5717,12 @@
       "genus": "Ptilinopus",
       "species": "chalcurus",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Tuamotus"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Tuamotus"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -4506,8 +5736,12 @@
       "genus": "Ptilinopus",
       "species": "coralensis",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Tuamotus"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Tuamotus"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4521,8 +5755,12 @@
       "genus": "Ptilinopus",
       "species": "greyi",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Solomon Islands to New Caledonia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Solomon Islands to New Caledonia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4536,13 +5774,15 @@
       "genus": "Ptilinopus",
       "species": "huttoni",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Rapa Iti"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Rapa Iti"
+        ]
       },
       "conservationStatus": "CR",
-      "photos": [
-        "https://images.unsplash.com/photo-1674873322419-ae411fec4144?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-      ],
+      "photos": [],
       "commonName": "Rapa fruit dove",
       "articleTitle": "Rapa fruit dove",
       "summary": "In the remote Austral Islands of French Polynesia, a vibrant avian gem, the Rapa fruit dove (Ptilinopus huttoni), thrives. Endemic to the small island of Rapa Iti, this species is critically endangered, with its population plummeting by 42% between surveys in the late 80s and 2017, leaving an estimated 160 individuals.\n\nStanding at around 31 cm tall, the Rapa fruit dove dons a colorful plumage—azure wings, blue-gray foreparts, and a rose-purple band below the chest feathers contrasting with a yellow lower belly. A striking feature is its bright pink crown, a distinctive mark between the eyes.\n\nTheir habitat, subtropical moist lowland forests on Rapa Iti, covers approximately 30 sqkm. These birds prefer undisturbed forest fragments at elevations between 40-450 meters, though they can occasionally be found in Caribbean pine plantations. Their diet primarily consists of fleshy fruit from native berry trees and nectar from flowers, including the invasive strawberry guava, which while threatening their habitat, might also serve as a food source.\n\nThreatened by habitat loss due to deforestation, invasive species, and declining forest quality, conservation efforts are crucial. Effective land protection and management can bolster the Rapa fruit dove's prospects, along with research into population dynamics and the impact of these threats to ensure the survival of this extraordinary island dweller."
@@ -4551,8 +5791,12 @@
       "genus": "Ptilinopus",
       "species": "dupetithouarsii",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Marquesas Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Marquesas Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4566,8 +5810,12 @@
       "genus": "Ptilinopus",
       "species": "mercierii",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Marquesas Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Marquesas Islands"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -4581,8 +5829,12 @@
       "genus": "Ptilinopus",
       "species": "insularis",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Henderson Island (Pitcairn Islands)"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Henderson Island (Pitcairn Islands)"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -4596,8 +5848,12 @@
       "genus": "Ptilinopus",
       "species": "coronulatus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4611,8 +5867,12 @@
       "genus": "Ptilinopus",
       "species": "pulchellus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4627,8 +5887,12 @@
       "genus": "Ptilinopus",
       "species": "monacha",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern Moluccas"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4642,8 +5906,12 @@
       "genus": "Ptilinopus",
       "species": "rivoli",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas to Bismarck Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas to Bismarck Archipelago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4659,8 +5927,13 @@
       "genus": "Ptilinopus",
       "species": "speciosus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["islands in Geelvink Bay", "New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "islands in Geelvink Bay",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4675,8 +5948,14 @@
       "genus": "Ptilinopus",
       "species": "solomonensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea", "Bismarck Archipelago", "New Britain"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea",
+          "Bismarck Archipelago",
+          "New Britain"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4690,8 +5969,14 @@
       "genus": "Ptilinopus",
       "species": "viridis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas", "New Guinea", "Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas",
+          "New Guinea",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4706,8 +5991,13 @@
       "genus": "Ptilinopus",
       "species": "eugeniae",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Makira", "neighboring islands (Solomon Islands)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Makira",
+          "neighboring islands (Solomon Islands)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4721,8 +6011,12 @@
       "genus": "Ptilinopus",
       "species": "iozonus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4737,8 +6031,12 @@
       "genus": "Ptilinopus",
       "species": "insolitus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck Archipelago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4753,8 +6051,12 @@
       "genus": "Ptilinopus",
       "species": "hyogastrus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["northern Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "northern Moluccas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4768,8 +6070,12 @@
       "genus": "Ptilinopus",
       "species": "granulifrons",
       "range": {
-        "regions": ["AU"],
-        "locations": ["central Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "central Moluccas"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -4783,8 +6089,14 @@
       "genus": "Ptilinopus",
       "species": "melanospilus",
       "range": {
-        "regions": ["OR", "AU"],
-        "locations": ["Philippines to Sulawesi", "Bali"]
+        "regions": [
+          "OR",
+          "AU"
+        ],
+        "locations": [
+          "Philippines to Sulawesi",
+          "Bali"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4799,8 +6111,12 @@
       "genus": "Ptilinopus",
       "species": "nainus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4814,8 +6130,12 @@
       "genus": "Ptilinopus",
       "species": "arcanus",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Negros (Philippines)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Negros (Philippines)"
+        ]
       },
       "conservationStatus": "CR",
       "photos": [
@@ -4830,8 +6150,12 @@
       "genus": "Ptilinopus",
       "species": "victor",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Fiji"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Fiji"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4846,8 +6170,12 @@
       "genus": "Ptilinopus",
       "species": "luteovirens",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Fiji"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Fiji"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4861,8 +6189,12 @@
       "genus": "Ptilinopus",
       "species": "layardi",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Fiji"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Fiji"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4877,8 +6209,12 @@
       "genus": "Drepanoptila",
       "species": "holosericea",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Caledonia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Caledonia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4892,8 +6228,12 @@
       "genus": "Alectroenas",
       "species": "nitidissima",
       "range": {
-        "regions": ["IO"],
-        "locations": ["Mauritius Island"]
+        "regions": [
+          "IO"
+        ],
+        "locations": [
+          "Mauritius Island"
+        ]
       },
       "conservationStatus": "EX",
       "photos": [
@@ -4913,8 +6253,12 @@
       "genus": "Alectroenas",
       "species": "madagascariensis",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Madagascar"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Madagascar"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4928,8 +6272,13 @@
       "genus": "Alectroenas",
       "species": "sganzini",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Comoros", "Aldabra"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Comoros",
+          "Aldabra"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4943,8 +6292,12 @@
       "genus": "Alectroenas",
       "species": "pulcherrimus",
       "range": {
-        "regions": ["AF"],
-        "locations": ["Seychelles"]
+        "regions": [
+          "AF"
+        ],
+        "locations": [
+          "Seychelles"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4961,8 +6314,12 @@
       "genus": "Ducula",
       "species": "poliocephala",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -4978,8 +6335,12 @@
       "genus": "Ducula",
       "species": "forsteni",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -4994,8 +6355,13 @@
       "genus": "Ducula",
       "species": "mindorensis",
       "range": {
-        "regions": ["OR", "EU"],
-        "locations": ["Mindoro (Philippines)"]
+        "regions": [
+          "OR",
+          "EU"
+        ],
+        "locations": [
+          "Mindoro (Philippines)"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5010,8 +6376,12 @@
       "genus": "Ducula",
       "species": "radiata",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5025,8 +6395,12 @@
       "genus": "Ducula",
       "species": "carola",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Philippines"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -5042,8 +6416,14 @@
       "genus": "Ducula",
       "species": "aenea",
       "range": {
-        "regions": ["OR"],
-        "locations": ["India to Philippines", "Borneo", "Lesser Sundas"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "India to Philippines",
+          "Borneo",
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5062,13 +6442,15 @@
       "genus": "Ducula",
       "species": "oenothorax",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Enggano (w of s Sumatra)"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Enggano (w of s Sumatra)"
+        ]
       },
       "conservationStatus": "NT",
-      "photos": [
-        "https://inaturalist-open-data.s3.amazonaws.com/photos/537724665/large.jpg"
-      ],
+      "photos": [],
       "commonName": "Enggano imperial pigeon",
       "articleTitle": "Enggano imperial pigeon",
       "summary": "In the remote outpost of Enggano Island resides the enigmatic Enggano Imperial Pigeon (Ducula oenothorax). This avian gem, endemic to its island sanctuary, is a captivating embodiment of the Columbidae family's splendor.\n\nNestled amidst forest, shrubland, and degraded former forests, these azure-plumaged creatures thrive in their verdant habitat. However, they face a unique threat - local inhabitants hunt them for sustenance. This delicate balance between man and nature unfolds within the island's boundaries.\n\nThe Enggano Imperial Pigeon is a testament to resilience, adapting to heavily degraded habitats while maintaining its distinctive identity. Yet, the future hangs precariously, as human encroachment poses a persistent challenge to the survival of this remarkable species."
@@ -5077,8 +6459,12 @@
       "genus": "Ducula",
       "species": "nicobarica",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Nicobar Islands"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Nicobar Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5092,8 +6478,12 @@
       "genus": "Ducula",
       "species": "perspicillata",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5107,8 +6497,12 @@
       "genus": "Ducula",
       "species": "neglecta",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Seram Island"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Seram Island"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5122,8 +6516,12 @@
       "genus": "Ducula",
       "species": "concinna",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Wallacea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Wallacea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5137,13 +6535,15 @@
       "genus": "Ducula",
       "species": "pacifica",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Bismarck Archipelago to Cook Islands"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Bismarck Archipelago to Cook Islands"
+        ]
       },
       "conservationStatus": "LC",
-      "photos": [
-        "https://en.wikipedia.org/wiki/Pacific_imperial_pigeon#/media/File:Pacific_imperial-pigeon_(Ducula_pacifica)_Rarotonga.jpg"
-      ],
+      "photos": [],
       "commonName": "Pacific imperial pigeon",
       "articleTitle": "Pacific imperial pigeon",
       "summary": "In the azure-tinted realm of the Pacific, a regal figure dominates - the Pacific Imperial Pigeon (Ducula pacifica). Native to islands spanning from American Samoa to Wallis and Futuna, this majestic species is found across a vast oceanic expanse.\n\nDescribed by Gmelin in 1789, this pigeon was initially classified within the genus Columba before being relegated to Ducula in 1836. Two subspecies, distinguished by their geographical locations, coexist: sejuncta found in north New Guinea and Nissan Island, while pacifica resides across a diverse range extending to the Solomon Islands and Tonga.\n\nStanding at 36-41 cm tall with a weight of 370-420 g, the Pacific Imperial Pigeon boasts a unique plumage: blackish-green back, tail, and wings; light grey head and neck; grey breast adorned with a pink tinge, and brown undertail coverts. The bill is black with a knob on the upper mantle, and the iris is red. Females are slightly smaller than their male counterparts, while juveniles exhibit a duller appearance and lack the adult's distinctive pink breast hue.\n\nNesting high in trees and foraging in fruit-laden forests, this pigeon plays an essential role as a seed disperser. In Tonga, it has been observed consuming fruits from 38 plant species across 24 families, traveling short to moderate distances between trees but sometimes venturing long distances or even crossing bodies of water to forage on other islands.\n\nThis species' frugivorous nature and significant impact as a seed disperser make it an integral component of the tropical forests it inhabits, adding depth and intrigue to the vibrant tapestry of life in the Pacific."
@@ -5152,8 +6552,12 @@
       "genus": "Ducula",
       "species": "oceanica",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Micronesia"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Micronesia"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -5169,8 +6573,12 @@
       "genus": "Ducula",
       "species": "aurorae",
       "range": {
-        "regions": ["PO"],
-        "locations": ["French Polynesia"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "French Polynesia"
+        ]
       },
       "conservationStatus": "EN",
       "photos": [
@@ -5181,27 +6589,35 @@
       "summary": "In the heart of French Polynesia dwells the Polynesian Imperial Pigeon (Ducula aurorae), a species as striking as it is elusive. This knob-billed pigeon, standing tall at 51 cm, boasts azure plumage—silver-grey on its head and underparts, with bronzy-green upperparts and black undertail-coverts.\n\nA denizen of forests once dense, now secondary habitats like gardens, this avian species plays a crucial role in seed dispersal, particularly on Makatea where it accelerates the regeneration of deforested lands. However, its numbers are dwindling, threatened by habitat loss.\n\nThe Polynesian Imperial Pigeon is woven into local folklore, serving as a midwife in a Tupua'i tale from French Polynesia. In some versions, it exacts retribution against those who shunned its sister during childbirth, plunging the entire island into the sea's embrace. This majestic bird stands as an embodiment of both survival and legend in the Pacific archipelago."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Ducula",
+      "species": "galeata",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Nuku Hiva"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Nuku Hiva"
+        ]
       },
-      "conservationStatus": "",
-      "photos": ["Ducula galeata Nuku Hiva.jpg"],
+      "conservationStatus": "EN",
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Ducula_galeata_Nuku_Hiva.jpg"
+      ],
       "commonName": "Nuku Hiva imperial pigeon",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Nuku Hiva imperial pigeon",
+      "summary": " In the verdant valleys of Nuku Hiva, a majestic avian reigns - the Nuku Hiva imperial pigeon, or Upe. Endemic to this Marquesan island, it once roamed freely, its presence hinted in subfossil bones on Henderson Island. Today, its population, estimated at around 300, clings tenaciously to woodlands between 200 and 1500 meters high.\n\nThis is the largest pigeon beyond the crowned pigeons, tipping the scales at approximately 900 grams. Males, reaching 55 cm in length, are slightly larger than their female counterparts, who measure between 50 to 53.5 cm. Their features are robust, with a large bill and long, broad tail, and they sport distinctive glossy green upperparts, wings, and tail with a bluish tint, contrasting starkly against their sooty-gray head, throat, and breast, adorned with a white band behind the bill.\n\nA unique melody echoes through these forests - a deep, guttural 'neah-ah' that resonates like a lowing cow. This bird is not shy, often perching near fruiting trees, allowing close approach while it feeds on favored foods such as mangoes, guavas, and various fruits from Ficus, Cordia, and Eugenia. Spending much of the day in tree canopies, it glides with wings held far back, descending to land with a graceful, flat-winged approach.\n\nThe Nuku Hiva imperial pigeon's survival hangs precariously on the edge of a precipice, its resilience a testament to its intrinsic worth and the tenacious spirit of life itself."
     },
     {
       "genus": "Ducula",
       "species": "rubricera",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismark Archipelago", "Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismark Archipelago",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5216,7 +6632,9 @@
       "genus": "Ducula",
       "species": "myristicivora",
       "range": {
-        "regions": ["AU"],
+        "regions": [
+          "AU"
+        ],
         "locations": [
           "Widi Island (northeast Moluccas)",
           "western Papuan islands"
@@ -5234,8 +6652,13 @@
       "genus": "Ducula",
       "species": "geelvinkiana",
       "range": {
-        "regions": ["AU"],
-        "locations": ["islands in Geelvink Bay", "New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "islands in Geelvink Bay",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5249,8 +6672,12 @@
       "genus": "Ducula",
       "species": "rufigaster",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5264,8 +6691,12 @@
       "genus": "Ducula",
       "species": "basilica",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Moluccas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Moluccas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5279,8 +6710,12 @@
       "genus": "Ducula",
       "species": "finschii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismark Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismark Archipelago"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5294,13 +6729,15 @@
       "genus": "Ducula",
       "species": "chalconota",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
-      "photos": [
-        "https://dibird.com/image_taxon/5_4716_27815372159_a6cb38f54f_c"
-      ],
+      "photos": [],
       "commonName": "Rufescent imperial pigeon",
       "articleTitle": "Rufescent imperial pigeon",
       "summary": "In the diverse avian world, the Rufescent Imperial Pigeon (Ducula chalconota), or the Shining Imperial Pigeon, stands out as a rare and stable species. Listed as of minimal concern by the International Union for Conservation Nature, these pigeons are known for their reserved nature, preferring solitude in their montane forest habitats across New Guinea.\n\nDescribed by Tommaso Salvadori in 1874 as Carpophaga chalconota, two subspecies exist: the Vogelkop's D. c. chalconota and the western, central, and eastern New Guinea's D. c. smaragdina. A distinct population in the Foja Mountains has been reported.\n\nMeasuring approximately 41-42 centimeters (males) and 37-39 centimeters (females), these birds weigh around 21-22 ounces, larger than most pigeon species. The male sports a slaty-grey head, metallic green back and wing coverts with bronzy and bluish reflections, a blackish glossed tail, cinnamon throat, vinous breast, chestnut belly, red feet, reddish eye, and dark slate beak. Females are similar but may exhibit slight color differences.\n\nThe Rufescent Imperial Pigeon inhabits the deeper layers of New Guinea's montane forests, at elevations ranging from 3,600 to 8,200 feet—an unusually high habitat for Columbidae family members. These pigeons are often found alone but can form pairs within these verdant realms. They primarily reside in the middle layers of the forest, seldom venturing out. Silent most of the time, they emit mournful hums and low hoots when communicating. Duetting has been observed, and their diet consists mainly of figs and fruits."
@@ -5309,8 +6746,13 @@
       "genus": "Ducula",
       "species": "pistrinaria",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck Archipelago", "Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck Archipelago",
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5325,8 +6767,12 @@
       "genus": "Ducula",
       "species": "rosacea",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Lesser Sundas"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5340,8 +6786,12 @@
       "genus": "Ducula",
       "species": "whartoni",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Christmas Island"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Christmas Island"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5358,8 +6808,12 @@
       "genus": "Ducula",
       "species": "pickeringii",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Borneo to Philippines"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Borneo to Philippines"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -5374,8 +6828,12 @@
       "genus": "Ducula",
       "species": "latrans",
       "range": {
-        "regions": ["PO"],
-        "locations": ["Fiji"]
+        "regions": [
+          "PO"
+        ],
+        "locations": [
+          "Fiji"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5389,13 +6847,15 @@
       "genus": "Ducula",
       "species": "brenchleyi",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "NT",
-      "photos": [
-        "https://www.oiseaux.net/photos/lars.petersson/images/carpophage.de.brenchley.lape.1g.jpg"
-      ],
+      "photos": [],
       "commonName": "Chestnut-bellied imperial pigeon",
       "articleTitle": "Chestnut-bellied imperial pigeon",
       "summary": "In the verdant heart of the Solomon Islands, the chestnut-bellied imperial pigeon (Ducula brenchleyi) holds court. A member of the Columbidae family, this endemic avian resides predominantly in subtropical and tropical forests, dwelling chiefly at elevations between 200 to 700 meters. However, deforestation has driven it to inhabit higher altitudes in numerous regions.\n\nAn adaptable forager, the chestnut-bellied imperial pigeon feasts primarily on banyan figs, a testament to its symbiotic relationship with the forest ecosystem. This species, though once widespread, now faces threats from habitat loss, a grim reminder of man's encroachment upon nature's domain."
@@ -5404,13 +6864,15 @@
       "genus": "Ducula",
       "species": "bakeri",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Vanuatu"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Vanuatu"
+        ]
       },
       "conservationStatus": "VU",
-      "photos": [
-        "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/344080281/2400"
-      ],
+      "photos": [],
       "commonName": "Vanuatu imperial pigeon",
       "articleTitle": "Vanuatu imperial pigeon",
       "summary": "In the lush forests of Vanuatu resides the enigmatic Vanuatu Imperial Pigeon (Ducula bakeri), a species teetering on the brink of vulnerability. Discovered by Norman Boyd Kinnear in 1928, this avian beauty commemorates British zoologist John Randal Baker, who first brought it to light.\n\nMeasuring around 40 cm long, this pigeon's plumage is a study in contrasts. The head and nape are azure blue-grey, transitioning to dark purplish-maroon on the neck. The mantle, back, and wing coverts are sooty-grey, shimmering with a steely sheen. Underwing coverts are chestnut, while flight feathers are rufous. The throat is grey, the breast a deep purplish-maroon with a slight gloss, and the belly deep chestnut. Black uppertail coverts contrast with rufous undertail coverts, eyes are yellow, beak black, and feet pinkish-red. Females are slightly smaller and duller than males, while juveniles exhibit much duller plumage with no gloss.\n\nEndemic to Vanuatu, this pigeon inhabits montane forests and lowlands, with Santo populations found above 500 meters. Typically solitary or paired in the canopy, small parties are occasionally spotted. A frugivore by nature, it forages for fruits from trees, shrubs, and vines, traveling within islands to find sustenance. Its call, a powerful repetition of twoo-too-too-too-too, echoes through the forests.\n\nThe species' population is estimated between 2,500 to 10,000 mature individuals, translating to 3,500 to 15,000 birds in total. The IUCN categorizes it as vulnerable due to its small, fragmented population that appears to be declining, threatened by forest clearing for agriculture and hunting."
@@ -5419,11 +6881,17 @@
       "genus": "Ducula",
       "species": "goliath",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Caledonia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Caledonia"
+        ]
       },
       "conservationStatus": "NT",
-      "photos": ["https://wikipedia.org/wiki/Special:Redirect/file/Notou.jpg"],
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/Notou.jpg"
+      ],
       "commonName": "Goliath imperial pigeon",
       "articleTitle": "Goliath imperial pigeon",
       "summary": "In the heart of New Caledonia, dwells the goliath imperial pigeon (Ducula goliath), a colossal arboreal bird that reigns over humid forests. Described by George Robert Gray in 1859, this singular species exhibits an impressive stature of up to 51 cm and weights between 600 - 716 g.\n\nSporting a slender profile and long tail, its plumage is a striking juxtaposition of blues, greys, purples, and chestnut hues. The head and neck are blue-grey, while the upperparts and wings are sooty-grey with a grey panel on the primaries' bases. A black tail adorned with a dark chestnut band stands out against its shaggy, bifurcated feathers on the neck and upper breast. The lower breast is sooty-grey, the belly and flanks are purplish-chestnut, and the vent is buffy-yellow. Its eye gleams bright red, while the beak and feet are pinkish or vinous-red.\n\nThe goliath imperial pigeon inhabits both Grande Terre and Isle of Pines, thriving in humid primary forests up to 1500 meters in elevation. Singular or paired, they forage on fruits, leaves, and flowers. A low oom echoes through the forest as they warm themselves on a branch at dawn, while a gkrarr rings out at dusk. During June to December, they breed, building woven nests on branches and laying one white egg, which both parents incubate.\n\nThe species boasts an estimated population of around 10,000 birds. Hunting - both legal and illicit - remains a threat, particularly during traditional feast seasons from late February to early May. Regulated by law only during April weekends with daily capture limits, this majestic bird's future may hang in the balance as hunting laws evolve, warranting its near-threatened status according to the International Union for Conservation of Nature (IUCN)."
@@ -5432,8 +6900,12 @@
       "genus": "Ducula",
       "species": "pinon",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5448,8 +6920,12 @@
       "genus": "Ducula",
       "species": "melanochroa",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck Archipelago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5463,8 +6939,13 @@
       "genus": "Ducula",
       "species": "mullerii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Aru Islands", "New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Aru Islands",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5478,8 +6959,12 @@
       "genus": "Ducula",
       "species": "zoeae",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Guinea"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5494,8 +6979,12 @@
       "genus": "Ducula",
       "species": "cuprea",
       "range": {
-        "regions": ["OR"],
-        "locations": ["southwestern India"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "southwestern India"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5509,8 +6998,12 @@
       "genus": "Ducula",
       "species": "badia",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Himalayas to Java"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Himalayas to Java"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5526,8 +7019,14 @@
       "genus": "Ducula",
       "species": "lacernulata",
       "range": {
-        "regions": ["OR", "AU"],
-        "locations": ["Java", "Lesser Sundas"]
+        "regions": [
+          "OR",
+          "AU"
+        ],
+        "locations": [
+          "Java",
+          "Lesser Sundas"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5541,8 +7040,13 @@
       "genus": "Ducula",
       "species": "cineracea",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Timor", "Wetar"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Timor",
+          "Wetar"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5556,8 +7060,13 @@
       "genus": "Ducula",
       "species": "bicolor",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Southeast Asia to Philippines", "New Guinea"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Southeast Asia to Philippines",
+          "New Guinea"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5573,8 +7082,12 @@
       "genus": "Ducula",
       "species": "luctuosa",
       "range": {
-        "regions": ["OR"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "OR"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5588,7 +7101,9 @@
       "genus": "Ducula",
       "species": "spilorrhoa",
       "range": {
-        "regions": ["AU"],
+        "regions": [
+          "AU"
+        ],
         "locations": [
           "Aru Islands",
           "New Guinea",
@@ -5611,8 +7126,13 @@
       "genus": "Ducula",
       "species": "subflavescens",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bismarck Archipelago", "Admiralty Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bismarck Archipelago",
+          "Admiralty Islands"
+        ]
       },
       "conservationStatus": "NT",
       "photos": [
@@ -5626,8 +7146,12 @@
       "genus": "Lopholaimus",
       "species": "antarcticus",
       "range": {
-        "regions": ["AU"],
-        "locations": ["eastern Australia"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "eastern Australia"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5642,27 +7166,42 @@
       "summary": "In the sun-drenched landscapes of eastern Australia, the Topknot Pigeon (Lopholaimus antarcticus) thrives, a species whose origins can be traced back to English naturalist George Shaw's 1793 description as Columba antarctica.\n\nThis large, predominantly slate-grey avian stands tall at 40-46 cm, its plumage adorned with intricate patterns—the back, coverts, and upper secondaries a darker shade of slate-grey, the chest and hind neck streaked to create a unique appearance. The Topknot Pigeon's crest is a spectacle of grey from the cere to the forehead, transforming into russet brown on the crown, with black sides.\n\nThe Topknot Pigeon's vocalizations are as diverse as its visual allure. Three distinct calls have been documented, ranging from the soft 'coo-oo, eee', potentially associated with nestlings, to a louder 'coo-oo, ooo', and a quiet, guttural 'cor-or'. During mass feeding and flocking, these birds emit a raucous call reminiscent of a distant flying fox or domestic pig.\n\nThe Topknot Pigeon's range extends from the Cape York Peninsula in Queensland to the central south coast of New South Wales. Known for their extensive travels in search of ripe fruit, these nomads occasionally venture beyond their southern limits into eastern Victoria. Historically, they've even been spotted in Tasmania, feeding on cherries—an intriguing testament to this extraordinary species' adaptability and resilience."
     },
     {
-      "genus": "",
-      "species": "",
+      "genus": "Hemiphaga",
+      "species": "novaeseelandiae",
       "range": {
-        "regions": ["AU"],
-        "locations": ["New Zealand"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "New Zealand"
+        ]
       },
-      "conservationStatus": "",
-      "photos": ["Hemiphaga novaeseelandiae -Kapiti Island-8.jpg"],
+      "conservationStatus": "LC",
+      "photos": [
+        "https://wikipedia.org/wiki/Special:Redirect/file/New_Zealand_pigeon_(Hemiphaga_novaeseelandiae)_Waitakere.jpg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Hemiphaga_novaeseelandiae_spadicea.png",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Kereru_chick_(Hemiphaga_novaeseelandiae)_by_Department_of_Conservation.jpg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Kereru_territorial_dispute.jpg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/New_Zealand_pigeon_(Hemiphaga_novaeseelandiae)_on_nikau_(Rhopalostylis_sapida)_Waitakere.jpg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Kereru_courtship_display.webm",
+        "https://wikipedia.org/wiki/Special:Redirect/file/New_Zealand_road_sign_W18-3.10.svg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Kereru_profile.jpg",
+        "https://wikipedia.org/wiki/Special:Redirect/file/Hemiphaga_novaeseelandiae_(AM_LB12098-1)_(cropped).jpg"
+      ],
       "commonName": "New Zealand pigeon",
-      "articlePage": null,
-      "articleTitle": null,
-      "imageCaption": "",
-      "note": "No article link available from the list page.",
-      "summary": ""
+      "articleTitle": "Kererū",
+      "summary": " In the verdant landscapes of Aotearoa New Zealand, the kererū (Hemiphaga novaeseelandiae), affectionately known as kūkupa in northern Māori dialects, soars with an azure plumage and white breast. This majestic pigeon species reaches up to 50 cm in length and a weight of 550 g. In the early 20th century, the Norfolk Island subspecies (H. n. spadicea) succumbed to extinction, leaving one remaining subspecies in New Zealand.\n\nMonogamous pairs breed over consecutive seasons, constructing twigged nests high in trees and hatching a single egg clutch. These birds find sustenance mainly from fruits, complemented by leaves, buds, and flowers. Once abundant across various habitats, the kererū has faced significant population decline since European colonization due to invasive mammals like rats, stoats, and possums. However, recent surveys indicate a notable recovery in suburban areas, earning it the classification of least concern by the IUCN Red List and \"not threatened\" but conservation dependent by the Department of Conservation (DOC) as of 2022.\n\nHistorically, the kererū held immense significance for Māori culture, serving as a cherished food source. As its numbers dwindled, hunting was outlawed, allowing only the use of feathers and bones from deceased birds collected by DOC. The ongoing debate over Māori traditions and kererū hunting has garnered substantial attention, with some advocating for lifting the hunting ban to preserve cultural practices.\n\nIn 2018, the kererū was named \"Bird of the Year\" by Forest & Bird, and in 2019, an exoplanet, HD 137388 b, was renamed Kererū in its honor. English ornithologist John Latham first wrote about the kererū in 1783, but it wasn't until German naturalist Johann Friedrich Gmelin's formal description in 1789 that the species received a scientific name. The genus Hemiphaga was introduced by French naturalist Charles Lucien Bonaparte in 1854, with the kererū serving as the type species for this genus."
     },
     {
       "genus": "Hemiphaga",
       "species": "chathamensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Chatham Island"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Chatham Island"
+        ]
       },
       "conservationStatus": "VU",
       "photos": [
@@ -5677,8 +7216,12 @@
       "genus": "Cryptophaps",
       "species": "poecilorrhoa",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Sulawesi"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Sulawesi"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5692,8 +7235,14 @@
       "genus": "Gymnophaps",
       "species": "albertisii",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Bacan Islands", "New Guinea", "Bismarck Archipelago"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Bacan Islands",
+          "New Guinea",
+          "Bismarck Archipelago"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5709,8 +7258,12 @@
       "genus": "Gymnophaps",
       "species": "mada",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Buru Island (Indonesia)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Buru Island (Indonesia)"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5725,8 +7278,12 @@
       "genus": "Gymnophaps",
       "species": "stalkeri",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Seram Island (Indonesia)"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Seram Island (Indonesia)"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5741,8 +7298,12 @@
       "genus": "Gymnophaps",
       "species": "solomonensis",
       "range": {
-        "regions": ["AU"],
-        "locations": ["Solomon Islands"]
+        "regions": [
+          "AU"
+        ],
+        "locations": [
+          "Solomon Islands"
+        ]
       },
       "conservationStatus": "LC",
       "photos": [
@@ -5752,5 +7313,7 @@
       "articleTitle": "Pale mountain pigeon",
       "summary": "In the verdant canopies of the Solomon Islands, a unique avian resides - the Pale Mountain Pigeon (Gymnophaps solomonensis). This medium-sized pigeon boasts an intriguing physiognomy, with upperparts draped in smoky-grey feathers adorned with darker fringes, and underparts shimmering in buffy-pink hues.\n\nThe species inhabits old-growth and secondary montane forests, feeding on an array of fruits while foraging in large flocks. During the breeding season, it prefers stunted moss forest teeming with Eugenia and Syzygium trees. Nests are constructed in shallow depressions or scrapes within the forest floor, laying a single white egg.\n\nDescribed by Ernst Mayr in 1931, the Pale Mountain Pigeon derives its name from its bare-like plumage and association with the Solomon Islands. It belongs to the four species of the mountain pigeon genus Gymnophaps found in Melanesia and Maluku Islands. This species forms a superspecies with its congeners, occupying a unique position within its family tree.\n\nDespite its striking appearance, the Pale Mountain Pigeon is listed as Least Concern by the IUCN due to its stable population and extensive range. Its enigmatic charm, coupled with the allure of the Solomon Islands, makes this species a captivating subject for any nature enthusiast."
     }
-  ]
+  ],
+  "generatedAt": "2026-04-20T16:23:14.285Z",
+  "totalProcessed": 7
 }

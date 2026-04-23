@@ -92,10 +92,26 @@
     --bg-corkboard: url(../assets/backgrounds/corkboard.png);
 
     --bg-size: 12.5rem;
+    
+    --bg-lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
+    
+    --filter-drop-shadow: 4px 4px 4px rgba(25, 10, 3, 0.25);
+    /* Layers (z-index) */
+    --z-overlay: 1;
+    --z-content: 2;
+    --z-top-detail: 3;
+    --z-clip: 4;
 
-    --drop-shadow: 4px 4px 4px rgba(25, 10, 3, 0.25);
+    /* Width */
+    --width-detail: clamp(20rem, 90vw, 60.25rem);
 
-    --lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
+    /* Breaking points: Aunque en CSS no se pueden usar variables como medida en media query, se dejan hechas para referencia */
+    --breakpoint-sm: 520px;
+    /* Revisar: medidas de breaking points*/
+    --breakpoint-md: 660px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1800px;
 }
 /* /Variables raíz */
 
@@ -120,7 +136,6 @@
 		transform: scale(1);
 	}
 }
-
 /* /Animaciones */
 
 /* Reset CSS */
@@ -171,13 +186,13 @@ h2, .text-lg {
 }
 
 h3, .text-md {
-    font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h3);
+    font: 300 clamp(1.125rem, 5vw, 1.5rem) var(--font-h3);
     color: var(--color-text);
     text-transform: lowercase;
 }
 
 h4, .text-sm {
-    font: 300 clamp(1.25rem, 5vw, 1.5rem) var(--font-h4);
+    font: 300 clamp(1.125rem, 5vw, 1.5rem) var(--font-h4);
     color: var(--color-text);
     text-transform: lowercase;
     font-style: italic;
@@ -226,7 +241,7 @@ a, .btn, .link {
                 grid-area: span 1 / span 1;
 
                 /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
-                filter: drop-shadow(var(--drop-shadow));
+                filter: drop-shadow(var(--filter-drop-shadow));
                 
                 /* Cada hijo par se desplaza para desfasar las columnas*/
                 &:nth-child(even) {
@@ -245,14 +260,13 @@ a, .btn, .link {
         }
 
         .stamps__instructions {
-            z-index: 1;
             position: fixed;
             bottom: 1rem;
             left: 1rem;
             padding: .5rem;
 
             background-image: var(--bg-brown-envelope);
-            filter: drop-shadow(var(--drop-shadow));
+            filter: drop-shadow(var(--filter-drop-shadow));
         }
     }
     /* /Stamps section*/
@@ -266,22 +280,35 @@ a, .btn, .link {
         left: 0;
         overflow-y: scroll;
 
-        background: var(--lightbox);
-
-        /*Este contenedor tiene un z-index mayor a lo demás para que se muestre arriba de las estampillas*/
-        z-index: 2;
-
         /*tiene un display none por defecto para que se muestre únicamente cuando tenga la clase active*/
         display: none;
 
         &.active {
             display: block;
         }
+
+        .detail__overlay {
+            position: fixed;
+            background: var(--bg-lightbox);
+            z-index: var(--z-overlay);
+            width: 100vw;
+            height: 100vh;
+        }
         
         .detail__content {
             position: relative;
-            padding-left: 3.75rem;
-            padding-top: 2rem;
+            display: flex;
+            justify-content: center;
+            z-index: var(--z-content);
+            margin-top: 5rem;
+
+            .detail__clipboard-clip {
+            position: absolute;
+            top: -50px;
+            width: 16.25rem;
+            height: 11rem;
+            z-index: var(--z-clip);
+            }
 
             .detail__clipboard {
                 display: flex;
@@ -315,12 +342,11 @@ a, .btn, .link {
             background-size: var(--bg-size);
             background-repeat: repeat;
             padding: 2.25rem;
-            filter: drop-shadow(var(--drop-shadow));
+            filter: drop-shadow(var(--filter-drop-shadow));
 
             position: absolute;
             top: 7rem;
-            left: 7rem;
-            width: 60.25rem;
+            width: var(--width-detail);
             display: flex;
             flex-flow: column nowrap;
             gap: 5rem;
@@ -387,7 +413,7 @@ a, .btn, .link {
                     gap: 2rem;
                     
                     .detail__related-picture{
-                        filter: drop-shadow(var(--drop-shadow));
+                        filter: drop-shadow(var(--filter-drop-shadow));
 
                         &:first-child {
                             rotate: -1deg;
@@ -420,12 +446,12 @@ a, .btn, .link {
             background-size: var(--bg-size);
             background-repeat: repeat;
             padding: 2.25rem;
-            filter: drop-shadow(var(--drop-shadow));
+            filter: drop-shadow(var(--filter-drop-shadow));
             
             position: absolute;
             top: 5rem;
             left: 2.5rem;
-            width: 60.25rem;
+            width: var(--width-detail);
             
             display: flex;
             
@@ -482,9 +508,13 @@ a, .btn, .link {
                 left: 0;
 
                 .detail__postcard-stamp-picture {
-                    filter: drop-shadow(var(--drop-shadow));
+                    filter: drop-shadow(var(--filter-drop-shadow));
                     width: 9.375rem;
                     transform: rotate(1deg);
+
+                    @media (max-width:520px){
+                        display: none;
+                    }
 
                     .detail__postcard-stamp-img {}
                 }
@@ -496,22 +526,22 @@ a, .btn, .link {
                     align-items: end;
                     justify-content: space-between;
                     gap: 7.5rem;
+                    padding-top: 1rem;
 
                     .detail__metadata {
                         flex: 1 1 50%;
+
                         .detail__metadatum {/* Styled in components */}
+                    }
+
+                    .detail__wiki-link {
+                        @media (max-width:660px){
+                        display: none;
+                        }
                     }
                 }
             }
             /* /Postcard block */
-        }
-        .detail__clipboard-clip {
-            position: absolute;
-            top: -50px;
-            left: 27rem;
-            width: 16.25rem;
-            height: 11rem;
-            z-index: 20;
         }
         /* /Detail section */
     }
@@ -519,7 +549,7 @@ a, .btn, .link {
 
 /* States */
 .top {
-    z-index: 10;
+    z-index: var(--z-top-detail);
 }
 
 .active {
