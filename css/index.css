@@ -1,22 +1,14 @@
-/* Carga de fuentes - Al ser fuentes estáticas, se importaron por peso */
 @font-face {
     font-family: 'Averia Sans Libre';
-    src: 
-    /* Se agrega la función local para optimizar el tiempo de carga de la página, si el usuario tiene la tipografía instalada, se usará ese archivo */
-    local('AveriaSansLibre-Bold'), /* Los nombres asignados en local son los mismos que tendría el usuario al descargar de Google Fonts sin editar su nombre */
-    url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
+    src: local('AveriaSansLibre-Bold'), url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
     font-style: normal;
     font-weight: 700;
-
-    /* Se utiliza swap para optimizar el tiempo de carga de la página */
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Averia Sans Libre';
-    src: 
-    local('AveriaSansLibre-Light'),
-    url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
+    src: local('AveriaSansLibre-Light'), url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -24,9 +16,7 @@
 
 @font-face {
     font-family: 'Averia Sans Libre';
-    src: 
-    local('AveriaSansLibre-LightItalic'),
-    url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
+    src: local('AveriaSansLibre-LightItalic'), url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
     font-style: italic;
     font-weight: 300;
     font-display: swap;
@@ -34,9 +24,7 @@
 
 @font-face {
     font-family: 'Averia Serif Libre';
-    src: 
-    local('AveriaSerifLibre-Light'),
-    url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
+    src: local('AveriaSerifLibre-Light'), url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -44,9 +32,7 @@
 
 @font-face {
     font-family: 'Averia Serif Libre';
-    src: 
-    local('AveriaSerifLibre-Regular'),
-    url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
+    src: local('AveriaSerifLibre-Regular'), url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -54,18 +40,13 @@
 
 @font-face {
     font-family: 'Didact Gothic';
-    src: 
-    local('DidactGothic-Regular'),
-    url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
+    src: local('DidactGothic-Regular'), url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
 }
-/* /Carga de fuentes */
 
-/* Variables raíz */
 :root {
-    /* Colores */
     --color-light: #F9F8F6;
     --color-text: #190A03;
     --color-red: #AF3029;
@@ -76,616 +57,126 @@
     --color-blue: #205EA6;
     --color-purple: #5E409D;
     --color-magenta: #A02F6F;
-
-    /* Fuentes */
     --font-h1: 'Averia Serif Libre', serif;
     --font-h2: 'Averia Serif Libre', serif;
     --font-h3: 'Averia Sans Libre', sans-serif;
     --font-h4: 'Averia Sans Libre', sans-serif;
     --font-text: 'Didact Gothic', sans-serif;
     --font-btn: 'Averia Sans Libre', sans-serif;
-
-    /* Background */
     --bg-white-with-fibers: url(../assets/backgrounds/white-with-fibers.webp);
-    --bg-bone-with-fibers: url(../assets/backgrounds/bone-with-fibers.webp);
     --bg-brown-envelope: url(../assets/backgrounds/brown-envelope.webp);
     --bg-textured-vintage: url(../assets/backgrounds/textured-vintage.webp);
     --bg-corkboard: url(../assets/backgrounds/corkboard.webp);
-    --bg-ruled-notepad: url(../assets/backgrounds/ruled-notepad.webp);
-    --bg-dutch: url(../assets/backgrounds/dutch.webp);
-
     --bg-size-sm: 12.5rem;
     --bg-size-lg: 25rem;
-    
     --bg-lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
-    
     --filter-drop-shadow: 4px 4px 4px rgba(25, 10, 3, 0.25);
-    /* Layers (z-index) */
     --z-overlay: 1;
     --z-content: 2;
     --z-top-detail: 3;
     --z-clip: 4;
-
-    /* Width */
     --width-detail: clamp(20rem, 90vw, 60.25rem);
-
-    /* Breaking points: Aunque en CSS no se pueden usar variables como medida en media query, se dejan hechas para referencia */
-    --breakpoint-sm: 520px;
-    /* Revisar: medidas de breaking points*/
-    --breakpoint-md: 660px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --breakpoint-xxl: 1800px;
-
-    /* Transitions */
     --transition: transform 0.5s ease;
 }
-/* /Variables raíz */
 
-/* Animaciones */
 @keyframes zoomIn {
-    from {
-        transform: scale(0.5);
-    }
-    to {
-        transform: scale(1);
-    }
+    from { transform: scale(0.5); }
+    to { transform: scale(1); }
 }
 
 @keyframes appear {
-	0% {
-		opacity: 0;
-		transform: scale(1.4);
-	}
-
-	100% {
-		opacity: 1;
-		transform: scale(1);
-	}
+	0% { opacity: 0; transform: scale(1.4); }
+	100% { opacity: 1; transform: scale(1); }
 }
 
 @keyframes slideInRight {
-    0% {
-        transform: translateX(100vw);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(0); }
 }
 
 @keyframes slideInLeft {
-    0% {
-        transform: translateX(-100vw);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-/* /Animaciones */
-
-/* Reset CSS */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    overscroll-behavior: none;
-
-    transition: var(--transition);
+    0% { transform: translateX(-100vw); }
+    100% { transform: translateX(0); }
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-}
-
-h1, h2 {
-    font-family: serif;
-}
-
-h3, h4, p, a, li {
-    font-family: sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-ul {
-    list-style: none;
-}
-
-button {
-    background: none;
-    border: none;
-    padding: 0;
-    font: inherit;
-    color: inherit;
-}
-
-/* /Reset CSS */
-
-/* Components */
-/* Components - tipografías globales */
-h1, .text-xl {
-    font: 300 clamp(2.625rem, 5vw, 4rem) var(--font-h1);
-    color: var(--color-text);
-    text-transform: capitalize;
-}
-
-h2, .text-lg {
-    font: 400 clamp(2rem, 5vw, 2.5rem) var(--font-h2);
-    color: var(--color-text);
-    text-transform: uppercase;
-}
-
-h3, .text-md {
-    font: 300 clamp(1.125rem, 5vw, 1.5rem) var(--font-h3);
-    color: var(--color-text);
-    text-transform: lowercase;
-}
-
-h4, .text-sm {
-    font: 300 clamp(1.125rem, 5vw, 1.5rem) var(--font-h4);
-    color: var(--color-text);
-    text-transform: lowercase;
-    font-style: italic;
-}
-
-p, .text-xs {
-    font: 400 1.125rem var(--font-text);
-    color: var(--color-text);
-}
-
-a, .btn, .link {
-    font: 600 1rem var(--font-btn);
-    color: var(--color-text);
-    text-transform: uppercase;
-
-    &:hover {
-        text-decoration: underline;
-    }
-}
-/* /Components - tipografías globales*/
-/* /Components */
-
-.homepage {
-    /*Se contempló poner el fondo a la sección stamps, pero se cortaba*/
-    background-color: var(--color-light);
-    background-image: var(--bg-textured-vintage);
-    background-blend-mode: multiply;
-    background-size: var(--bg-size-sm);
-    background-repeat: repeat;
-    
-
-    /* Stamps section */
-    .stamps {
-        width: 100vw;
-        height: 100vh;
-        overflow: auto;
-        position: relative;
-        scroll-behavior: auto;
-
-        /*
-        user-select: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        */
-
-        cursor: grab;
-        
-        &.dragging {
-            cursor: grabbing;
-            scroll-behavior: auto;
-        }
-        
-        .stamps__grid {
-            display: grid;
-            grid-template: repeat(22, 10rem) / repeat(16, 10rem);
-            gap: 3rem;
-
-            .detail__open-button {
-                grid-area: span 1 / span 1;
-
-                &:hover {
-                    transform: rotate(3deg);
-                    cursor: pointer;
-                }
-                
-                /* Cada hijo par se desplaza para desfasar las columnas*/
-                &:nth-child(even) {
-                    transform: translateY(5rem) rotate(0deg)
-                }
-
-                &:nth-child(even):hover {
-                    transform: translateY(5rem) rotate(3deg)
-                }
-                
-                .stamps__picture {
-                    pointer-events: auto;
-
-                    /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
-                    filter: drop-shadow(var(--filter-drop-shadow));
-                    
-                    .stamps__img {
-                        animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both;
-                        
-                        /* Revisar por qué después de agregar el loader ya no funciona */
-                        
-                    }
-                }
-            }
-        }
-
-        .stamps__instructions {
-            position: fixed;
-            bottom: 1rem;
-            left: 1rem;
-            padding: .5rem;
-
-            background-image: var(--bg-brown-envelope);
-            filter: drop-shadow(var(--filter-drop-shadow));
-        }
-    }
-    /* /Stamps section*/
-
-    /* Detail section */
-    .detail {
-        width: 100vw;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        left: 0;
-        overflow-y: scroll;
-
-        /*tiene un display none por defecto para que se muestre únicamente cuando tenga la clase active*/
-        display: none;
-
-        &.active {
-            display: block;
-        }
-
-        .detail__overlay {
-            position: fixed;
-            background: var(--bg-lightbox);
-            z-index: var(--z-overlay);
-            width: 100vw;
-            height: 100vh;
-
-        }
-        
-        .detail__content {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            z-index: var(--z-content);
-            margin-top: 5rem;
-
-            .detail__clip-picture {
-            position: absolute;
-            z-index: var(--z-clip);
-
-            top: -6rem;
-            width: 16.25rem;
-            height: auto;
-
-                .detail__clip-img {}
-            }
-
-            .detail__clipboard {
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: start;
-                align-items: end;
-                width: 66.5625rem;
-                height: 88.9375rem;
-                padding: 1rem;
-
-                background-image: var(--bg-corkboard);
-                background-repeat: repeat;
-                background-size: var(--bg-size-sm);
-                border-radius: 10px;
-                
-                .detail__close-button {
-                    width: 25px;
-                    height: 25px;
-                    mix-blend-mode: multiply;
-                    
-                    &:hover {
-                        transform: rotate(3deg);
-                        cursor: pointer;
-
-                        .detail__close-icon {}
-                    }
-                }
-            }
-            
-            /* Factsheet block */
-            .detail__factsheet {
-            /*Revisar: revisitar medidas de ancho y alto*/
-            background-image: var(--bg-white-with-fibers);
-            background-size: var(--bg-size-lg);
-            background-repeat: repeat;
-            padding: 2.25rem;
-            filter: drop-shadow(var(--filter-drop-shadow));
-
-            position: absolute;
-            top: 5rem;
-            margin-left: clamp(2rem, 10vw, 3rem);
-            margin-right: 1.5rem;
-
-            width: var(--width-detail);
-            display: flex;
-            flex-flow: column nowrap;
-            gap: 5rem;
-
-            &:hover {
-                cursor: pointer;
-                transform: rotate(.5deg);
-            }
-
-                .detail__main-info{
-                    display: flex;
-                    flex-flow: column nowrap;
-                    gap: 2.5rem;
-
-                    align-items: end;
-
-                    .detail__title {
-                        width: 100%;
-                    }
-    
-                    .detail__summary {
-                        width: 100%;
-
-                        /* Propiedad white-space incluida para mantener los saltos de línea que vienen en el JSON */
-                        white-space: pre-line;
-                    }
-    
-                    .detail__wiki-link {
-                        width: fit-content;
-                    }
-                }
-            }
-    
-            .detail__map {
-                .detail__map-canvas {
-                    position: relative;
-
-                    .detail__map-picture--base {
-                        position: relative;
-                        width: 100%;
-                        height: 100%;
-
-                        .detail__map-img--base {}
-                    }
-
-                    .detail__map-picture {
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-
-                        /* El leve desfase entre controno y relleno es intencional, para emular error de imprenta */
-                        top: 1px;
-                        left: 0;
-                        mix-blend-mode: multiply;
-                        filter: blur(0.5px);
-
-                        .detail__map-img {}
-                    }
-                }
-                
-                .detail__metadatum {/* Styled in components */}
-            }
-
-            .detail__related-species {
-                display: flex;
-                flex-flow: column nowrap;
-                gap: .5rem;
-                
-                .detail__related-region {
-                    display: grid;
-                    /* Revisar: esto se puede ver mejor en movil */
-                    grid-template: repeat(1, 1fr) / repeat(5, 1fr);
-                    gap: 2rem;
-                    
-                    .detail__open-button {
-                        &:first-child {
-                            rotate: -1deg;
-                        }
-                            
-                        &:nth-child(even) {
-                            rotate: 2deg;
-                        }
-                        
-                        &:last-child {
-                            rotate: -2deg;
-                        }
-                    
-                        &:hover {
-                            transform: rotate(3deg);
-                            cursor: pointer;
-                            grid-area: span 1 / span 1;
-                        }
-
-                        .detail__related-picture{
-                            pointer-events: auto;
-
-                            filter: drop-shadow(var(--filter-drop-shadow));
-    
-                            
-                            
-                            .detail__related-img {}
-                        }
-                    }
-                }
-                
-                .detail__region-name {
-                    width: 100%;
-                    text-align: left;
-                    padding-bottom: 3rem;
-                }
-            }
-        }
-        /* /Factsheet block */
-        
-        /* Postcard block */
-        /* Revisar: do I want a different bg for the postcard? */
-        .detail__postcard-container {
-            background-image: var(--bg-white-with-fibers);
-            background-size: var(--bg-size-sm);
-            background-repeat: repeat;
-            padding: 2.25rem;
-            filter: drop-shadow(var(--filter-drop-shadow));
-            
-            position: absolute;
-            top: 4rem;
-            margin-left: -3rem;
-            width: var(--width-detail);
-            
-            display: flex;
-
-            transform-style: preserve-3d;
-            
-            &:hover {
-                cursor: pointer;
-                transform: rotate(-1deg);
-            }
-            
-            .detail__postcard-front {
-                width: 100%;
-                display: flex;
-                flex-flow: column nowrap;
-                gap: 1.25rem;
-                backface-visibility: hidden;
-                
-                .detail__postcard-picture {
-                    flex: 1 1 100%;
-                    max-height: 32.5rem;
-                    min-height: 32.5rem;
-                    mix-blend-mode: multiply;
-                    
-                    .detail__postcard-img {
-                        object-fit: cover;
-                        object-position: top;
-                    }
-                }
-                
-                .detail__postcard-titles {
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    align-items: center;
-                    
-                    .detail__postcard-common-name {
-                        width: auto;
-                    }
-                    
-                    .detail__scientific-name {
-                        width: auto;
-                        text-align: left;
-                    }
-                }
-            }
-            
-            .detail__postcard-back {
-                height: 100%;
-                width: 100%;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-between;
-                align-items: end;
-
-                padding: 2.25rem;
-                backface-visibility: hidden;
-                transform-origin: center;
-                
-                position: absolute;
-                top: 0;
-                left: 0;
-
-                .detail__postcard-stamp-picture {
-                    filter: drop-shadow(var(--filter-drop-shadow));
-                    width: 9.375rem;
-
-                    @media (max-width:520px){
-                        display: none;
-                    }
-
-                    .detail__postcard-stamp-img {}
-                }
-
-                .detail__postcard-info {
-                    width: 100%;
-                    display: flex;
-                    flex-flow: row wrap;
-                    align-items: end;
-                    justify-content: space-between;
-                    gap: 7.5rem;
-                    padding-top: 1rem;
-
-                    .detail__metadata {
-                        flex: 1 1 50%;
-
-                        .detail__metadatum {/* Styled in components */}
-                    }
-
-                    .detail__wiki-link {
-                        @media (max-width:660px){
-                        display: none;
-                        }
-                    }
-                }
-            }
-            /* /Postcard block */
-        }
-        /* /Detail section */
-    }
-}
-
-/* States */
-.top {
-    z-index: var(--z-top-detail);
-
-    
-}
-
-.moving {
-    &.detail__factsheet {
-        animation: slideInRight 0.5s ease-in-out;
-    }
-
-    &.detail__postcard-container {
-        animation: slideInLeft 0.5s ease-in-out;
-    }
-}
-
-.active {
-    opacity: 100%;
-}
-
-.inactive {
-    opacity: 0;
-}
-
-.flipLeft {
-    transform: rotateY(180deg);
-}
-
-.flipRight {
-    transform: rotateY(-180deg);
-}
-/* /States */
-
-/* Revisar: Component??? */
-.detail__metadatum {
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid var(--color-text);
-    padding: 7px 10px 3px 10px;
-}
+* { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; overscroll-behavior: none; transition: var(--transition); }
+img { max-width: 100%; max-height: 100%; width: 100%; height: 100%; }
+h1, h2 { font-family: serif; }
+h3, h4, p, a, li { font-family: sans-serif; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+button { background: 0; border: 0; padding: 0; font: inherit; color: inherit; }
+
+h1, .text-xl { font: 300 clamp(2.625rem, 5vw, 4rem) var(--font-h1); color: var(--color-text); text-transform: capitalize; }
+h2, .text-lg { font: 400 clamp(2rem, 5vw, 2.5rem) var(--font-h2); color: var(--color-text); text-transform: uppercase; }
+h3, .text-md { font: 300 clamp(1.125rem, 5vw, 1.5rem) var(--font-h3); color: var(--color-text); text-transform: lowercase; }
+h4, .text-sm { font: 300 clamp(1.125rem, 5vw, 1.5rem) var(--font-h4); color: var(--color-text); text-transform: lowercase; font-style: italic; }
+p, .text-xs { font: 400 1.125rem var(--font-text); color: var(--color-text); }
+a, .btn, .link { font: 600 1rem var(--font-btn); color: var(--color-text); text-transform: uppercase; }
+a:hover, .btn:hover, .link:hover { text-decoration: underline; }
+
+.homepage { background: var(--color-light) var(--bg-textured-vintage) multiply var(--bg-size-sm) repeat; }
+.stamps { width: 100vw; height: 100vh; overflow: auto; position: relative; scroll-behavior: auto; cursor: grab; }
+.stamps.dragging { cursor: grabbing; }
+.stamps__grid { display: grid; grid-template: repeat(22, 10rem) / repeat(16, 10rem); gap: 3rem; }
+.detail__open-button { grid-area: span 1 / span 1; cursor: pointer; }
+.detail__open-button:hover { transform: rotate(3deg); }
+.detail__open-button:nth-child(even) { transform: translateY(5rem); }
+.detail__open-button:nth-child(even):hover { transform: translateY(5rem) rotate(3deg); }
+.stamps__picture { pointer-events: auto; filter: drop-shadow(var(--filter-drop-shadow)); }
+.stamps__img { animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both; }
+.stamps__instructions { position: fixed; bottom: 1rem; left: 1rem; padding: .5rem; background-image: var(--bg-brown-envelope); filter: drop-shadow(var(--filter-drop-shadow)); }
+
+.detail { width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; overflow-y: scroll; display: none; }
+.detail.active { display: block; }
+.detail__overlay { position: fixed; background: var(--bg-lightbox); z-index: var(--z-overlay); width: 100vw; height: 100vh; }
+.detail__content { position: relative; display: flex; justify-content: center; z-index: var(--z-content); margin-top: 5rem; }
+.detail__clip-picture { position: absolute; z-index: var(--z-clip); top: -6rem; width: 16.25rem; height: auto; }
+.detail__clipboard { display: flex; flex-flow: column nowrap; justify-content: start; align-items: end; width: 66.5625rem; height: 88.9375rem; padding: 1rem; background-image: var(--bg-corkboard); background-repeat: repeat; background-size: var(--bg-size-sm); border-radius: 10px; }
+.detail__close-button { width: 25px; height: 25px; mix-blend-mode: multiply; cursor: pointer; }
+.detail__close-button:hover { transform: rotate(3deg); }
+
+.detail__factsheet { background-image: var(--bg-white-with-fibers); background-size: var(--bg-size-lg); background-repeat: repeat; padding: 2.25rem; filter: drop-shadow(var(--filter-drop-shadow)); position: absolute; top: 5rem; margin-left: clamp(2rem, 10vw, 3rem); margin-right: 1.5rem; width: var(--width-detail); display: flex; flex-flow: column nowrap; gap: 5rem; cursor: pointer; }
+.detail__factsheet:hover { transform: rotate(.5deg); }
+.detail__main-info { display: flex; flex-flow: column nowrap; gap: 2.5rem; align-items: end; }
+.detail__title, .detail__summary { width: 100%; }
+.detail__summary { white-space: pre-line; }
+.detail__wiki-link { width: fit-content; }
+
+.detail__map-canvas { position: relative; }
+.detail__map-picture--base { position: relative; width: 100%; height: 100%; }
+.detail__map-picture { position: absolute; width: 100%; height: 100%; top: 1px; left: 0; mix-blend-mode: multiply; filter: blur(0.5px); }
+
+.detail__related-species { display: flex; flex-flow: column nowrap; gap: .5rem; }
+.detail__related-region { display: grid; grid-template: repeat(1, 1fr) / repeat(5, 1fr); gap: 2rem; }
+.detail__related-region .detail__open-button:first-child { rotate: -1deg; }
+.detail__related-region .detail__open-button:nth-child(even) { rotate: 2deg; }
+.detail__related-region .detail__open-button:last-child { rotate: -2deg; }
+.detail__related-region .detail__open-button:hover { transform: rotate(3deg); }
+.detail__related-picture { pointer-events: auto; filter: drop-shadow(var(--filter-drop-shadow)); }
+.detail__region-name { width: 100%; text-align: left; padding-bottom: 3rem; }
+
+.detail__postcard-container { background-image: var(--bg-white-with-fibers); background-size: var(--bg-size-sm); background-repeat: repeat; padding: 2.25rem; filter: drop-shadow(var(--filter-drop-shadow)); position: absolute; top: 4rem; margin-left: -3rem; width: var(--width-detail); display: flex; transform-style: preserve-3d; cursor: pointer; }
+.detail__postcard-container:hover { transform: rotate(-1deg); }
+.detail__postcard-front { width: 100%; display: flex; flex-flow: column nowrap; gap: 1.25rem; backface-visibility: hidden; }
+.detail__postcard-picture { flex: 1 1 100%; max-height: 32.5rem; min-height: 32.5rem; mix-blend-mode: multiply; }
+.detail__postcard-img { object-fit: cover; object-position: top; }
+.detail__postcard-titles { display: flex; flex-flow: row wrap; justify-content: space-between; align-items: center; }
+.detail__postcard-common-name, .detail__scientific-name { width: auto; }
+.detail__scientific-name { text-align: left; }
+.detail__postcard-back { height: 100%; width: 100%; display: flex; flex-flow: column nowrap; justify-content: space-between; align-items: end; padding: 2.25rem; backface-visibility: hidden; transform-origin: center; position: absolute; top: 0; left: 0; }
+.detail__postcard-stamp-picture { filter: drop-shadow(var(--filter-drop-shadow)); width: 9.375rem; }
+.detail__postcard-info { width: 100%; display: flex; flex-flow: row wrap; align-items: end; justify-content: space-between; gap: 7.5rem; padding-top: 1rem; }
+.detail__metadata { flex: 1 1 50%; }
+
+@media (max-width: 520px) { .detail__postcard-stamp-picture { display: none; } }
+@media (max-width: 660px) { .detail__postcard-info .detail__wiki-link { display: none; } }
+
+.top { z-index: var(--z-top-detail); }
+.moving.detail__factsheet { animation: slideInRight 0.5s ease-in-out; }
+.moving.detail__postcard-container { animation: slideInLeft 0.5s ease-in-out; }
+.active { opacity: 100%; }
+.inactive { opacity: 0; }
+.flipLeft { transform: rotateY(180deg); }
+.flipRight { transform: rotateY(-180deg); }
+.detail__metadatum { width: 100%; text-align: left; border-bottom: 1px solid var(--color-text); padding: 7px 10px 3px 10px; }
