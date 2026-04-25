@@ -8,13 +8,25 @@
 
 <!-- Connect CSS & JS files to HTML -->
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+    <script defer src="js/loader.js"></script>
     <!-- Type="module" used so import of local JSON file works -->
     <script type="module" defer src="js/index.js"></script>
+
+<!-- Preload critical images -->
+<link rel="preload" as="image" href="assets/backgrounds/textured-vintage.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/backgrounds/brown-envelope.webp" fetchpriority="high">
 
 <!-- Add favicon Revisar: cómo agregar favicon -->
 </head>
 
 <body class="homepage">
+
+    <!-- Loading animation container -->
+    <div class="loader-container" id="stage">
+        <div class="walking-container"></div>
+    </div>
     <!-- Revisar uso de clase container -->
 <main>
     <!-- When describing sections with dynamically generated content, a general structure of each block is defined, class names and interpolation placeholders may vary from final template literals in JS file -->
@@ -25,16 +37,18 @@
             <!-- Each stamp is created dynamically by JS, information is taken from the "pigeons-with-summaries.json" file.
             
             HTML will have the following structure:
-            <picture class="stamps__picture">
-                <source src="${webpFile}" type="image/webp">
-                <img 
-                    class="stamps__img" 
-                    src="${pngFile}"
-                    loading="lazy"
-                    title="${pigeon.genus} ${pigeon.species}"
-                    alt="${pigeon.commonName} styled as a vintage postal stamp"
-                >
-            </picture>
+            <button>
+                <picture class="stamps__picture">
+                    <source src="${webpFile}" type="image/webp">
+                    <img 
+                        class="stamps__img" 
+                        src="${pngFile}"
+                        loading="lazy"
+                        title="${pigeon.genus} ${pigeon.species}"
+                        alt="${pigeon.commonName} styled as a vintage postal stamp"
+                    >
+                </picture>
+            </button>
             -->
         </div>
         
@@ -58,8 +72,8 @@
 
             <!-- Clipboard block: Background texture & closing control container. -->
             <div class="detail__clipboard">
-                <!-- Closing button -->
-                <button type="button" onclick="click()" class="detail__close-button" id="detailCloseButton" aria-label="Close details view">
+                <!-- Closing button: onclick="closeDetail()" was tested for use, but it won't work because the JS import is type="module". The event listener is added in the JS file. -->
+                <button type="button" class="detail__close-button" id="detailCloseButton" aria-label="Close detail view">
                     <!-- Alt text is not included on purpose. Since it´s decoration for the button, we want screen readers to ignore it -->
                     <!-- Revisar: editar para agregar el ícono como ícono y no como imagen (con etiqueta i, svg o span) Usar icomoon -->
                     <img class="detail__close-icon" src="assets/icons/cruz.svg" alt="" id="closeIcon">

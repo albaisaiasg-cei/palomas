@@ -86,13 +86,16 @@
     --font-btn: 'Averia Sans Libre', sans-serif;
 
     /* Background */
-    --bg-white-with-fibers: url(../assets/backgrounds/white-with-fibers.png);
-    --bg-bone-with-fibers: url(../assets/backgrounds/bone-with-fibers.png);
-    --bg-brown-envelope: url(../assets/backgrounds/brown-envelope.png);
-    --bg-textured-vintage: url(../assets/backgrounds/textured-vintage.png);
-    --bg-corkboard: url(../assets/backgrounds/corkboard.png);
+    --bg-white-with-fibers: url(../assets/backgrounds/white-with-fibers.webp);
+    --bg-bone-with-fibers: url(../assets/backgrounds/bone-with-fibers.webp);
+    --bg-brown-envelope: url(../assets/backgrounds/brown-envelope.webp);
+    --bg-textured-vintage: url(../assets/backgrounds/textured-vintage.webp);
+    --bg-corkboard: url(../assets/backgrounds/corkboard.webp);
+    --bg-ruled-notepad: url(../assets/backgrounds/ruled-notepad.webp);
+    --bg-dutch: url(../assets/backgrounds/dutch.webp);
 
-    --bg-size: 12.5rem;
+    --bg-size-sm: 12.5rem;
+    --bg-size-lg: 25rem;
     
     --bg-lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
     
@@ -113,6 +116,9 @@
     --breakpoint-lg: 992px;
     --breakpoint-xl: 1200px;
     --breakpoint-xxl: 1800px;
+
+    /* Transitions */
+    --transition: transform 0.5s ease;
 }
 /* /Variables raíz */
 
@@ -137,6 +143,26 @@
 		transform: scale(1);
 	}
 }
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100vw);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 /* /Animaciones */
 
 /* Reset CSS */
@@ -145,6 +171,9 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    overscroll-behavior: none;
+
+    transition: var(--transition);
 }
 
 img {
@@ -230,7 +259,7 @@ a, .btn, .link {
     background-color: var(--color-light);
     background-image: var(--bg-textured-vintage);
     background-blend-mode: multiply;
-    background-size: var(--bg-size);
+    background-size: var(--bg-size-sm);
     background-repeat: repeat;
     
 
@@ -240,30 +269,54 @@ a, .btn, .link {
         height: 100vh;
         overflow: auto;
         position: relative;
+        scroll-behavior: auto;
+
+        /*
+        user-select: none;
+        -webkit-user-select: none;
+        -webkit-touch-callout: none;
+        */
+
+        cursor: grab;
+        
+        &.dragging {
+            cursor: grabbing;
+            scroll-behavior: auto;
+        }
         
         .stamps__grid {
             display: grid;
             grid-template: repeat(22, 10rem) / repeat(16, 10rem);
-            gap: 2.5rem;
+            gap: 3rem;
 
-            
-            .stamps__picture {
+            .detail__open-button {
                 grid-area: span 1 / span 1;
 
-                /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
-                filter: drop-shadow(var(--filter-drop-shadow));
+                &:hover {
+                    transform: rotate(3deg);
+                    cursor: pointer;
+                }
                 
                 /* Cada hijo par se desplaza para desfasar las columnas*/
                 &:nth-child(even) {
-                    transform: translateY(5rem);
+                    transform: translateY(5rem) rotate(0deg)
                 }
 
-                .stamps__img {
-                    animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both;
+                &:nth-child(even):hover {
+                    transform: translateY(5rem) rotate(3deg)
+                }
+                
+                .stamps__picture {
+                    pointer-events: auto;
 
-                    &:hover {
-                        transform: rotate(3deg);
-                        cursor: pointer;
+                    /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
+                    filter: drop-shadow(var(--filter-drop-shadow));
+                    
+                    .stamps__img {
+                        animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both;
+                        
+                        /* Revisar por qué después de agregar el loader ya no funciona */
+                        
                     }
                 }
             }
@@ -303,6 +356,7 @@ a, .btn, .link {
             z-index: var(--z-overlay);
             width: 100vw;
             height: 100vh;
+
         }
         
         .detail__content {
@@ -334,12 +388,8 @@ a, .btn, .link {
 
                 background-image: var(--bg-corkboard);
                 background-repeat: repeat;
-                background-size: var(--bg-size);
+                background-size: var(--bg-size-sm);
                 border-radius: 10px;
-
-                @media (max-width:660px){
-                    display: none;
-                }
                 
                 .detail__close-button {
                     width: 25px;
@@ -359,7 +409,7 @@ a, .btn, .link {
             .detail__factsheet {
             /*Revisar: revisitar medidas de ancho y alto*/
             background-image: var(--bg-white-with-fibers);
-            background-size: var(--bg-size);
+            background-size: var(--bg-size-lg);
             background-repeat: repeat;
             padding: 2.25rem;
             filter: drop-shadow(var(--filter-drop-shadow));
@@ -367,6 +417,7 @@ a, .btn, .link {
             position: absolute;
             top: 5rem;
             margin-left: clamp(2rem, 10vw, 3rem);
+            margin-right: 1.5rem;
 
             width: var(--width-detail);
             display: flex;
@@ -391,6 +442,9 @@ a, .btn, .link {
     
                     .detail__summary {
                         width: 100%;
+
+                        /* Propiedad white-space incluida para mantener los saltos de línea que vienen en el JSON */
+                        white-space: pre-line;
                     }
     
                     .detail__wiki-link {
@@ -428,7 +482,7 @@ a, .btn, .link {
                 
                 .detail__metadatum {/* Styled in components */}
             }
-            
+
             .detail__related-species {
                 display: flex;
                 flex-flow: column nowrap;
@@ -440,14 +494,11 @@ a, .btn, .link {
                     grid-template: repeat(1, 1fr) / repeat(5, 1fr);
                     gap: 2rem;
                     
-                    .detail__related-picture{
-                        filter: drop-shadow(var(--filter-drop-shadow));
-                        grid-template-areas: span 1 / span 1;
-
+                    .detail__open-button {
                         &:first-child {
                             rotate: -1deg;
                         }
-                        
+                            
                         &:nth-child(even) {
                             rotate: 2deg;
                         }
@@ -455,8 +506,22 @@ a, .btn, .link {
                         &:last-child {
                             rotate: -2deg;
                         }
-                        
-                        .detail__related-img {}
+                    
+                        &:hover {
+                            transform: rotate(3deg);
+                            cursor: pointer;
+                            grid-area: span 1 / span 1;
+                        }
+
+                        .detail__related-picture{
+                            pointer-events: auto;
+
+                            filter: drop-shadow(var(--filter-drop-shadow));
+    
+                            
+                            
+                            .detail__related-img {}
+                        }
                     }
                 }
                 
@@ -473,7 +538,7 @@ a, .btn, .link {
         /* Revisar: do I want a different bg for the postcard? */
         .detail__postcard-container {
             background-image: var(--bg-white-with-fibers);
-            background-size: var(--bg-size);
+            background-size: var(--bg-size-sm);
             background-repeat: repeat;
             padding: 2.25rem;
             filter: drop-shadow(var(--filter-drop-shadow));
@@ -484,6 +549,8 @@ a, .btn, .link {
             width: var(--width-detail);
             
             display: flex;
+
+            transform-style: preserve-3d;
             
             &:hover {
                 cursor: pointer;
@@ -495,10 +562,12 @@ a, .btn, .link {
                 display: flex;
                 flex-flow: column nowrap;
                 gap: 1.25rem;
+                backface-visibility: hidden;
                 
                 .detail__postcard-picture {
                     flex: 1 1 100%;
                     max-height: 32.5rem;
+                    min-height: 32.5rem;
                     mix-blend-mode: multiply;
                     
                     .detail__postcard-img {
@@ -533,6 +602,8 @@ a, .btn, .link {
                 align-items: end;
 
                 padding: 2.25rem;
+                backface-visibility: hidden;
+                transform-origin: center;
                 
                 position: absolute;
                 top: 0;
@@ -580,6 +651,18 @@ a, .btn, .link {
 /* States */
 .top {
     z-index: var(--z-top-detail);
+
+    
+}
+
+.moving {
+    &.detail__factsheet {
+        animation: slideInRight 0.5s ease-in-out;
+    }
+
+    &.detail__postcard-container {
+        animation: slideInLeft 0.5s ease-in-out;
+    }
 }
 
 .active {
@@ -588,6 +671,14 @@ a, .btn, .link {
 
 .inactive {
     opacity: 0;
+}
+
+.flipLeft {
+    transform: rotateY(180deg);
+}
+
+.flipRight {
+    transform: rotateY(-180deg);
 }
 /* /States */
 

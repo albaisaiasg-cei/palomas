@@ -1,3 +1,7 @@
+// Revisar que cuando se haga clic en una relatedSpecies la postcard solo se voltee si está en modo postcardBack
+
+/* ==================== DATA & DOM REFERENCES ==================== */
+
 // Se utiliza import para obtener los datos de un archivo local. Se especifica que el archivo es tipo json para que el compilador del navegador sepa el tipo de archivo y lo convierta en un objeto.
 import pigeonsWithSummaries from '../assets/pigeon_data/pigeons-with-summaries.json' with { type: 'json' }
 
@@ -16,6 +20,15 @@ const stamps = document.getElementById('stamps')
 
 var mapsToClean = []
 
+// Z-index values for clipboard element stacking
+const Z_INDEX_CONTENT = '2'
+const Z_INDEX_TOP_DETAIL = '3'
+
+/* /DATA & DOM REFERENCES /*/
+
+/* ==================== UTILITY FUNCTIONS ==================== */
+
+// Random number
 function getRandomNumber(min, max) {
     return Math.random() * (max - min) + min
 }
@@ -71,7 +84,40 @@ function translateConservationStatus(status) {
     }
 }
 
-function createStamp(pigeon, pictureClass, imgClass) {
+/* /UTILITY FUNCTIONS /*/
+
+/* ==================== DOM GENERATION FUNCTIONS ==================== */
+
+function createButtonStamp(pigeon, pictureClass, imgClass) {
+    // let singleStamp = document.createElement('picture')
+    // singleStamp.tabIndex = 0
+
+    let singleStamp = document.createElement('button')
+    singleStamp.type = 'button'
+    singleStamp.classList.add('detail__open-button')
+    singleStamp.ariaLabel = `Open detail view for ${pigeon.commonName}`
+    // Revisar: Para mejoras de performance futuras: singleStamp.dataset.id = `stamp-${pigeon.commonName.split(' ').join('-')}`
+    // Se declara una constante que manipula datos del array para referencia sencilla más adelante
+    // const fileName = 'assets/pigeon_stamps/' + pigeon.commonName.split(' ').join('_') + '.png'
+    // Se da clase y modifica el html interno de la singleStamp (picture) nueva
+    // singleStamp.classList.add(pictureClass)
+
+    singleStamp.innerHTML = `
+        <picture class="${pictureClass}">
+            <source srcset="${getStampFilePath(pigeon.commonName, 'webp')}" type="image/webp">
+            <img 
+                class="${imgClass}" 
+                src="${getStampFilePath(pigeon.commonName)}"
+                loading="lazy"
+                title="${pigeon.genus} ${pigeon.species}"
+                alt="${pigeon.commonName} styled as a vintage postal stamp"
+            >
+        </picture>
+    `
+    return singleStamp
+}
+
+function createPictureStamp(pigeon, pictureClass, imgClass) {
     let singleStamp = document.createElement('picture')
     singleStamp.tabIndex = 0
 
@@ -93,153 +139,180 @@ function createStamp(pigeon, pictureClass, imgClass) {
     return singleStamp
 }
 
-function generateDetail(pigeon) {
-    /* Detail section */
+function generateMainInfo(pigeon) {
+    /* Main info element */
+    const detailMainInfo = document.getElementById('detailMainInfo')
     const articleLink = pigeon.articleTitle
-        ? 'https://en.wikipedia.org/wiki/' +
-        pigeon.articleTitle.split(' ').join('_')
+        ? 'https://en.wikipedia.org/wiki/' + pigeon.articleTitle.split(' ').join('_')
         : ''
 
-    if (pigeon.genus) {
-        // Revisar: poner ícono final
-        /* Main info element */
-        const detailMainInfo = document.getElementById('detailMainInfo')
-
-        detailMainInfo.innerHTML = `
-        <h3 class="detail__title">More about the ${pigeon.commonName}</h3>
-        <p class="detail__summary">${pigeon.summary}</p>
-        <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
-            Wiki article
-        </a>
-        `
-        /* /Main info element */
-
-        /* Map element */
-        pigeon.range.regions.forEach((region) => {
-            let singleRegion = document.createElement('picture')
-            singleRegion.classList.add('detail__map-picture')
-            singleRegion.innerHTML = `
-            <source src="assets/maps/${region}.svg" type="image/svg">
-            <img class="detail__map-img" src="assets/maps/${region}.svg" alt="${translateRegionName(region)}">
-            `
-            detailMapCanvas.appendChild(singleRegion)
-            mapsToClean.push(singleRegion)
-        })
-
-        const regions = pigeon.range.regions.map((region) => translateRegionName(region)).join(', ')
-
-        detailMapRegions.innerText = `
-        living region: ${regions}
-        `
-        detailMapLocations.innerText = `
-        locations: ${pigeon.range.locations.join(', ')}
-        `
-        /* /Map element */
-
-        /* Related species element */
-        pigeon.range.regions.forEach((region) => {
-            // Filter by region
-            const relatedSpecies = pigeonsWithSummaries.data.filter(p => p.range.regions.includes(region) && p.commonName !== pigeon.commonName)
-
-            // Select 5 random related species
-            const max = getRandomNumber(5, relatedSpecies.length)
-            const min = max - 5
-            const selectedSpecies = relatedSpecies.slice(min, max)
-            console.log(selectedSpecies)
-
-            // Create container for selected species
-            let singleRegion = document.createElement('div')
-            singleRegion.classList.add('detail__related-region')
-
-            // createStamp of each selected species
-            selectedSpecies.forEach((species) => {
-                const selectedPigeonStamp = createStamp(species, 'detail__related-picture', 'detail__related-img')
-                singleRegion.appendChild(selectedPigeonStamp)
-
-                // Revisar: aquí se podrían agregar event listeners a cada estampilla para generar un detalle al hacer click, pero por ahora no lo hago para evitar que el código se vuelva muy complejo y difícil de manejar. Si tuviera que hacerlo, tendría que modificar la función generateDetail para que pueda recibir un pigeon vacío o con datos mínimos, y luego ir llenando los datos a medida que se hace click en las estampillas relacionadas. Por ahora, solo dejo la función createStamp para reutilizar el código de creación de estampillas, pero sin agregarle funcionalidad extra.
-            })
-
-            // Create container for related species text
-            let singleRegionText = document.createElement('p')
-            singleRegionText.classList.add('detail__region-name')
-            singleRegionText.classList.add('text-md')
-            singleRegionText.innerText = `
-            Other species in ${translateRegionName(region)}
-            `
-
-            // Append elements to related species container
-            detailRelatedSpecies.appendChild(singleRegionText)
-            detailRelatedSpecies.appendChild(singleRegion)
-        })
-        /* /Related species element */
-
-        /* Postcard front element */
-        let extensionType = pigeon.photos[0].split('.').pop()
-        console.log(extensionType)
-
-        detailPostcardFront.innerHTML = `
-        <picture class="detail__postcard-picture">
-            <source src="${pigeon.photos[0]}" type="image/${extensionType}">
-            <img 
-            class="detail__postcard-img"
-            src="${pigeon.photos[0]}"
-            alt="${pigeon.genus} ${pigeon.species}"
-            >
-        </picture>
-        <div class="detail__postcard-titles">
-            <h2 class="detail__common-name">${pigeon.commonName}</h2>
-            <p class="detail__scientific-name text-sm">${pigeon.genus} ${pigeon.species}</p>
-        </div>
-        `
-        /* /Postcard front element */
-
-        /* Postcard back element */
-        const postcardStamp = createStamp(pigeon, 'detail__postcard-stamp-picture', 'detail__postcard-stamp-img')
-
-        const postcardInfo = document.createElement('div')
-        postcardInfo.classList.add('detail__postcard-info')
-        postcardInfo.innerHTML = `
-        <div class="detail__metadata">
-            <p class="detail__metadatum text-md">Common Name: ${pigeon.commonName}</p>
-            <p class="detail__metadatum text-md">Genus: ${pigeon.genus}</p>
-            <p class="detail__metadatum text-md">Species: ${pigeon.species}</p>
-            <p class="detail__metadatum text-md">Living Region: ${regions}</p>
-            <p class="detail__metadatum text-md">ConservationStatus: ${translateConservationStatus(pigeon.conservationStatus)}</p>
-        </div>
-        
-        <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
+    detailMainInfo.innerHTML = `
+    <h3 class="detail__title">More about the ${pigeon.commonName}</h3>
+    <p class="detail__summary">${pigeon.summary}</p>
+    <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
         Wiki article
-        </a>
+    </a>
+    `
+    /* /Main info element */
+}
+
+function generateMapElement(pigeon) {
+    /* Map element */
+    pigeon.range.regions.forEach((region) => {
+        let singleRegion = document.createElement('picture')
+        singleRegion.classList.add('detail__map-picture')
+        singleRegion.innerHTML = `
+        <source src="assets/maps/${region}.svg" type="image/svg">
+        <img class="detail__map-img" src="assets/maps/${region}.svg" alt="${translateRegionName(region)}">
+        `
+        detailMapCanvas.appendChild(singleRegion)
+        mapsToClean.push(singleRegion)
+    })
+
+    const regions = pigeon.range.regions.map((region) => translateRegionName(region)).join(', ')
+
+    detailMapRegions.innerText = `
+    living region: ${regions}
+    `
+    detailMapLocations.innerText = `
+    locations: ${pigeon.range.locations.join(', ')}
+    `
+    /* /Map element */
+
+    return regions
+}
+
+function generateRelatedSpeciesElement(pigeon) {
+    /* Related species element */
+    pigeon.range.regions.forEach((region) => {
+        // Filter by region
+        const relatedSpecies = pigeonsWithSummaries.data.filter(p => p.range.regions.includes(region) && p.commonName !== pigeon.commonName)
+
+        // Select 5 random related species
+        const max = getRandomNumber(5, relatedSpecies.length)
+        const min = max - 5
+        const selectedSpecies = relatedSpecies.slice(min, max)
+        console.log(selectedSpecies)
+
+        // Create container for selected species
+        let singleRegion = document.createElement('div')
+        singleRegion.classList.add('detail__related-region')
+
+        // Create stamp of each selected species with click listeners
+        selectedSpecies.forEach((species) => {
+            const selectedPigeonStamp = createButtonStamp(species, 'detail__related-picture', 'detail__related-img')
+            singleRegion.appendChild(selectedPigeonStamp)
+
+            // Add click event listener to load related species details
+            selectedPigeonStamp.addEventListener('click', (e) => {
+                e.stopPropagation()
+                // Revisar: cómo hacer que haga scroll hasta arriba
+                // detail.scrollTop = 0 .scrollTo({ top: 0, behavior: 'smooth'})
+                closeDetail()
+                generateDetail(species)
+                openDetail(species)
+                flipPostcard()
+                detail.scrollTop = 0
+            })
+        })
+
+        // Create container for related species text
+        let singleRegionText = document.createElement('p')
+        singleRegionText.classList.add('detail__region-name')
+        singleRegionText.classList.add('text-md')
+        singleRegionText.innerText = `
+        Other species in ${translateRegionName(region)}
         `
 
-        detailPostcardBack.appendChild(postcardStamp)
-        detailPostcardBack.appendChild(postcardInfo)
-        /* /Postcard back element */
+        // Append elements to related species container
+        detailRelatedSpecies.appendChild(singleRegionText)
+        detailRelatedSpecies.appendChild(singleRegion)
+    })
+    /* /Related species element */
+}
 
-    } else {
-        detailFactsheet.innerHTML = `
-        <p class="text-xl">404 cucurrucucú not found</p>
+function generatePostcardFront(pigeon) {
+    /* Postcard front element */
+    let extensionType = pigeon.photos[0].split('.').pop()
+    console.log(extensionType)
+
+    detailPostcardFront.innerHTML = `
+    <picture class="detail__postcard-picture">
+        <source src="${pigeon.photos[0]}" type="image/${extensionType}">
         <img 
-            src="assets/postal-placeholder.png"
-            alt="${pigeon.genus} ${pigeon.species}"
+        class="detail__postcard-img"
+        src="${pigeon.photos[0]}"
+        alt="${pigeon.genus} ${pigeon.species}"
         >
-        `
+    </picture>
+    <div class="detail__postcard-titles">
+        <h2 class="detail__common-name">${pigeon.commonName}</h2>
+        <p class="detail__scientific-name text-sm">${pigeon.genus} ${pigeon.species}</p>
+    </div>
+    `
+    /* /Postcard front element */
+}
+
+function generatePostcardBack(pigeon, regions) {
+    /* Postcard back element */
+    const articleLink = pigeon.articleTitle
+        ? 'https://en.wikipedia.org/wiki/' + pigeon.articleTitle.split(' ').join('_')
+        : ''
+
+    const postcardStamp = createPictureStamp(pigeon, 'detail__postcard-stamp-picture', 'detail__postcard-stamp-img')
+
+    const postcardInfo = document.createElement('div')
+    postcardInfo.classList.add('detail__postcard-info')
+    postcardInfo.innerHTML = `
+    <div class="detail__metadata">
+        <p class="detail__metadatum text-md">Common Name: ${pigeon.commonName}</p>
+        <p class="detail__metadatum text-md">Genus: ${pigeon.genus}</p>
+        <p class="detail__metadatum text-md">Species: ${pigeon.species}</p>
+        <p class="detail__metadatum text-md">Living Region: ${regions}</p>
+        <p class="detail__metadatum text-md">ConservationStatus: ${translateConservationStatus(pigeon.conservationStatus)}</p>
+    </div>
+    
+    <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
+    Wiki article
+    </a>
+    `
+
+    detailPostcardBack.appendChild(postcardStamp)
+    detailPostcardBack.appendChild(postcardInfo)
+    /* /Postcard back element */
+}
+
+function generateErrorDetail(pigeon) {
+    /* Error element */
+    detailFactsheet.innerHTML = `
+    <p class="text-xl">404 cucurrucucú not found</p>
+    <img 
+        src="assets/postal-placeholder.png"
+        alt="${pigeon.genus} ${pigeon.species}"
+    >
+    `
+    /* /Error element */
+}
+
+function generateDetail(pigeon) {
+    /* Detail section */
+    if (pigeon.genus) {
+        generateMainInfo(pigeon)
+        const regions = generateMapElement(pigeon)
+        generateRelatedSpeciesElement(pigeon)
+        generatePostcardFront(pigeon)
+        generatePostcardBack(pigeon, regions)
+    } else {
+        generateErrorDetail(pigeon)
     }
 
-    // Revisar: cómo hacer que el clipboard siempre salga en la parte de la pantalla que quiero
-    detail.classList.toggle('active')
     /* /Detail section */
 }
 
-// Creación de estampilla de cada paloma en stampsGrid
-pigeonsWithSummaries.data.forEach((pigeon) => {
-    const singleStamp = createStamp(pigeon, 'stamps__picture', 'stamps__img')
-    stampsGrid.appendChild(singleStamp)
+/* /DOM GENERATION FUNCTIONS /*/
 
-    singleStamp.addEventListener('click', (e) => generateDetail(pigeon))
-})
+/* ==================== DETAIL VIEW INTERACTIONS ==================== */
 
-// Interacciones con contenedor detalle
 function closeDetail() {
     detail.classList.remove('active')
     
@@ -259,40 +332,181 @@ function closeDetail() {
     mapsToClean = []
 }
 
-// Revisar: nombres de const
-const detailCloseButton = document.getElementById('detailCloseButton')
-detailCloseButton.addEventListener('click', () => closeDetail())
+function openDetail(pigeon) {
+    detail.classList.add('active')
 
-// Visualización de información detalle
-function sendPostcardBack() {
-    postcardContainer.classList.remove('top')
+    // Initialize z-index for both elements
+    postcardContainer.style.zIndex = Z_INDEX_TOP_DETAIL
+    detailFactsheet.style.zIndex = Z_INDEX_CONTENT
+
+    // Animate
+    move(postcardContainer)
+    move(detailFactsheet)
 }
 
-function sendFactsheetBack() {
-    detailFactsheet.classList.remove('top')
+/* /DETAIL VIEW INTERACTIONS /*/
+
+/* ==================== ANIMATION FUNCTIONS ==================== */
+
+// Generic animation helper
+function animateElement(element, keyframes, options = {}) {
+    const defaultOptions = {
+        duration: 600,
+        easing: 'ease-in-out',
+        iterations: 1,
+        fill: 'forwards'
+    }
+    element.animate(keyframes, { ...defaultOptions, ...options })
 }
 
+// Animate clipboard blocks entry
+function move(element) {
+    element.classList.remove('moving')
+    element.classList.add('moving')
+}
+
+// Flip animation
+function flip(element, direction = 'left') {
+    const elementWidth = element.offsetWidth
+
+    const flipDeg = direction === 'left' ? '-180deg' : '180deg'
+    const flipKeyframes = [
+        { transform: `rotateY(0deg)` },
+        { transform: `rotateY(${flipDeg})` },
+        { opacity: 0 },
+        { opacity: 1 }
+    ]
+    animateElement(element, flipKeyframes, {
+        duration: 1600,
+        easing: 'cubic-bezier(0.85, 0, 0.15, 1)',
+        fill: 'backwards'
+    })
+}
+
+// Shuffle detail with animation
+function shuffleDetail(element, inactiveElement, direction) {
+    const elementWidth = element.offsetWidth
+
+    const position = direction === 'left' ? `-${elementWidth}px` : `${elementWidth}px`
+    const shuffleKeyframes = [
+        { transform: 'translateX(0)' },
+        { transform: `translateX(${position})` },
+        { transform: 'translateX(0)' }
+    ]
+    animateElement(element, shuffleKeyframes, { duration: 1000 })
+
+    setTimeout(() => {
+        inactiveElement.style.zIndex = Z_INDEX_CONTENT
+        element.style.zIndex = Z_INDEX_TOP_DETAIL
+    }, 500)
+}
+
+/* /ANIMATION FUNCTIONS /*/
+
+/* ==================== POSTCARD & FACTSHEET INTERACTIONS ==================== */
+
+// Toggle postcard sides (front/back flip)
+function flipToFront() {
+    detailPostcardBack.classList.toggle('inactive')
+    detailPostcardFront.classList.toggle('inactive')
+    detailPostcardFront.classList.add('active')
+}
+
+function flipToBack() {
+    detailPostcardFront.classList.toggle('inactive')
+    detailPostcardBack.classList.toggle('inactive')
+    detailPostcardBack.classList.add('active')
+}
+
+function flipPostcard() {
+    console.log('Estoy flipando tìo')
+    if (detailPostcardFront.classList.contains('active')) {
+        flip(postcardContainer, 'left')
+        // Delay class changes until animation completes (600ms)
+        setTimeout(() => flipToBack(), 800)
+    } else {
+        flip(postcardContainer, 'right')
+        // Delay class changes until animation completes (600ms)
+        setTimeout(() => flipToFront(), 800)
+    }
+}
+
+// Handle postcard container click interactions
 postcardContainer.addEventListener('click', () => {
-    if (postcardContainer.classList.contains('top')) {
-        detailPostcardFront.classList.toggle('active')
-        detailPostcardBack.classList.toggle('active')
-        detailPostcardFront.classList.toggle('inactive')
-        detailPostcardBack.classList.toggle('inactive')
+    if (postcardContainer.style.zIndex === Z_INDEX_TOP_DETAIL) {
+        // If postcard is already on top, flip it
+        flipPostcard()
     } else {
-        postcardContainer.classList.add('top')
-        sendFactsheetBack()
+        // Otherwise bring postcard to front and swap with factsheet
+        //swapClipboardElements(postcardContainer, detailFactsheet, 'left')
+        shuffleDetail(postcardContainer, detailFactsheet, 'left')
     }
 })
 
+// Handle factsheet click interactions
 detailFactsheet.addEventListener('click', () => {
-    if (detailFactsheet.classList.contains('top')) {
-        // Por ahora no hacer nadaP
+    if (detailFactsheet.style.zIndex === Z_INDEX_TOP_DETAIL) {
+        // Factsheet is already on top - no action for now
     } else {
-        detailFactsheet.classList.add('top')
-        sendPostcardBack()
+        // Bring factsheet to front and swap with postcard
+        //swapClipboardElements(detailFactsheet, postcardContainer, 'right')
+        shuffleDetail(detailFactsheet, postcardContainer, 'right')
     }
 })
 
+/* /POSTCARD & FACTSHEET INTERACTIONS /*/
+
+/* ==================== DRAG SCROLL FUNCTIONALITY ==================== */
+
+// Draggable canvas implementation
+// References: https://discourse.wicg.io/t/drag-to-scroll-a-simple-way-to-scroll-sideways-on-desktop/3627/
+// https://www.youtube.com/watch?v=C9EWifQ5xqA
+// https://stackoverflow.com/questions/22504437/should-cursor-property-be-defined-in-class-or-classhover
+
+let isDown = false
+let startX
+let startY
+let scrollLeft
+let scrollTop
+let pendingScroll = false
+
+stamps.addEventListener('mousedown', (e) => {
+    isDown = true
+    stamps.classList.add('dragging')
+    startX = e.pageX - stamps.offsetLeft
+    startY = e.pageY - stamps.offsetTop
+    scrollLeft = stamps.scrollLeft
+    scrollTop = stamps.scrollTop
+    pendingScroll = false
+})
+
+stamps.addEventListener('mousemove', (e) => {
+    if (!isDown) return
+    e.preventDefault()
+    
+    const scrollX = scrollLeft - (e.pageX - stamps.offsetLeft - startX)
+    const scrollY = scrollTop - (e.pageY - stamps.offsetTop - startY)
+
+    if (!pendingScroll) {
+        pendingScroll = true
+        requestAnimationFrame(() => {
+            stamps.scroll(scrollX, scrollY)
+            pendingScroll = false
+        })
+    }
+})
+
+stamps.addEventListener('mouseup', () => {
+    isDown = false
+    stamps.classList.remove('dragging')
+})
+
+stamps.addEventListener('mouseleave', () => {
+    isDown = false
+    stamps.classList.remove('dragging')
+})
+
+// Center the stamps grid on page load
 function centerStampsGrid() {
     if (!stamps || !stampsGrid) return
 
@@ -304,9 +518,32 @@ function centerStampsGrid() {
     stamps.scroll(centerX, centerY)
 }
 
+/* /DRAG SCROLL FUNCTIONALITY /*/
+
+/* ==================== INITIALIZATION ==================== */
+
+// Setup detail overlay close button
+const detailCloseButton = document.getElementById('detailCloseButton')
+detailCloseButton.addEventListener('click', () => closeDetail())
+
+// Setup detail overlay click handler
+const detailOverlay = document.getElementById('detailOverlay')
+detailOverlay.addEventListener('click', (e) => closeDetail())
+
+// Initialize stamps grid with click handlers
+pigeonsWithSummaries.data.forEach((pigeon) => {
+    const singleStamp = createButtonStamp(pigeon, 'stamps__picture', 'stamps__img')
+    stampsGrid.appendChild(singleStamp)
+
+    singleStamp.addEventListener('click', (e) => {
+        generateDetail(pigeon)
+        openDetail(pigeon)
+    })
+})
+
+// Center stamps grid and setup listeners on page load
 window.addEventListener('load', () => {
     requestAnimationFrame(() => setTimeout(centerStampsGrid, 5))
 })
 
-const detailOverlay = document.getElementById('detailOverlay')
-detailOverlay.addEventListener('click', (e) => closeDetail())
+/* /INITIALIZATION /*/

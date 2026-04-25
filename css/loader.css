@@ -1,0 +1,61 @@
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  background-color: var(--color-light);
+  background-image: var(--bg-textured-vintage);
+  background-blend-mode: multiply;
+  background-size: var(--bg-size);
+  background-repeat: repeat;
+  z-index: 9999;
+  transition: opacity 0.5s ease-out;
+}
+
+.loader-container.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* The active feet moving across the screen */
+#walking-container {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.foot-svg {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  /* Points both feet toward the top-right corner */
+  transform: rotate(45deg);
+}
+
+/* The footprint trail */
+.footprint {
+  position: absolute;
+  width: 50px;
+  height: auto;
+  pointer-events: none;
+  opacity: 1;
+  mix-blend-mode: multiply;
+
+  /* Animates the fade out */
+  animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
