@@ -4,7 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pururús</title>
+
+    <!-- HTML Meta Tags -->
+    <title>Pururús - Learn about pigeons from the world</title>
+    <meta name="description" content="An interactive monopedia about wild pigeons from all around the globe">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://albaisaiasg-cei.github.io/palomas/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pururús - Learn about pigeons from the world">
+    <meta property="og:description" content="An interactive monopedia about wild pigeons from all around the globe">
+    <meta property="og:image" content="assets/og_image.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="albaisaiasg-cei.github.io">
+    <meta property="twitter:url" content="https://albaisaiasg-cei.github.io/palomas/">
+    <meta name="twitter:title" content="Pururús - Learn about pigeons from the world">
+    <meta name="twitter:description" content="An interactive monopedia about wild pigeons from all around the globe">
+    <meta name="twitter:image" content="assets/og_image.webp">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon-blk.svg" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon-lt.svg" media="(prefers-color-scheme: dark)">
 
 <!-- Connect CSS & JS files to HTML -->
     <link rel="stylesheet" href="css/index.css">
@@ -18,19 +41,28 @@
 <link rel="preload" as="image" href="assets/backgrounds/textured-vintage.webp" fetchpriority="high">
 <link rel="preload" as="image" href="assets/backgrounds/brown-envelope.webp" fetchpriority="high">
 
-<!-- Add favicon Revisar: cómo agregar favicon -->
 
 <body class="homepage">
+    <header class="header container--flex-columns with-shadow">
+        <h1 class="header__title text-sm">Pururús</h1>
+    </header>
 
     <!-- Loading animation container -->
     <div class="loader-container" id="stage">
         <div class="walking-container"></div>
     </div>
-    <!-- Revisar uso de clase container -->
 <main>
     <!-- When describing sections with dynamically generated content, a general structure of each block is defined, class names and interpolation placeholders may vary from final template literals in JS file -->
     <!-- Stamps section: Grid of thumbnail images styled as postal stamps-->
     <section class="stamps" id="stamps">
+        <div class="stamps__instructions with-shadow container--flex-columns" role="tooltip" aria-label="instructions" tabindex="1">
+            <ul class="stamps__instructions-list with-shadow">
+                <li class="text-xxs"><span class="icon__drag"></span>Drag or scroll to move around</li>
+                <li class="text-xxs">Click on any stamp to view its details</li>
+            </ul>
+            <span class="icon__info"></span>
+        </div>
+        
         <div class="container--grid stamps__grid" id="stampsGrid">
             <!-- Revisar: Se pone loading lazy a todas (incluso las primeras en pantalla para mejorar performance), como son generadas por un script, no se puede usar loading lazy en imágenes que no son cargadas dinámicamente, probar carga con loading lazy y con eager y ver cómo es el performance. -->
             <!-- Each stamp is created dynamically by JS, information is taken from the "pigeons-with-summaries.json" file.
@@ -50,11 +82,6 @@
             </button>
             -->
         </div>
-        
-        <!-- Revisar: Texto instrucciones y si agregar más elementos a la sección-->
-        <div class="container--flex stamps__instructions">
-            <p class="text-md">Click on any stamp to view its details</p>
-        </div>
     </section>
 
     <!-- Detail section: Popup section with detail view styled as field clipboard for each pigeon species. Each container stays the same, content is modified by JS each time a stamp is clicked on. Styled as a lightbox. -->
@@ -70,18 +97,17 @@
             </picture>
 
             <!-- Clipboard block: Background texture & closing control container. -->
-            <div class="detail__clipboard">
+            <div class="detail__clipboard container--flex-columns">
                 <!-- Closing button: onclick="closeDetail()" was tested for use, but it won't work because the JS import is type="module". The event listener is added in the JS file. -->
                 <button type="button" class="detail__close-button" id="detailCloseButton" aria-label="Close detail view">
                     <!-- Alt text is not included on purpose. Since it´s decoration for the button, we want screen readers to ignore it -->
-                    <!-- Revisar: editar para agregar el ícono como ícono y no como imagen (con etiqueta i, svg o span) Usar icomoon -->
-                    <img class="detail__close-icon" src="assets/icons/cruz.svg" alt="" id="closeIcon">
+                    <span class="icon__close"></span>
                 </button>
             </div>
 
             <!-- Factsheet block: Container for detailed information about each pigeon species -->
-            <div class="detail__factsheet" id="detailFactsheet">
-                <div class="detail__main-info" id="detailMainInfo">
+            <div class="detail__factsheet container--flex-columns with-shadow" id="detailFactsheet">
+                <div class="detail__main-info container--flex-columns" id="detailMainInfo">
                     <!-- Dynamic content generated by JS 
 
                     HTML will have the following structure:
@@ -96,7 +122,7 @@
 
                 <div class="detail__map" id="detailMap">
                     <div class="detail__map-canvas" id="detailMapCanvas">
-                        <picture class="detail__map-picture--base">
+                        <picture class="detail__map-picture--base full-width">
                             <source src="assets/maps/base-map.svg" type="image/svg">
                             <img class="detail__map-img--base" src="assets/maps/base-map.svg" alt="outline of a world map">
                         </picture>
@@ -121,7 +147,7 @@
                     </p>
                 </div>
 
-                <div class="detail__related-species" id="detailRelatedSpecies">
+                <div class="detail__related-species container--flex-columns" id="detailRelatedSpecies">
                     <!-- Dynamic related species content generated by JS 
                     HTML will have the following structure:
                     Revisar: Copiar y pegar estructura final aquí
@@ -130,10 +156,10 @@
             </div>
 
             <!-- Postcard block: Summarized information about the selected pigeon species styled as a postcard -->
-            <div class="top detail__postcard-container" id="postcardContainer">
+            <div class="top detail__postcard-container with-shadow" id="postcardContainer">
                 
                 <!-- Front of the postcard -->
-                <div class="active detail__postcard-front" id="detailPostcardFront">
+                <div class="active detail__postcard-front full-width container--flex-columns" id="detailPostcardFront">
                     <!-- Dynamic postcard front content generated by JS
                     
                     HTML will have the following structure:
@@ -154,7 +180,7 @@
                 
 
                 <!-- Back of the postcard -->
-                <div class="inactive detail__postcard-back" id="detailPostcardBack">
+                <div class="inactive detail__postcard-back full-width container--flex-columns" id="detailPostcardBack">
                     <!-- Dynamic back content generated by JS
                     
                     HTML will have the following structure:

@@ -101,7 +101,7 @@ function createButtonStamp(pigeon, pictureClass, imgClass) {
     // singleStamp.classList.add(pictureClass)
 
     singleStamp.innerHTML = `
-        <picture class="${pictureClass}">
+        <picture class="${pictureClass} with-shadow">
             <source srcset="${getStampFilePath(pigeon.commonName, 'webp')}" type="image/webp">
             <img 
                 class="${imgClass}" 
@@ -145,11 +145,9 @@ function generateMainInfo(pigeon) {
         : ''
 
     detailMainInfo.innerHTML = `
-    <h3 class="detail__title">More about the ${pigeon.commonName}</h3>
-    <p class="detail__summary">${pigeon.summary}</p>
-    <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
-        Wiki article
-    </a>
+    <h3 class="detail__title full-width">More about the ${pigeon.commonName}</h3>
+    <p class="detail__summary full-width">${pigeon.summary}</p>
+    <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">Wiki article <span class="icon__arrow-up-right"></span></a>
     `
     /* /Main info element */
 }
@@ -158,7 +156,7 @@ function generateMapElement(pigeon) {
     /* Map element */
     pigeon.range.regions.forEach((region) => {
         let singleRegion = document.createElement('picture')
-        singleRegion.classList.add('detail__map-picture')
+        singleRegion.classList.add('detail__map-picture', 'full-width')
         singleRegion.innerHTML = `
         <source src="assets/maps/${region}.svg" type="image/svg">
         <img class="detail__map-img" src="assets/maps/${region}.svg" alt="${translateRegionName(region)}">
@@ -190,7 +188,6 @@ function generateRelatedSpeciesElement(pigeon) {
         const max = getRandomNumber(5, relatedSpecies.length)
         const min = max - 5
         const selectedSpecies = relatedSpecies.slice(min, max)
-        console.log(selectedSpecies)
 
         // Create container for selected species
         let singleRegion = document.createElement('div')
@@ -209,14 +206,17 @@ function generateRelatedSpeciesElement(pigeon) {
                 closeDetail()
                 generateDetail(species)
                 openDetail(species)
-                flipPostcard()
+
+                if(!detailPostcardFront.classList.contains('active')) {
+                    flipToFront()
+                }
                 detail.scrollTop = 0
             })
         })
 
         // Create container for related species text
         let singleRegionText = document.createElement('p')
-        singleRegionText.classList.add('detail__region-name')
+        singleRegionText.classList.add('detail__region-name', 'full-width')
         singleRegionText.classList.add('text-md')
         singleRegionText.innerText = `
         Other species in ${translateRegionName(region)}
@@ -232,7 +232,6 @@ function generateRelatedSpeciesElement(pigeon) {
 function generatePostcardFront(pigeon) {
     /* Postcard front element */
     let extensionType = pigeon.photos[0].split('.').pop()
-    console.log(extensionType)
 
     detailPostcardFront.innerHTML = `
     <picture class="detail__postcard-picture">
@@ -260,7 +259,7 @@ function generatePostcardBack(pigeon, regions) {
     const postcardStamp = createPictureStamp(pigeon, 'detail__postcard-stamp-picture', 'detail__postcard-stamp-img')
 
     const postcardInfo = document.createElement('div')
-    postcardInfo.classList.add('detail__postcard-info')
+    postcardInfo.classList.add('detail__postcard-info', 'full-width')
     postcardInfo.innerHTML = `
     <div class="detail__metadata">
         <p class="detail__metadatum text-md">Common Name: ${pigeon.commonName}</p>
@@ -270,9 +269,7 @@ function generatePostcardBack(pigeon, regions) {
         <p class="detail__metadatum text-md">ConservationStatus: ${translateConservationStatus(pigeon.conservationStatus)}</p>
     </div>
     
-    <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">
-    Wiki article
-    </a>
+    <a class="link detail__wiki-link" title="Go to the ${pigeon.commonName} Wikipedia Article" target="blank" rel="noopener noreferrer" href="${articleLink}">Wiki article <span class="icon__arrow-up-left"></span></a>
     `
 
     detailPostcardBack.appendChild(postcardStamp)
@@ -323,14 +320,13 @@ function closeDetail() {
     }
     
     mapsToClean.forEach((map) => {
-        console.log(map)
         detailMapCanvas.removeChild(map)
     })
     
     mapsToClean = []
 }
 
-function openDetail(pigeon) {
+function openDetail() {
     detail.classList.add('active')
 
     // Initialize z-index for both elements
@@ -365,8 +361,6 @@ function move(element) {
 
 // Flip animation
 function flip(element, direction = 'left') {
-    const elementWidth = element.offsetWidth
-
     const flipDeg = direction === 'left' ? '-180deg' : '180deg'
     const flipKeyframes = [
         { transform: `rotateY(0deg)` },
@@ -377,7 +371,6 @@ function flip(element, direction = 'left') {
     animateElement(element, flipKeyframes, {
         duration: 1600,
         easing: 'cubic-bezier(0.85, 0, 0.15, 1)',
-        fill: 'backwards'
     })
 }
 
@@ -406,18 +399,19 @@ function shuffleDetail(element, inactiveElement, direction) {
 // Toggle postcard sides (front/back flip)
 function flipToFront() {
     detailPostcardBack.classList.toggle('inactive')
+    detailPostcardBack.classList.toggle('active')
     detailPostcardFront.classList.toggle('inactive')
-    detailPostcardFront.classList.add('active')
+    detailPostcardFront.classList.toggle('active')
 }
 
 function flipToBack() {
     detailPostcardFront.classList.toggle('inactive')
+    detailPostcardFront.classList.toggle('active')
     detailPostcardBack.classList.toggle('inactive')
-    detailPostcardBack.classList.add('active')
+    detailPostcardBack.classList.toggle('active')
 }
 
 function flipPostcard() {
-    console.log('Estoy flipando tìo')
     if (detailPostcardFront.classList.contains('active')) {
         flip(postcardContainer, 'left')
         // Delay class changes until animation completes (600ms)
@@ -510,8 +504,6 @@ function centerStampsGrid() {
 
     const centerX = (stampsGrid.scrollWidth - stamps.clientWidth) / 2
     const centerY = (stampsGrid.scrollHeight - stamps.clientHeight) / 2
-
-    console.log(centerX)
 
     stamps.scroll(centerX, centerY)
 }

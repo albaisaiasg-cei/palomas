@@ -50,6 +50,14 @@
     font-weight: 400;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'icons';
+    src: url(../assets/icons/icons.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
 /* /Carga de fuentes */
 
 /* Variables raíz */
@@ -57,14 +65,6 @@
     /* Colores */
     --color-light: #F9F8F6;
     --color-text: #190A03;
-    --color-red: #AF3029;
-    --color-orange: #BC5215;
-    --color-yellow: #AD8301;
-    --color-green: #66800B;
-    --color-cyan: #24837B;
-    --color-blue: #205EA6;
-    --color-purple: #5E409D;
-    --color-magenta: #A02F6F;
 
     /* Fuentes */
     --font-h1: 'Averia Serif Libre', serif;
@@ -81,7 +81,6 @@
     --bg-corkboard: url(../assets/backgrounds/corkboard.webp);
 
     --bg-size-sm: 12.5rem;
-    --bg-size-lg: 25rem;
     
     --bg-lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
     
@@ -95,14 +94,6 @@
 
     /* Width */
     --width-detail: clamp(20rem, 90vw, 60.25rem);
-
-    /* Breaking points: Aunque en CSS no se pueden usar variables como medida en media query, se dejan hechas para referencia */
-    --breakpoint-sm: 520px;
-    /* Revisar: medidas de breaking points*/
-    --breakpoint-md: 660px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --breakpoint-xxl: 1800px;
 
     /* Transitions */
     --transition: transform 0.5s ease;
@@ -185,6 +176,23 @@ button {
 /* /Reset CSS */
 
 /* Components */
+/* Componentes para reducir duplicidad */
+/* Clase agregada para reducir la duplicidad de width: 100% de acuerdo con primer análisis de CSS Wallace */
+.full-width {
+    width: 100%;
+}
+
+/* Flex columns */
+.container--flex-columns {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.with-shadow {
+    filter: drop-shadow(var(--filter-drop-shadow));
+}
+
+
 .detail__metadatum {
     width: 100%;
     text-align: left;
@@ -223,16 +231,51 @@ p, .text-xs {
     color: var(--color-text);
 }
 
+.text-xxs {
+    font: 600 1rem var(--font-btn);
+    color: var(--color-text);
+    text-transform: uppercase;
+}
+
 a, .btn, .link {
     font: 600 1rem var(--font-btn);
     color: var(--color-text);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6875rem;
 
     &:hover {
         text-decoration: underline;
     }
 }
 /* /Components - tipografías globales*/
+
+/* Components - icons */
+[class^="icon__"], [class*=" icon__"] {
+    font-family: 'icons';
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    margin-top: 2px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon__menu:before {content: "\e900";}
+.icon__close:before {content: "\e901";}
+.icon__info:before {content: "\e902";}
+.icon__drag:before {content: "\e903";}
+.icon__up:before {content: "\e904";}
+.icon__up-right:before {content: "\e905";}
+.icon__right:before {content: "\e906";}
+.icon__down-right:before {content: "\e907";}
+.icon__down:before {content: "\e908";}
+.icon__down-left:before {content: "\e909";}
+.icon__left:before {content: "\e90a";}
+.icon__up-left:before {content: "\e90b";}
+/* /Components - icons*/
 /* /Components */
 
 .homepage {
@@ -241,7 +284,18 @@ a, .btn, .link {
     background-blend-mode: multiply;
     background-size: var(--bg-size-sm);
     background-repeat: repeat;
-    
+
+    /* Header */
+    header {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        gap: 1rem;
+        padding: 1rem;
+        background-image: var(--bg-white-with-fibers);
+        background-size: var(--bg-size-sm);
+        z-index: 1;
+    }
 
     /* Stamps section */
     .stamps {
@@ -250,12 +304,48 @@ a, .btn, .link {
         overflow: auto;
         position: relative;
         scroll-behavior: auto;
-        
         cursor: grab;
         
         &.dragging {
             cursor: grabbing;
             scroll-behavior: auto;
+        }
+
+        .stamps__instructions {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            gap: 1rem;
+            z-index: 1;
+
+            & .icon__info {
+                width: fit-content;
+                padding: 1rem;
+                background-image: var(--bg-brown-envelope);
+                background-size: var(--bg-size-sm);
+            }
+            
+            & .stamps__instructions-list {
+                display: none;
+                flex-flow: column nowrap;
+                background-image: var(--bg-white-with-fibers);
+                background-size: var(--bg-size-sm);
+                padding: 1rem;
+                gap: 1rem;
+                border-radius: 3px;
+
+                li {
+                    gap: .75rem;
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            &:hover {
+                & .stamps__instructions-list {
+                    display: flex;
+                }
+            }
         }
         
         .stamps__grid {
@@ -283,28 +373,15 @@ a, .btn, .link {
                 .stamps__picture {
                     pointer-events: auto;
 
-                    /*Se agrega un filtro drop-shadow para dar la ilusión de profundidad*/
-                    filter: drop-shadow(var(--filter-drop-shadow));
-                    
                     .stamps__img {
                         animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both;
                     }
                 }
             }
         }
-
-        .stamps__instructions {
-            position: fixed;
-            bottom: 1rem;
-            left: 1rem;
-            padding: 1rem;
-
-            background-image: var(--bg-brown-envelope);
-            filter: drop-shadow(var(--filter-drop-shadow));
-        }
     }
     /* /Stamps section*/
-
+    
     /* Detail section */
     .detail {
         width: 100vw;
@@ -347,8 +424,6 @@ a, .btn, .link {
             }
 
             .detail__clipboard {
-                display: flex;
-                flex-flow: column nowrap;
                 justify-content: start;
                 align-items: end;
                 width: 66.5625rem;
@@ -378,7 +453,6 @@ a, .btn, .link {
             background-size: var(--bg-size-lg);
             background-repeat: repeat;
             padding: 2.25rem;
-            filter: drop-shadow(var(--filter-drop-shadow));
 
             position: absolute;
             top: 5rem;
@@ -386,8 +460,6 @@ a, .btn, .link {
             margin-right: 1.5rem;
 
             width: var(--width-detail);
-            display: flex;
-            flex-flow: column nowrap;
             gap: 5rem;
 
             &:hover {
@@ -396,19 +468,11 @@ a, .btn, .link {
             }
 
                 .detail__main-info{
-                    display: flex;
-                    flex-flow: column nowrap;
                     gap: 2.5rem;
 
                     align-items: end;
-
-                    .detail__title {
-                        width: 100%;
-                    }
     
                     .detail__summary {
-                        width: 100%;
-
                         /* Propiedad white-space incluida para mantener los saltos de línea que vienen en el JSON */
                         white-space: pre-line;
                     }
@@ -425,13 +489,11 @@ a, .btn, .link {
 
                     .detail__map-picture--base {
                         position: relative;
-                        width: 100%;
                         height: 100%;
                     }
 
                     .detail__map-picture {
                         position: absolute;
-                        width: 100%;
                         height: 100%;
 
                         /* El leve desfase entre controno y relleno es intencional, para emular error de imprenta */
@@ -444,8 +506,6 @@ a, .btn, .link {
             }
 
             .detail__related-species {
-                display: flex;
-                flex-flow: column nowrap;
                 gap: .5rem;
                 
                 .detail__related-region {
@@ -475,14 +535,11 @@ a, .btn, .link {
 
                         .detail__related-picture{
                             pointer-events: auto;
-
-                            filter: drop-shadow(var(--filter-drop-shadow));
                         }
                     }
                 }
                 
                 .detail__region-name {
-                    width: 100%;
                     text-align: left;
                     padding-bottom: 3rem;
                 }
@@ -496,12 +553,12 @@ a, .btn, .link {
             background-size: var(--bg-size-sm);
             background-repeat: repeat;
             padding: 2.25rem;
-            filter: drop-shadow(var(--filter-drop-shadow));
             
             position: absolute;
             top: 4rem;
             margin-left: -3rem;
             width: var(--width-detail);
+            min-height: clamp(18.75rem, 37.5rem, 37.5rem);
             
             display: flex;
 
@@ -513,9 +570,6 @@ a, .btn, .link {
             }
             
             .detail__postcard-front {
-                width: 100%;
-                display: flex;
-                flex-flow: column nowrap;
                 gap: 1.25rem;
                 backface-visibility: hidden;
                 
@@ -550,9 +604,6 @@ a, .btn, .link {
             
             .detail__postcard-back {
                 height: 100%;
-                width: 100%;
-                display: flex;
-                flex-flow: column nowrap;
                 justify-content: space-between;
                 align-items: end;
 
@@ -565,16 +616,14 @@ a, .btn, .link {
                 left: 0;
 
                 .detail__postcard-stamp-picture {
-                    filter: drop-shadow(var(--filter-drop-shadow));
                     width: 9.375rem;
 
-                    @media (max-width:520px){
+                    @media (max-width:520px) {
                         display: none;
                     }
                 }
 
                 .detail__postcard-info {
-                    width: 100%;
                     display: flex;
                     flex-flow: row wrap;
                     align-items: end;
