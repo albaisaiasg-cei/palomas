@@ -1,10 +1,9 @@
 /* Carga de fuentes - Al ser fuentes estáticas, se importaron por peso */
 @font-face {
     font-family: 'Averia Sans Libre';
+    /* Se agrega la función local para optimizar el tiempo de carga de la página, si el usuario tiene la tipografía instalada, se usará ese archivo. Los nombres asignados en local son los mismos que tendría el usuario al descargar de Google Fonts sin editar su nombre */
     src: 
-    /* Se agrega la función local para optimizar el tiempo de carga de la página, si el usuario tiene la tipografía instalada, se usará ese archivo */
-    local('AveriaSansLibre-Bold'), /* Los nombres asignados en local son los mismos que tendría el usuario al descargar de Google Fonts sin editar su nombre */
-    url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
+    local('AveriaSansLibre-Bold'), url(../assets/fonts/AveriaSansLibre-Bold.woff2) format("woff2");
     font-style: normal;
     font-weight: 700;
 
@@ -14,9 +13,7 @@
 
 @font-face {
     font-family: 'Averia Sans Libre';
-    src: 
-    local('AveriaSansLibre-Light'),
-    url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
+    src: local('AveriaSansLibre-Light'), url(../assets/fonts/AveriaSansLibre-Light.woff2) format("woff2");
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -24,9 +21,7 @@
 
 @font-face {
     font-family: 'Averia Sans Libre';
-    src: 
-    local('AveriaSansLibre-LightItalic'),
-    url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
+    src: local('AveriaSansLibre-LightItalic'), url(../assets/fonts/AveriaSansLibre-LightItalic.woff2) format("woff2");
     font-style: italic;
     font-weight: 300;
     font-display: swap;
@@ -34,9 +29,7 @@
 
 @font-face {
     font-family: 'Averia Serif Libre';
-    src: 
-    local('AveriaSerifLibre-Light'),
-    url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
+    src: local('AveriaSerifLibre-Light'), url(../assets/fonts/AveriaSerifLibre-Light.woff2) format("woff2");
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -44,9 +37,7 @@
 
 @font-face {
     font-family: 'Averia Serif Libre';
-    src: 
-    local('AveriaSerifLibre-Regular'),
-    url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
+    src: local('AveriaSerifLibre-Regular'), url(../assets/fonts/AveriaSerifLibre-Regular.woff2) format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -54,9 +45,7 @@
 
 @font-face {
     font-family: 'Didact Gothic';
-    src: 
-    local('DidactGothic-Regular'),
-    url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
+    src: local('DidactGothic-Regular'), url(../assets/fonts/DidactGothic-Regular.woff2) format("woff2");
     font-style: normal;
     font-weight: 400;
     font-display: swap;
@@ -87,12 +76,9 @@
 
     /* Background */
     --bg-white-with-fibers: url(../assets/backgrounds/white-with-fibers.webp);
-    --bg-bone-with-fibers: url(../assets/backgrounds/bone-with-fibers.webp);
     --bg-brown-envelope: url(../assets/backgrounds/brown-envelope.webp);
     --bg-textured-vintage: url(../assets/backgrounds/textured-vintage.webp);
     --bg-corkboard: url(../assets/backgrounds/corkboard.webp);
-    --bg-ruled-notepad: url(../assets/backgrounds/ruled-notepad.webp);
-    --bg-dutch: url(../assets/backgrounds/dutch.webp);
 
     --bg-size-sm: 12.5rem;
     --bg-size-lg: 25rem;
@@ -100,11 +86,12 @@
     --bg-lightbox: linear-gradient(0deg,rgba(25, 10, 3, 0.75) 0%, rgba(25, 10, 3, 0.6) 100%);
     
     --filter-drop-shadow: 4px 4px 4px rgba(25, 10, 3, 0.25);
+    
     /* Layers (z-index) */
     --z-overlay: 1;
     --z-content: 2;
     --z-top-detail: 3;
-    --z-clip: 4;
+    --z-clip: 5;
 
     /* Width */
     --width-detail: clamp(20rem, 90vw, 60.25rem);
@@ -123,21 +110,11 @@
 /* /Variables raíz */
 
 /* Animaciones */
-@keyframes zoomIn {
-    from {
-        transform: scale(0.5);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
 @keyframes appear {
 	0% {
 		opacity: 0;
 		transform: scale(1.4);
 	}
-
 	100% {
 		opacity: 1;
 		transform: scale(1);
@@ -148,7 +125,6 @@
     0% {
         transform: translateX(100vw);
     }
-
     100% {
         transform: translateX(0);
     }
@@ -158,7 +134,6 @@
     0% {
         transform: translateX(-100vw);
     }
-
     100% {
         transform: translateX(0);
     }
@@ -172,7 +147,6 @@
     padding: 0;
     scroll-behavior: smooth;
     overscroll-behavior: none;
-
     transition: var(--transition);
 }
 
@@ -211,6 +185,13 @@ button {
 /* /Reset CSS */
 
 /* Components */
+.detail__metadatum {
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid var(--color-text);
+    padding: 7px 10px 3px 10px;
+}
+
 /* Components - tipografías globales */
 h1, .text-xl {
     font: 300 clamp(2.625rem, 5vw, 4rem) var(--font-h1);
@@ -256,7 +237,6 @@ a, .btn, .link {
 
 .homepage {
     /*Se contempló poner el fondo a la sección stamps, pero se cortaba*/
-    background-color: var(--color-light);
     background-image: var(--bg-textured-vintage);
     background-blend-mode: multiply;
     background-size: var(--bg-size-sm);
@@ -270,13 +250,7 @@ a, .btn, .link {
         overflow: auto;
         position: relative;
         scroll-behavior: auto;
-
-        /*
-        user-select: none;
-        -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        */
-
+        
         cursor: grab;
         
         &.dragging {
@@ -314,9 +288,6 @@ a, .btn, .link {
                     
                     .stamps__img {
                         animation: appear 2s cubic-bezier(0.5, 0, 0.75, 0) 300ms 1 normal both;
-                        
-                        /* Revisar por qué después de agregar el loader ya no funciona */
-                        
                     }
                 }
             }
@@ -326,7 +297,7 @@ a, .btn, .link {
             position: fixed;
             bottom: 1rem;
             left: 1rem;
-            padding: .5rem;
+            padding: 1rem;
 
             background-image: var(--bg-brown-envelope);
             filter: drop-shadow(var(--filter-drop-shadow));
@@ -373,8 +344,6 @@ a, .btn, .link {
             top: -6rem;
             width: 16.25rem;
             height: auto;
-
-                .detail__clip-img {}
             }
 
             .detail__clipboard {
@@ -399,15 +368,12 @@ a, .btn, .link {
                     &:hover {
                         transform: rotate(3deg);
                         cursor: pointer;
-
-                        .detail__close-icon {}
                     }
                 }
             }
             
             /* Factsheet block */
             .detail__factsheet {
-            /*Revisar: revisitar medidas de ancho y alto*/
             background-image: var(--bg-white-with-fibers);
             background-size: var(--bg-size-lg);
             background-repeat: repeat;
@@ -461,8 +427,6 @@ a, .btn, .link {
                         position: relative;
                         width: 100%;
                         height: 100%;
-
-                        .detail__map-img--base {}
                     }
 
                     .detail__map-picture {
@@ -475,12 +439,8 @@ a, .btn, .link {
                         left: 0;
                         mix-blend-mode: multiply;
                         filter: blur(0.5px);
-
-                        .detail__map-img {}
                     }
                 }
-                
-                .detail__metadatum {/* Styled in components */}
             }
 
             .detail__related-species {
@@ -517,10 +477,6 @@ a, .btn, .link {
                             pointer-events: auto;
 
                             filter: drop-shadow(var(--filter-drop-shadow));
-    
-                            
-                            
-                            .detail__related-img {}
                         }
                     }
                 }
@@ -535,7 +491,6 @@ a, .btn, .link {
         /* /Factsheet block */
         
         /* Postcard block */
-        /* Revisar: do I want a different bg for the postcard? */
         .detail__postcard-container {
             background-image: var(--bg-white-with-fibers);
             background-size: var(--bg-size-sm);
@@ -616,8 +571,6 @@ a, .btn, .link {
                     @media (max-width:520px){
                         display: none;
                     }
-
-                    .detail__postcard-stamp-img {}
                 }
 
                 .detail__postcard-info {
@@ -631,8 +584,6 @@ a, .btn, .link {
 
                     .detail__metadata {
                         flex: 1 1 50%;
-
-                        .detail__metadatum {/* Styled in components */}
                     }
 
                     .detail__wiki-link {
@@ -681,11 +632,3 @@ a, .btn, .link {
     transform: rotateY(-180deg);
 }
 /* /States */
-
-/* Revisar: Component??? */
-.detail__metadatum {
-    width: 100%;
-    text-align: left;
-    border-bottom: 1px solid var(--color-text);
-    padding: 7px 10px 3px 10px;
-}

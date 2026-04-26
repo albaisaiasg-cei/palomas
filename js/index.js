@@ -1,5 +1,3 @@
-// Revisar que cuando se haga clic en una relatedSpecies la postcard solo se voltee si está en modo postcardBack
-
 /* ==================== DATA & DOM REFERENCES ==================== */
 
 // Se utiliza import para obtener los datos de un archivo local. Se especifica que el archivo es tipo json para que el compilador del navegador sepa el tipo de archivo y lo convierta en un objeto.
@@ -21,8 +19,8 @@ const stamps = document.getElementById('stamps')
 var mapsToClean = []
 
 // Z-index values for clipboard element stacking
-const Z_INDEX_CONTENT = '2'
-const Z_INDEX_TOP_DETAIL = '3'
+const Z_INDEX_CONTENT = '3'
+const Z_INDEX_TOP_DETAIL = '4'
 
 /* /DATA & DOM REFERENCES /*/
 
